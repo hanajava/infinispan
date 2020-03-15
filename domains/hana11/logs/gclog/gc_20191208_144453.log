@@ -1,0 +1,13 @@
+Java HotSpot(TM) 64-Bit Server VM (25.202-b08) for linux-amd64 JRE (1.8.0_202-b08), built on Dec 15 2018 12:40:22 by "java_re" with gcc 7.3.0
+Memory: 4k page, physical 1527524k(599292k free), swap 2097148k(2096628k free)
+CommandLine flags: -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/svc/was/nsdg01/domains/sessionCache11/logs/heapdump -XX:InitialHeapSize=134217728 -XX:MaxHeapSize=536870912 -XX:+PrintGC -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:ThreadStackSize=256 -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC -XX:+UseParallelOldGC 
+1.920: [GC (Allocation Failure) [PSYoungGen: 33280K->5088K(38400K)] 33280K->8630K(125952K), 0.0899209 secs] [Times: user=0.17 sys=0.15, real=0.09 secs] 
+Heap
+ PSYoungGen      total 38400K, used 9168K [0x00000000f5580000, 0x00000000fa080000, 0x0000000100000000)
+  eden space 33280K, 12% used [0x00000000f5580000,0x00000000f597bfd8,0x00000000f7600000)
+  from space 5120K, 99% used [0x00000000f7600000,0x00000000f7af8170,0x00000000f7b00000)
+  to   space 5120K, 0% used [0x00000000f9b80000,0x00000000f9b80000,0x00000000fa080000)
+ ParOldGen       total 87552K, used 3541K [0x00000000e0000000, 0x00000000e5580000, 0x00000000f5580000)
+  object space 87552K, 4% used [0x00000000e0000000,0x00000000e03757e0,0x00000000e5580000)
+ Metaspace       used 16016K, capacity 16858K, committed 17024K, reserved 1064960K
+  class space    used 2015K, capacity 2319K, committed 2432K, reserved 1048576K

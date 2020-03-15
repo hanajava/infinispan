@@ -1,0 +1,347 @@
+JAVA_OPTS already set in environment; overriding default settings with values:                 -server  -Xms128m -Xmx512m -Xss256k -XX:+PrintGCTimeStamps  -XX:+PrintGCDetails  -Xloggc:/svc/infinispan/domains/hana12/logs/gclog/gc_20191223_105314.log  -XX:+UseParallelGC  -XX:+UseParallelOldGC  -XX:+HeapDumpOnOutOfMemoryError  -XX:HeapDumpPath=/svc/infinispan/domains/hana12/logs/heapdump  -Djava.net.preferIPv4Stack=true -Dorg.jboss.resolver.warning=true -Djboss.server.base.dir=/svc/infinispan/domains/hana12 -Djboss.server.config.dir=/svc/infinispan/domains/hana12/configuration  -Djboss.server.log.dir=/svc/infinispan/domains/hana12/logs -Djboss.socket.binding.port-offset=200 -Djboss.bind.address=192.168.110.141 -Djboss.bind.address.management=192.168.110.141
+=========================================================================
+
+  JBoss Bootstrap Environment
+
+  JBOSS_HOME: /svc/infinispan/infinispan-server-9.4.17.Final
+
+  JAVA: /usr/java/jdk1.8/bin/java
+
+  JAVA_OPTS:  -verbose:gc -Xloggc:"/svc/infinispan/domains/hana12/logs/gc.log" -XX:+PrintGCDetails -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=5 -XX:GCLogFileSize=3M -XX:-TraceClassUnloading                 -server  -Xms128m -Xmx512m -Xss256k -XX:+PrintGCTimeStamps  -XX:+PrintGCDetails  -Xloggc:/svc/infinispan/domains/hana12/logs/gclog/gc_20191223_105314.log  -XX:+UseParallelGC  -XX:+UseParallelOldGC  -XX:+HeapDumpOnOutOfMemoryError  -XX:HeapDumpPath=/svc/infinispan/domains/hana12/logs/heapdump  -Djava.net.preferIPv4Stack=true -Dorg.jboss.resolver.warning=true -Djboss.server.base.dir=/svc/infinispan/domains/hana12 -Djboss.server.config.dir=/svc/infinispan/domains/hana12/configuration  -Djboss.server.log.dir=/svc/infinispan/domains/hana12/logs -Djboss.socket.binding.port-offset=200 -Djboss.bind.address=192.168.110.141 -Djboss.bind.address.management=192.168.110.141 
+
+=========================================================================
+
+[0m10:53:15,862 INFO  [org.jboss.modules] (main) JBoss Modules version 1.8.6.Final
+[0m[0m10:53:16,493 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.3.Final
+[0m[0m10:53:16,515 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.2.Final
+[0m[0m10:53:16,810 INFO  [org.jboss.as] (MSC service thread 1-3) WFLYSRV0049: Infinispan Server 9.4.17.Final (WildFly Core 6.0.2.Final) starting
+[0m[0m10:53:19,352 INFO  [org.wildfly.security] (ServerService Thread Pool -- 7) ELY00001: WildFly Elytron version 1.6.0.Final
+[0m[0m10:53:20,551 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+[0m[0m10:53:20,600 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 8) WFLYCTL0028: Attribute 'default-stack' in the resource at address '/subsystem=datagrid-jgroups' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+[0m[0m10:53:20,808 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+[0m[0m10:53:20,848 INFO  [org.xnio] (MSC service thread 1-3) XNIO version 3.6.5.Final
+[0m[0m10:53:20,858 INFO  [org.xnio.nio] (MSC service thread 1-3) XNIO NIO Implementation Version 3.6.5.Final
+[0m[0m10:53:20,933 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 17) Activating Infinispan subsystem.
+[0m[33m10:53:20,960 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 31) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+[0m[0m10:53:20,962 INFO  [org.infinispan.server.jgroups] (ServerService Thread Pool -- 20) DGJGRP0001: Activating JGroups subsystem.
+[0m[0m10:53:20,969 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 28) WFLYNAM0001: Activating Naming Subsystem
+[0m[0m10:53:20,987 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 30) WFLYSEC0002: Activating Security Subsystem
+[0m[0m10:53:21,008 INFO  [org.jboss.as.security] (MSC service thread 1-2) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+[0m[0m10:53:21,035 INFO  [org.jboss.as.connector] (MSC service thread 1-1) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.11.Final)
+[0m[0m10:53:21,057 INFO  [org.jboss.as.naming] (MSC service thread 1-7) WFLYNAM0003: Starting Naming Service
+[0m[0m10:53:21,116 INFO  [org.jboss.remoting] (MSC service thread 1-6) JBoss Remoting version 5.0.8.Final
+[0m[0m10:53:21,124 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 21) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+[0m[0m10:53:21,151 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = h2
+[0m[0m10:53:21,366 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+[0m[0m10:53:22,227 INFO  [org.jboss.as.patching] (MSC service thread 1-1) WFLYPAT0050: Infinispan Server cumulative patch ID is: base, one-off patches include: none
+[0m[33m10:53:22,323 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-1) WFLYDM0111: Keystore /svc/infinispan/domains/hana12/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+[0m[0m10:53:22,343 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-3) WFLYDS0013: Started FileSystemDeploymentService for directory /svc/infinispan/domains/hana12/deployments
+[0m[0m10:53:22,436 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+[0m[0m10:53:24,639 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-5) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.17.Final
+[0m[0m10:53:24,865 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-5) ISPN000078: Starting JGroups channel clustered
+[0m[0m10:53:24,904 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-5) ISPN000094: Received new cluster view for channel cluster: [hana11|1] (2) [hana11, hana12]
+[0m[0m10:53:24,926 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-5) ISPN000079: Channel clustered local address is hana12, physical addresses are [192.168.110.141:55400]
+[0m[0m10:53:24,963 INFO  [org.infinispan.globalstate.impl.GlobalStateManagerImpl] (MSC service thread 1-5) ISPN000390: Persisted state, version=9.4.17.Final timestamp=2019-12-23T01:53:24.960Z
+[0m[0m10:53:25,770 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-5) DGISPN0023: Started clustered cache container
+[0m[0m10:53:26,417 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-2) DGISPN0001: Started HANA_CACHE cache from clustered container
+[0m[0m10:53:26,422 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-8) DGISPN0001: Started default cache from clustered container
+[0m[0m10:53:26,424 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-1) DGISPN0001: Started repl cache from clustered container
+[0m[0m10:53:26,510 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-3) DGENDPT10000: HotRodServer starting
+[0m[0m10:53:26,518 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-6) DGENDPT10000:  starting
+[0m[0m10:53:26,528 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-3) DGENDPT10001: HotRodServer listening on 192.168.110.141:11422
+[0m[0m10:53:27,297 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-6) DGENDPT10002:  listening on 192.168.110.141:8280 (mapped to rest)
+[0m[0m10:53:27,682 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+[0m[0m10:53:27,687 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://192.168.110.141:10190/management
+[0m[0m10:53:27,688 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://192.168.110.141:10190
+[0m[0m10:53:27,688 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: Infinispan Server 9.4.17.Final (WildFly Core 6.0.2.Final) started in 12354ms - Started 229 of 277 services (134 services are lazy, passive or on-demand)
+[0m[0m10:56:39,565 INFO  [org.infinispan.CLUSTER] (jgroups-11,hana12) ISPN000094: Received new cluster view for channel cluster: [hana12|2] (1) [hana12]
+[0m[0m10:56:39,575 INFO  [org.infinispan.CLUSTER] (jgroups-11,hana12) ISPN100001: Node hana11 left the cluster
+[0m[0m10:56:39,670 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t7) [Context=___hotRodTopologyCache]ISPN100007: After merge (or coordinator change), recovered members [hana12] with topology id 7
+[0m[0m10:56:39,671 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t62) [Context=___protobuf_metadata]ISPN100007: After merge (or coordinator change), recovered members [hana12] with topology id 7
+[0m[0m10:56:39,670 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t61) [Context=default]ISPN100007: After merge (or coordinator change), recovered members [hana12] with topology id 7
+[0m[0m10:56:39,698 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t7) [Context=org.infinispan.CONFIG]ISPN100007: After merge (or coordinator change), recovered members [hana12] with topology id 7
+[0m[0m10:56:39,698 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t62) [Context=repl]ISPN100007: After merge (or coordinator change), recovered members [hana12] with topology id 7
+[0m[0m10:56:39,705 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t61) [Context=___script_cache]ISPN100007: After merge (or coordinator change), recovered members [hana12] with topology id 7
+[0m[0m10:56:39,709 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t61) [Context=HANA_CACHE]ISPN100007: After merge (or coordinator change), recovered members [hana12] with topology id 7
+[0m[0m10:56:39,711 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t61) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100007: After merge (or coordinator change), recovered members [hana12] with topology id 7
+[0m[0m10:57:04,223 INFO  [org.infinispan.CLUSTER] (jgroups-12,hana12) ISPN000094: Received new cluster view for channel cluster: [hana12|3] (2) [hana12, hana11]
+[0m[0m10:57:04,224 INFO  [org.infinispan.CLUSTER] (jgroups-12,hana12) ISPN100000: Node hana11 joined the cluster
+[0m[0m10:57:06,073 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t4) [Context=org.infinispan.CONFIG]ISPN100002: Starting rebalance with members [hana12, hana11], phase READ_OLD_WRITE_ALL, topology id 8
+[0m[0m10:57:06,170 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t4) [Context=org.infinispan.CONFIG]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 9
+[0m[0m10:57:06,186 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t4) [Context=org.infinispan.CONFIG]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 10
+[0m[0m10:57:06,195 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t4) [Context=org.infinispan.CONFIG]ISPN100010: Finished rebalance with members [hana12, hana11], topology id 11
+[0m[0m10:57:06,608 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t4) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100002: Starting rebalance with members [hana12, hana11], phase READ_OLD_WRITE_ALL, topology id 8
+[0m[0m10:57:06,673 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t4) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 9
+[0m[0m10:57:06,681 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t4) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 10
+[0m[0m10:57:06,687 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t4) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100010: Finished rebalance with members [hana12, hana11], topology id 11
+[0m[0m10:57:06,769 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t4) [Context=___protobuf_metadata]ISPN100002: Starting rebalance with members [hana12, hana11], phase READ_OLD_WRITE_ALL, topology id 8
+[0m[0m10:57:06,834 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t4) [Context=___protobuf_metadata]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 9
+[0m[0m10:57:06,852 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t4) [Context=___protobuf_metadata]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 10
+[0m[0m10:57:06,858 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t4) [Context=HANA_CACHE]ISPN100002: Starting rebalance with members [hana12, hana11], phase READ_OLD_WRITE_ALL, topology id 8
+[0m[0m10:57:06,865 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t4) [Context=___protobuf_metadata]ISPN100010: Finished rebalance with members [hana12, hana11], topology id 11
+[0m[0m10:57:06,873 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t4) [Context=repl]ISPN100002: Starting rebalance with members [hana12, hana11], phase READ_OLD_WRITE_ALL, topology id 8
+[0m[0m10:57:06,881 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t4) [Context=default]ISPN100002: Starting rebalance with members [hana12, hana11], phase READ_OLD_WRITE_ALL, topology id 8
+[0m[0m10:57:07,022 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t4) [Context=HANA_CACHE]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 9
+[0m[0m10:57:07,028 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t4) [Context=repl]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 9
+[0m[0m10:57:07,029 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=HANA_CACHE]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 10
+[0m[0m10:57:07,032 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t5) [Context=default]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 9
+[0m[0m10:57:07,041 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t6) [Context=HANA_CACHE]ISPN100010: Finished rebalance with members [hana12, hana11], topology id 11
+[0m[0m10:57:07,045 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t4) [Context=repl]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 10
+[0m[0m10:57:07,045 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=default]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 10
+[0m[0m10:57:07,058 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=repl]ISPN100010: Finished rebalance with members [hana12, hana11], topology id 11
+[0m[0m10:57:07,068 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=default]ISPN100010: Finished rebalance with members [hana12, hana11], topology id 11
+[0m[0m10:57:07,186 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=___script_cache]ISPN100002: Starting rebalance with members [hana12, hana11], phase READ_OLD_WRITE_ALL, topology id 8
+[0m[0m10:57:07,207 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=___script_cache]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 9
+[0m[0m10:57:07,212 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=___script_cache]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 10
+[0m[0m10:57:07,217 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=___script_cache]ISPN100010: Finished rebalance with members [hana12, hana11], topology id 11
+[0m[0m10:57:07,384 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=___hotRodTopologyCache]ISPN100002: Starting rebalance with members [hana12, hana11], phase READ_OLD_WRITE_ALL, topology id 8
+[0m[0m10:57:07,428 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=___hotRodTopologyCache]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 9
+[0m[0m10:57:07,434 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=___hotRodTopologyCache]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 10
+[0m[0m10:57:07,439 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=___hotRodTopologyCache]ISPN100010: Finished rebalance with members [hana12, hana11], topology id 11
+[0m[0m10:58:58,863 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=___hotRodTopologyCache]ISPN100008: Updating cache members list [hana12], topology id 12
+[0m[0m10:58:58,941 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=repl]ISPN100008: Updating cache members list [hana12], topology id 12
+[0m[0m10:58:58,941 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t7) [Context=HANA_CACHE]ISPN100008: Updating cache members list [hana12], topology id 12
+[0m[0m10:58:59,947 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=default]ISPN100008: Updating cache members list [hana12], topology id 12
+[0m[0m10:58:59,968 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=___protobuf_metadata]ISPN100008: Updating cache members list [hana12], topology id 12
+[0m[0m10:58:59,980 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=org.infinispan.CONFIG]ISPN100008: Updating cache members list [hana12], topology id 12
+[0m[0m10:58:59,989 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=___script_cache]ISPN100008: Updating cache members list [hana12], topology id 12
+[0m[0m10:59:00,003 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100008: Updating cache members list [hana12], topology id 12
+[0m[0m10:59:00,078 INFO  [org.infinispan.CLUSTER] (jgroups-12,hana12) ISPN000094: Received new cluster view for channel cluster: [hana12|4] (1) [hana12]
+[0m[0m10:59:00,079 INFO  [org.infinispan.CLUSTER] (jgroups-12,hana12) ISPN100001: Node hana11 left the cluster
+[0m[0m10:59:12,560 INFO  [org.infinispan.CLUSTER] (jgroups-10,hana12) ISPN000094: Received new cluster view for channel cluster: [hana12|5] (2) [hana12, hana11]
+[0m[0m10:59:12,561 INFO  [org.infinispan.CLUSTER] (jgroups-10,hana12) ISPN100000: Node hana11 joined the cluster
+[0m[0m10:59:15,046 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=org.infinispan.CONFIG]ISPN100002: Starting rebalance with members [hana12, hana11], phase READ_OLD_WRITE_ALL, topology id 13
+[0m[0m10:59:15,180 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=org.infinispan.CONFIG]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 14
+[0m[0m10:59:15,195 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=org.infinispan.CONFIG]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 15
+[0m[0m10:59:15,204 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=org.infinispan.CONFIG]ISPN100010: Finished rebalance with members [hana12, hana11], topology id 16
+[0m[0m10:59:15,579 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100002: Starting rebalance with members [hana12, hana11], phase READ_OLD_WRITE_ALL, topology id 13
+[0m[0m10:59:15,629 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 14
+[0m[0m10:59:15,640 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 15
+[0m[0m10:59:15,647 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100010: Finished rebalance with members [hana12, hana11], topology id 16
+[0m[0m10:59:15,722 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=___protobuf_metadata]ISPN100002: Starting rebalance with members [hana12, hana11], phase READ_OLD_WRITE_ALL, topology id 13
+[0m[0m10:59:15,808 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=default]ISPN100002: Starting rebalance with members [hana12, hana11], phase READ_OLD_WRITE_ALL, topology id 13
+[0m[0m10:59:15,852 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t7) [Context=HANA_CACHE]ISPN100002: Starting rebalance with members [hana12, hana11], phase READ_OLD_WRITE_ALL, topology id 13
+[0m[0m10:59:15,858 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t7) [Context=___protobuf_metadata]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 14
+[0m[0m10:59:15,862 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=repl]ISPN100002: Starting rebalance with members [hana12, hana11], phase READ_OLD_WRITE_ALL, topology id 13
+[0m[0m10:59:15,888 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t7) [Context=___protobuf_metadata]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 15
+[0m[0m10:59:15,902 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=___protobuf_metadata]ISPN100010: Finished rebalance with members [hana12, hana11], topology id 16
+[0m[0m10:59:15,922 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=default]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 14
+[0m[0m10:59:15,952 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=HANA_CACHE]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 14
+[0m[0m10:59:15,955 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t7) [Context=default]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 15
+[0m[0m10:59:15,966 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t7) [Context=HANA_CACHE]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 15
+[0m[0m10:59:15,969 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=default]ISPN100010: Finished rebalance with members [hana12, hana11], topology id 16
+[0m[0m10:59:15,969 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t8) [Context=repl]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 14
+[0m[0m10:59:15,973 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=HANA_CACHE]ISPN100010: Finished rebalance with members [hana12, hana11], topology id 16
+[0m[0m10:59:15,978 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=repl]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 15
+[0m[0m10:59:15,987 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=repl]ISPN100010: Finished rebalance with members [hana12, hana11], topology id 16
+[0m[0m10:59:16,104 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=___script_cache]ISPN100002: Starting rebalance with members [hana12, hana11], phase READ_OLD_WRITE_ALL, topology id 13
+[0m[0m10:59:16,145 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=___script_cache]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 14
+[0m[0m10:59:16,151 INFO  [org.infinispan.CLUSTER] (transport-thread--p4-t3) [Context=___script_cache]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 15
+[0m[0m10:59:16,162 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=___script_cache]ISPN100010: Finished rebalance with members [hana12, hana11], topology id 16
+[0m[0m10:59:16,316 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=___hotRodTopologyCache]ISPN100002: Starting rebalance with members [hana12, hana11], phase READ_OLD_WRITE_ALL, topology id 13
+[0m[0m10:59:16,370 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=___hotRodTopologyCache]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 14
+[0m[0m10:59:16,377 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=___hotRodTopologyCache]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 15
+[0m[0m10:59:16,384 INFO  [org.infinispan.CLUSTER] (transport-thread--p4-t19) [Context=___hotRodTopologyCache]ISPN100010: Finished rebalance with members [hana12, hana11], topology id 16
+[0m[0m11:00:58,582 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=HANA_CACHE]ISPN100008: Updating cache members list [hana12], topology id 17
+[0m[0m11:00:58,611 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=repl]ISPN100008: Updating cache members list [hana12], topology id 17
+[0m[0m11:00:58,656 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=___hotRodTopologyCache]ISPN100008: Updating cache members list [hana12], topology id 17
+[0m[0m11:00:59,897 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=default]ISPN100008: Updating cache members list [hana12], topology id 17
+[0m[0m11:00:59,921 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=___protobuf_metadata]ISPN100008: Updating cache members list [hana12], topology id 17
+[0m[0m11:00:59,936 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=org.infinispan.CONFIG]ISPN100008: Updating cache members list [hana12], topology id 17
+[0m[0m11:00:59,947 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=___script_cache]ISPN100008: Updating cache members list [hana12], topology id 17
+[0m[0m11:00:59,958 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100008: Updating cache members list [hana12], topology id 17
+[0m[0m11:00:59,995 INFO  [org.infinispan.CLUSTER] (jgroups-17,hana12) ISPN000094: Received new cluster view for channel cluster: [hana12|6] (1) [hana12]
+[0m[0m11:00:59,996 INFO  [org.infinispan.CLUSTER] (jgroups-17,hana12) ISPN100001: Node hana11 left the cluster
+[0m[0m11:02:44,423 INFO  [org.infinispan.CLUSTER] (jgroups-16,hana12) ISPN000094: Received new cluster view for channel cluster: [hana12|7] (2) [hana12, hana11]
+[0m[0m11:02:44,424 INFO  [org.infinispan.CLUSTER] (jgroups-16,hana12) ISPN100000: Node hana11 joined the cluster
+[0m[0m11:02:46,036 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=org.infinispan.CONFIG]ISPN100002: Starting rebalance with members [hana12, hana11], phase READ_OLD_WRITE_ALL, topology id 18
+[0m[0m11:02:46,116 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=org.infinispan.CONFIG]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 19
+[0m[0m11:02:46,133 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=org.infinispan.CONFIG]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 20
+[0m[0m11:02:46,154 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=org.infinispan.CONFIG]ISPN100010: Finished rebalance with members [hana12, hana11], topology id 21
+[0m[0m11:02:46,566 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100002: Starting rebalance with members [hana12, hana11], phase READ_OLD_WRITE_ALL, topology id 18
+[0m[0m11:02:46,631 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 19
+[0m[0m11:02:46,640 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 20
+[0m[0m11:02:46,675 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100010: Finished rebalance with members [hana12, hana11], topology id 21
+[0m[0m11:02:46,755 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=___protobuf_metadata]ISPN100002: Starting rebalance with members [hana12, hana11], phase READ_OLD_WRITE_ALL, topology id 18
+[0m[0m11:02:46,840 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=___protobuf_metadata]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 19
+[0m[0m11:02:46,846 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t10) [Context=repl]ISPN100002: Starting rebalance with members [hana12, hana11], phase READ_OLD_WRITE_ALL, topology id 18
+[0m[0m11:02:46,847 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t11) [Context=HANA_CACHE]ISPN100002: Starting rebalance with members [hana12, hana11], phase READ_OLD_WRITE_ALL, topology id 18
+[0m[0m11:02:46,850 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=default]ISPN100002: Starting rebalance with members [hana12, hana11], phase READ_OLD_WRITE_ALL, topology id 18
+[0m[0m11:02:46,891 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=___protobuf_metadata]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 20
+[0m[0m11:02:46,921 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=___protobuf_metadata]ISPN100010: Finished rebalance with members [hana12, hana11], topology id 21
+[0m[0m11:02:46,933 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=HANA_CACHE]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 19
+[0m[0m11:02:46,964 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=HANA_CACHE]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 20
+[0m[0m11:02:46,980 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=repl]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 19
+[0m[0m11:02:46,984 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=HANA_CACHE]ISPN100010: Finished rebalance with members [hana12, hana11], topology id 21
+[0m[0m11:02:46,988 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=repl]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 20
+[0m[0m11:02:46,993 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=default]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 19
+[0m[0m11:02:47,005 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t3) [Context=repl]ISPN100010: Finished rebalance with members [hana12, hana11], topology id 21
+[0m[0m11:02:47,005 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=default]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 20
+[0m[0m11:02:47,016 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=default]ISPN100010: Finished rebalance with members [hana12, hana11], topology id 21
+[0m[0m11:02:47,219 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=___script_cache]ISPN100002: Starting rebalance with members [hana12, hana11], phase READ_OLD_WRITE_ALL, topology id 18
+[0m[0m11:02:47,711 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=___script_cache]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 19
+[0m[0m11:02:47,752 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=___script_cache]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 20
+[0m[0m11:02:47,777 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=___script_cache]ISPN100010: Finished rebalance with members [hana12, hana11], topology id 21
+[0m[0m11:02:48,024 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=___hotRodTopologyCache]ISPN100002: Starting rebalance with members [hana12, hana11], phase READ_OLD_WRITE_ALL, topology id 18
+[0m[0m11:02:48,074 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=___hotRodTopologyCache]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 19
+[0m[0m11:02:48,084 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=___hotRodTopologyCache]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 20
+[0m[0m11:02:48,094 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=___hotRodTopologyCache]ISPN100010: Finished rebalance with members [hana12, hana11], topology id 21
+[0m[0m11:03:17,994 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 34) WFLYDR0009: Content /svc/infinispan/domains/hana12/data/content/b9/0a637b24350b9a7d31b1844924ba9a05979ff0 is obsolete and will be removed
+[0m[0m11:03:17,999 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 34) WFLYDR0002: Content removed from location /svc/infinispan/domains/hana12/data/content/b9/0a637b24350b9a7d31b1844924ba9a05979ff0/content
+[0m[0m11:05:15,591 INFO  [org.infinispan.CLUSTER] (VERIFY_SUSPECT.TimerThread-27,hana12) ISPN000094: Received new cluster view for channel cluster: [hana12|8] (1) [hana12]
+[0m[0m11:05:15,610 INFO  [org.infinispan.CLUSTER] (VERIFY_SUSPECT.TimerThread-27,hana12) ISPN100001: Node hana11 left the cluster
+[0m[33m11:05:15,615 WARN  [org.infinispan.CLUSTER] (transport-thread--p4-t17) [Context=___hotRodTopologyCache]ISPN000314: Lost at least half of the stable members, possible split brain causing data inconsistency. Current members are [hana12], lost members are [hana11], stable members are [hana12, hana11]
+[0m[0m11:05:15,618 INFO  [org.infinispan.CLUSTER] (transport-thread--p4-t17) [Context=___hotRodTopologyCache]ISPN100008: Updating cache members list [hana12], topology id 22
+[0m[33m11:05:15,621 WARN  [org.infinispan.CLUSTER] (transport-thread--p4-t17) [Context=default]ISPN000314: Lost at least half of the stable members, possible split brain causing data inconsistency. Current members are [hana12], lost members are [hana11], stable members are [hana12, hana11]
+[0m[0m11:05:15,623 INFO  [org.infinispan.CLUSTER] (transport-thread--p4-t17) [Context=default]ISPN100008: Updating cache members list [hana12], topology id 22
+[0m[33m11:05:15,627 WARN  [org.infinispan.CLUSTER] (transport-thread--p4-t17) [Context=___protobuf_metadata]ISPN000314: Lost at least half of the stable members, possible split brain causing data inconsistency. Current members are [hana12], lost members are [hana11], stable members are [hana12, hana11]
+[0m[0m11:05:15,629 INFO  [org.infinispan.CLUSTER] (transport-thread--p4-t17) [Context=___protobuf_metadata]ISPN100008: Updating cache members list [hana12], topology id 22
+[0m[33m11:05:15,634 WARN  [org.infinispan.CLUSTER] (transport-thread--p4-t17) [Context=org.infinispan.CONFIG]ISPN000314: Lost at least half of the stable members, possible split brain causing data inconsistency. Current members are [hana12], lost members are [hana11], stable members are [hana12, hana11]
+[0m[0m11:05:15,636 INFO  [org.infinispan.CLUSTER] (transport-thread--p4-t17) [Context=org.infinispan.CONFIG]ISPN100008: Updating cache members list [hana12], topology id 22
+[0m[33m11:05:15,641 WARN  [org.infinispan.CLUSTER] (transport-thread--p4-t17) [Context=repl]ISPN000314: Lost at least half of the stable members, possible split brain causing data inconsistency. Current members are [hana12], lost members are [hana11], stable members are [hana12, hana11]
+[0m[0m11:05:15,643 INFO  [org.infinispan.CLUSTER] (transport-thread--p4-t17) [Context=repl]ISPN100008: Updating cache members list [hana12], topology id 22
+[0m[33m11:05:15,648 WARN  [org.infinispan.CLUSTER] (transport-thread--p4-t17) [Context=___script_cache]ISPN000314: Lost at least half of the stable members, possible split brain causing data inconsistency. Current members are [hana12], lost members are [hana11], stable members are [hana12, hana11]
+[0m[0m11:05:15,650 INFO  [org.infinispan.CLUSTER] (transport-thread--p4-t17) [Context=___script_cache]ISPN100008: Updating cache members list [hana12], topology id 22
+[0m[33m11:05:15,654 WARN  [org.infinispan.CLUSTER] (transport-thread--p4-t17) [Context=HANA_CACHE]ISPN000314: Lost at least half of the stable members, possible split brain causing data inconsistency. Current members are [hana12], lost members are [hana11], stable members are [hana12, hana11]
+[0m[0m11:05:15,655 INFO  [org.infinispan.CLUSTER] (transport-thread--p4-t17) [Context=HANA_CACHE]ISPN100008: Updating cache members list [hana12], topology id 22
+[0m[33m11:05:15,658 WARN  [org.infinispan.CLUSTER] (transport-thread--p4-t17) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN000314: Lost at least half of the stable members, possible split brain causing data inconsistency. Current members are [hana12], lost members are [hana11], stable members are [hana12, hana11]
+[0m[0m11:05:15,660 INFO  [org.infinispan.CLUSTER] (transport-thread--p4-t17) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100008: Updating cache members list [hana12], topology id 22
+[0m[0m11:05:28,864 INFO  [org.infinispan.CLUSTER] (jgroups-21,hana12) ISPN000094: Received new cluster view for channel cluster: [hana12|9] (2) [hana12, hana11]
+[0m[0m11:05:28,865 INFO  [org.infinispan.CLUSTER] (jgroups-21,hana12) ISPN100000: Node hana11 joined the cluster
+[0m[0m11:05:30,665 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=org.infinispan.CONFIG]ISPN100002: Starting rebalance with members [hana12, hana11], phase READ_OLD_WRITE_ALL, topology id 23
+[0m[0m11:05:30,749 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=org.infinispan.CONFIG]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 24
+[0m[0m11:05:30,764 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=org.infinispan.CONFIG]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 25
+[0m[0m11:05:30,773 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=org.infinispan.CONFIG]ISPN100010: Finished rebalance with members [hana12, hana11], topology id 26
+[0m[0m11:05:31,649 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100002: Starting rebalance with members [hana12, hana11], phase READ_OLD_WRITE_ALL, topology id 23
+[0m[0m11:05:31,701 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 24
+[0m[0m11:05:31,707 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 25
+[0m[0m11:05:31,713 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100010: Finished rebalance with members [hana12, hana11], topology id 26
+[0m[0m11:05:31,795 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=___protobuf_metadata]ISPN100002: Starting rebalance with members [hana12, hana11], phase READ_OLD_WRITE_ALL, topology id 23
+[0m[0m11:05:31,866 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=___protobuf_metadata]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 24
+[0m[0m11:05:31,877 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=___protobuf_metadata]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 25
+[0m[0m11:05:31,884 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=___protobuf_metadata]ISPN100010: Finished rebalance with members [hana12, hana11], topology id 26
+[0m[0m11:05:31,898 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=default]ISPN100002: Starting rebalance with members [hana12, hana11], phase READ_OLD_WRITE_ALL, topology id 23
+[0m[0m11:05:31,927 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=repl]ISPN100002: Starting rebalance with members [hana12, hana11], phase READ_OLD_WRITE_ALL, topology id 23
+[0m[0m11:05:31,937 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t12) [Context=HANA_CACHE]ISPN100002: Starting rebalance with members [hana12, hana11], phase READ_OLD_WRITE_ALL, topology id 23
+[0m[0m11:05:31,986 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=default]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 24
+[0m[0m11:05:31,989 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t12) [Context=HANA_CACHE]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 24
+[0m[0m11:05:32,004 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=HANA_CACHE]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 25
+[0m[0m11:05:32,014 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t12) [Context=repl]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 24
+[0m[0m11:05:32,014 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=default]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 25
+[0m[0m11:05:32,025 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t12) [Context=default]ISPN100010: Finished rebalance with members [hana12, hana11], topology id 26
+[0m[0m11:05:32,031 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=HANA_CACHE]ISPN100010: Finished rebalance with members [hana12, hana11], topology id 26
+[0m[0m11:05:32,045 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=repl]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 25
+[0m[0m11:05:32,053 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=repl]ISPN100010: Finished rebalance with members [hana12, hana11], topology id 26
+[0m[0m11:05:32,181 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=___script_cache]ISPN100002: Starting rebalance with members [hana12, hana11], phase READ_OLD_WRITE_ALL, topology id 23
+[0m[0m11:05:32,210 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=___script_cache]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 24
+[0m[0m11:05:32,216 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=___script_cache]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 25
+[0m[0m11:05:32,222 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=___script_cache]ISPN100010: Finished rebalance with members [hana12, hana11], topology id 26
+[0m[0m11:05:32,380 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=___hotRodTopologyCache]ISPN100002: Starting rebalance with members [hana12, hana11], phase READ_OLD_WRITE_ALL, topology id 23
+[0m[0m11:05:32,419 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=___hotRodTopologyCache]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 24
+[0m[0m11:05:32,427 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=___hotRodTopologyCache]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 25
+[0m[0m11:05:32,434 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=___hotRodTopologyCache]ISPN100010: Finished rebalance with members [hana12, hana11], topology id 26
+[0m[0m11:13:14,324 INFO  [org.infinispan.CLUSTER] (VERIFY_SUSPECT.TimerThread-32,hana12) ISPN000094: Received new cluster view for channel cluster: [hana12|10] (1) [hana12]
+[0m[0m11:13:14,324 INFO  [org.infinispan.CLUSTER] (VERIFY_SUSPECT.TimerThread-32,hana12) ISPN100001: Node hana11 left the cluster
+[0m[33m11:13:14,332 WARN  [org.infinispan.CLUSTER] (transport-thread--p4-t8) [Context=___hotRodTopologyCache]ISPN000314: Lost at least half of the stable members, possible split brain causing data inconsistency. Current members are [hana12], lost members are [hana11], stable members are [hana12, hana11]
+[0m[0m11:13:14,335 INFO  [org.infinispan.CLUSTER] (transport-thread--p4-t8) [Context=___hotRodTopologyCache]ISPN100008: Updating cache members list [hana12], topology id 27
+[0m[33m11:13:14,338 WARN  [org.infinispan.CLUSTER] (transport-thread--p4-t8) [Context=default]ISPN000314: Lost at least half of the stable members, possible split brain causing data inconsistency. Current members are [hana12], lost members are [hana11], stable members are [hana12, hana11]
+[0m[0m11:13:14,340 INFO  [org.infinispan.CLUSTER] (transport-thread--p4-t8) [Context=default]ISPN100008: Updating cache members list [hana12], topology id 27
+[0m[33m11:13:14,344 WARN  [org.infinispan.CLUSTER] (transport-thread--p4-t8) [Context=___protobuf_metadata]ISPN000314: Lost at least half of the stable members, possible split brain causing data inconsistency. Current members are [hana12], lost members are [hana11], stable members are [hana12, hana11]
+[0m[0m11:13:14,345 INFO  [org.infinispan.CLUSTER] (transport-thread--p4-t8) [Context=___protobuf_metadata]ISPN100008: Updating cache members list [hana12], topology id 27
+[0m[33m11:13:14,348 WARN  [org.infinispan.CLUSTER] (transport-thread--p4-t8) [Context=org.infinispan.CONFIG]ISPN000314: Lost at least half of the stable members, possible split brain causing data inconsistency. Current members are [hana12], lost members are [hana11], stable members are [hana12, hana11]
+[0m[0m11:13:14,350 INFO  [org.infinispan.CLUSTER] (transport-thread--p4-t8) [Context=org.infinispan.CONFIG]ISPN100008: Updating cache members list [hana12], topology id 27
+[0m[33m11:13:14,353 WARN  [org.infinispan.CLUSTER] (transport-thread--p4-t8) [Context=repl]ISPN000314: Lost at least half of the stable members, possible split brain causing data inconsistency. Current members are [hana12], lost members are [hana11], stable members are [hana12, hana11]
+[0m[0m11:13:14,354 INFO  [org.infinispan.CLUSTER] (transport-thread--p4-t8) [Context=repl]ISPN100008: Updating cache members list [hana12], topology id 27
+[0m[33m11:13:14,356 WARN  [org.infinispan.CLUSTER] (transport-thread--p4-t8) [Context=___script_cache]ISPN000314: Lost at least half of the stable members, possible split brain causing data inconsistency. Current members are [hana12], lost members are [hana11], stable members are [hana12, hana11]
+[0m[0m11:13:14,357 INFO  [org.infinispan.CLUSTER] (transport-thread--p4-t8) [Context=___script_cache]ISPN100008: Updating cache members list [hana12], topology id 27
+[0m[33m11:13:14,359 WARN  [org.infinispan.CLUSTER] (transport-thread--p4-t8) [Context=HANA_CACHE]ISPN000314: Lost at least half of the stable members, possible split brain causing data inconsistency. Current members are [hana12], lost members are [hana11], stable members are [hana12, hana11]
+[0m[0m11:13:14,360 INFO  [org.infinispan.CLUSTER] (transport-thread--p4-t8) [Context=HANA_CACHE]ISPN100008: Updating cache members list [hana12], topology id 27
+[0m[33m11:13:14,362 WARN  [org.infinispan.CLUSTER] (transport-thread--p4-t8) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN000314: Lost at least half of the stable members, possible split brain causing data inconsistency. Current members are [hana12], lost members are [hana11], stable members are [hana12, hana11]
+[0m[0m11:13:14,363 INFO  [org.infinispan.CLUSTER] (transport-thread--p4-t8) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100008: Updating cache members list [hana12], topology id 27
+[0m[0m11:13:26,448 INFO  [org.infinispan.CLUSTER] (jgroups-30,hana12) ISPN000094: Received new cluster view for channel cluster: [hana12|11] (2) [hana12, hana11]
+[0m[0m11:13:26,450 INFO  [org.infinispan.CLUSTER] (jgroups-30,hana12) ISPN100000: Node hana11 joined the cluster
+[0m[0m11:13:28,280 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=org.infinispan.CONFIG]ISPN100002: Starting rebalance with members [hana12, hana11], phase READ_OLD_WRITE_ALL, topology id 28
+[0m[0m11:13:28,397 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=org.infinispan.CONFIG]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 29
+[0m[0m11:13:28,411 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=org.infinispan.CONFIG]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 30
+[0m[0m11:13:28,418 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=org.infinispan.CONFIG]ISPN100010: Finished rebalance with members [hana12, hana11], topology id 31
+[0m[0m11:13:28,792 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100002: Starting rebalance with members [hana12, hana11], phase READ_OLD_WRITE_ALL, topology id 28
+[0m[0m11:13:28,850 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 29
+[0m[0m11:13:28,858 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 30
+[0m[0m11:13:28,865 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100010: Finished rebalance with members [hana12, hana11], topology id 31
+[0m[0m11:13:28,936 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=___protobuf_metadata]ISPN100002: Starting rebalance with members [hana12, hana11], phase READ_OLD_WRITE_ALL, topology id 28
+[0m[0m11:13:29,000 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=repl]ISPN100002: Starting rebalance with members [hana12, hana11], phase READ_OLD_WRITE_ALL, topology id 28
+[0m[0m11:13:29,004 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t13) [Context=default]ISPN100002: Starting rebalance with members [hana12, hana11], phase READ_OLD_WRITE_ALL, topology id 28
+[0m[0m11:13:29,013 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t14) [Context=HANA_CACHE]ISPN100002: Starting rebalance with members [hana12, hana11], phase READ_OLD_WRITE_ALL, topology id 28
+[0m[0m11:13:29,012 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=___protobuf_metadata]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 29
+[0m[0m11:13:29,144 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t15) [Context=___protobuf_metadata]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 30
+[0m[0m11:13:29,145 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=repl]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 29
+[0m[0m11:13:29,161 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=repl]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 30
+[0m[0m11:13:29,170 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t13) [Context=___protobuf_metadata]ISPN100010: Finished rebalance with members [hana12, hana11], topology id 31
+[0m[0m11:13:29,179 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t13) [Context=HANA_CACHE]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 29
+[0m[0m11:13:29,189 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t13) [Context=repl]ISPN100010: Finished rebalance with members [hana12, hana11], topology id 31
+[0m[0m11:13:29,202 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t13) [Context=HANA_CACHE]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 30
+[0m[0m11:13:29,208 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=default]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 29
+[0m[0m11:13:29,216 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t13) [Context=HANA_CACHE]ISPN100010: Finished rebalance with members [hana12, hana11], topology id 31
+[0m[0m11:13:29,229 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=default]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 30
+[0m[0m11:13:29,241 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=default]ISPN100010: Finished rebalance with members [hana12, hana11], topology id 31
+[0m[0m11:13:29,369 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=___script_cache]ISPN100002: Starting rebalance with members [hana12, hana11], phase READ_OLD_WRITE_ALL, topology id 28
+[0m[0m11:13:29,396 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=___script_cache]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 29
+[0m[0m11:13:29,403 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=___script_cache]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 30
+[0m[0m11:13:29,407 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=___script_cache]ISPN100010: Finished rebalance with members [hana12, hana11], topology id 31
+[0m[0m11:13:29,565 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=___hotRodTopologyCache]ISPN100002: Starting rebalance with members [hana12, hana11], phase READ_OLD_WRITE_ALL, topology id 28
+[0m[0m11:13:29,618 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=___hotRodTopologyCache]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 29
+[0m[0m11:13:29,628 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=___hotRodTopologyCache]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 30
+[0m[0m11:13:29,638 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=___hotRodTopologyCache]ISPN100010: Finished rebalance with members [hana12, hana11], topology id 31
+[0m[0m11:27:24,878 INFO  [org.infinispan.CLUSTER] (VERIFY_SUSPECT.TimerThread-41,hana12) ISPN000094: Received new cluster view for channel cluster: [hana12|12] (1) [hana12]
+[0m[0m11:27:24,896 INFO  [org.infinispan.CLUSTER] (VERIFY_SUSPECT.TimerThread-41,hana12) ISPN100001: Node hana11 left the cluster
+[0m[33m11:27:25,034 WARN  [org.infinispan.CLUSTER] (transport-thread--p4-t12) [Context=___hotRodTopologyCache]ISPN000314: Lost at least half of the stable members, possible split brain causing data inconsistency. Current members are [hana12], lost members are [hana11], stable members are [hana12, hana11]
+[0m[0m11:27:25,046 INFO  [org.infinispan.CLUSTER] (transport-thread--p4-t12) [Context=___hotRodTopologyCache]ISPN100008: Updating cache members list [hana12], topology id 32
+[0m[33m11:27:25,120 WARN  [org.infinispan.CLUSTER] (transport-thread--p4-t12) [Context=default]ISPN000314: Lost at least half of the stable members, possible split brain causing data inconsistency. Current members are [hana12], lost members are [hana11], stable members are [hana12, hana11]
+[0m[0m11:27:25,143 INFO  [org.infinispan.CLUSTER] (transport-thread--p4-t12) [Context=default]ISPN100008: Updating cache members list [hana12], topology id 32
+[0m[33m11:27:25,146 WARN  [org.infinispan.CLUSTER] (transport-thread--p4-t12) [Context=___protobuf_metadata]ISPN000314: Lost at least half of the stable members, possible split brain causing data inconsistency. Current members are [hana12], lost members are [hana11], stable members are [hana12, hana11]
+[0m[0m11:27:25,196 INFO  [org.infinispan.CLUSTER] (transport-thread--p4-t12) [Context=___protobuf_metadata]ISPN100008: Updating cache members list [hana12], topology id 32
+[0m[33m11:27:25,222 WARN  [org.infinispan.CLUSTER] (transport-thread--p4-t12) [Context=org.infinispan.CONFIG]ISPN000314: Lost at least half of the stable members, possible split brain causing data inconsistency. Current members are [hana12], lost members are [hana11], stable members are [hana12, hana11]
+[0m[0m11:27:25,225 INFO  [org.infinispan.CLUSTER] (transport-thread--p4-t12) [Context=org.infinispan.CONFIG]ISPN100008: Updating cache members list [hana12], topology id 32
+[0m[33m11:27:25,233 WARN  [org.infinispan.CLUSTER] (transport-thread--p4-t12) [Context=repl]ISPN000314: Lost at least half of the stable members, possible split brain causing data inconsistency. Current members are [hana12], lost members are [hana11], stable members are [hana12, hana11]
+[0m[0m11:27:25,239 INFO  [org.infinispan.CLUSTER] (transport-thread--p4-t12) [Context=repl]ISPN100008: Updating cache members list [hana12], topology id 32
+[0m[33m11:27:25,267 WARN  [org.infinispan.CLUSTER] (transport-thread--p4-t12) [Context=___script_cache]ISPN000314: Lost at least half of the stable members, possible split brain causing data inconsistency. Current members are [hana12], lost members are [hana11], stable members are [hana12, hana11]
+[0m[0m11:27:25,274 INFO  [org.infinispan.CLUSTER] (transport-thread--p4-t12) [Context=___script_cache]ISPN100008: Updating cache members list [hana12], topology id 32
+[0m[33m11:27:25,301 WARN  [org.infinispan.CLUSTER] (transport-thread--p4-t12) [Context=HANA_CACHE]ISPN000314: Lost at least half of the stable members, possible split brain causing data inconsistency. Current members are [hana12], lost members are [hana11], stable members are [hana12, hana11]
+[0m[0m11:27:25,380 INFO  [org.infinispan.CLUSTER] (transport-thread--p4-t12) [Context=HANA_CACHE]ISPN100008: Updating cache members list [hana12], topology id 32
+[0m[33m11:27:25,388 WARN  [org.infinispan.CLUSTER] (transport-thread--p4-t12) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN000314: Lost at least half of the stable members, possible split brain causing data inconsistency. Current members are [hana12], lost members are [hana11], stable members are [hana12, hana11]
+[0m[0m11:27:25,397 INFO  [org.infinispan.CLUSTER] (transport-thread--p4-t12) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100008: Updating cache members list [hana12], topology id 32
+[0m[0m11:27:52,887 INFO  [org.infinispan.CLUSTER] (jgroups-39,hana12) ISPN000094: Received new cluster view for channel cluster: [hana12|13] (2) [hana12, hana11]
+[0m[0m11:27:52,889 INFO  [org.infinispan.CLUSTER] (jgroups-39,hana12) ISPN100000: Node hana11 joined the cluster
+[0m[0m11:27:57,047 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=org.infinispan.CONFIG]ISPN100002: Starting rebalance with members [hana12, hana11], phase READ_OLD_WRITE_ALL, topology id 33
+[0m[0m11:27:57,322 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=org.infinispan.CONFIG]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 34
+[0m[0m11:27:57,335 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=org.infinispan.CONFIG]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 35
+[0m[0m11:27:57,377 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=org.infinispan.CONFIG]ISPN100010: Finished rebalance with members [hana12, hana11], topology id 36
+[0m[0m11:27:58,013 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100002: Starting rebalance with members [hana12, hana11], phase READ_OLD_WRITE_ALL, topology id 33
+[0m[0m11:27:58,321 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 34
+[0m[0m11:27:58,351 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 35
+[0m[0m11:27:58,366 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100010: Finished rebalance with members [hana12, hana11], topology id 36
+[0m[0m11:27:58,554 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=___protobuf_metadata]ISPN100002: Starting rebalance with members [hana12, hana11], phase READ_OLD_WRITE_ALL, topology id 33
+[0m[0m11:27:58,828 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=___protobuf_metadata]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 34
+[0m[0m11:27:58,939 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=HANA_CACHE]ISPN100002: Starting rebalance with members [hana12, hana11], phase READ_OLD_WRITE_ALL, topology id 33
+[0m[0m11:27:58,990 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t16) [Context=default]ISPN100002: Starting rebalance with members [hana12, hana11], phase READ_OLD_WRITE_ALL, topology id 33
+[0m[0m11:27:59,017 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t16) [Context=___protobuf_metadata]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 35
+[0m[0m11:27:59,041 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=repl]ISPN100002: Starting rebalance with members [hana12, hana11], phase READ_OLD_WRITE_ALL, topology id 33
+[0m[0m11:27:59,073 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t18) [Context=HANA_CACHE]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 34
+[0m[0m11:27:59,084 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t18) [Context=___protobuf_metadata]ISPN100010: Finished rebalance with members [hana12, hana11], topology id 36
+[0m[0m11:27:59,100 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t16) [Context=HANA_CACHE]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 35
+[0m[0m11:27:59,218 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t18) [Context=HANA_CACHE]ISPN100010: Finished rebalance with members [hana12, hana11], topology id 36
+[0m[0m11:27:59,218 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t16) [Context=repl]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 34
+[0m[0m11:27:59,240 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t16) [Context=repl]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 35
+[0m[0m11:27:59,262 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=default]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 34
+[0m[0m11:27:59,307 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t9) [Context=default]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 35
+[0m[0m11:27:59,307 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t16) [Context=repl]ISPN100010: Finished rebalance with members [hana12, hana11], topology id 36
+[0m[0m11:27:59,349 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t16) [Context=default]ISPN100010: Finished rebalance with members [hana12, hana11], topology id 36
+[0m[0m11:27:59,780 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t16) [Context=___script_cache]ISPN100002: Starting rebalance with members [hana12, hana11], phase READ_OLD_WRITE_ALL, topology id 33
+[0m[0m11:27:59,809 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t16) [Context=___script_cache]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 34
+[0m[0m11:27:59,817 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t16) [Context=___script_cache]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 35
+[0m[0m11:27:59,823 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t16) [Context=___script_cache]ISPN100010: Finished rebalance with members [hana12, hana11], topology id 36
+[0m[0m11:28:00,091 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t16) [Context=___hotRodTopologyCache]ISPN100002: Starting rebalance with members [hana12, hana11], phase READ_OLD_WRITE_ALL, topology id 33
+[0m[0m11:28:00,287 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t16) [Context=___hotRodTopologyCache]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 34
+[0m[0m11:28:00,459 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t16) [Context=___hotRodTopologyCache]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 35
+[0m[0m11:28:00,605 INFO  [org.infinispan.CLUSTER] (transport-thread--p4-t14) [Context=___hotRodTopologyCache]ISPN100010: Finished rebalance with members [hana12, hana11], topology id 36
+[0m/svc/infinispan/infinispan-server-9.4.17.Final/bin/standalone.sh: line 334: 11078 Killed                  "/usr/java/jdk1.8/bin/java" -D"[Standalone]" -verbose:gc -Xloggc:"/svc/infinispan/domains/hana12/logs/gc.log" -XX:+PrintGCDetails -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=5 -XX:GCLogFileSize=3M -XX:-TraceClassUnloading -server -Xms128m -Xmx512m -Xss256k -XX:+PrintGCTimeStamps -XX:+PrintGCDetails -Xloggc:/svc/infinispan/domains/hana12/logs/gclog/gc_20191223_105314.log -XX:+UseParallelGC -XX:+UseParallelOldGC -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/svc/infinispan/domains/hana12/logs/heapdump -Djava.net.preferIPv4Stack=true -Dorg.jboss.resolver.warning=true -Djboss.server.base.dir=/svc/infinispan/domains/hana12 -Djboss.server.config.dir=/svc/infinispan/domains/hana12/configuration -Djboss.server.log.dir=/svc/infinispan/domains/hana12/logs -Djboss.socket.binding.port-offset=200 -Djboss.bind.address=192.168.110.141 -Djboss.bind.address.management=192.168.110.141 "-Dorg.jboss.boot.log.file=/svc/infinispan/domains/hana12/logs/server.log" "-Dlogging.configuration=file:/svc/infinispan/domains/hana12/configuration/logging.properties" -jar "/svc/infinispan/infinispan-server-9.4.17.Final/jboss-modules.jar" -mp "/svc/infinispan/infinispan-server-9.4.17.Final/modules" org.jboss.as.standalone -Djboss.home.dir="/svc/infinispan/infinispan-server-9.4.17.Final" -Djboss.server.base.dir="/svc/infinispan/domains/hana12" '-Djboss.node.name=hana12' '-c' 'clustered.xml'

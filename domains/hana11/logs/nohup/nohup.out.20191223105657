@@ -1,0 +1,113 @@
+JAVA_OPTS already set in environment; overriding default settings with values:               -server  -Xms128m -Xmx512m -Xss256k -XX:+PrintGCTimeStamps  -XX:+PrintGCDetails  -Xloggc:/svc/infinispan/domains/hana11/logs/gclog/gc_20191223_104729.log  -XX:+UseParallelGC  -XX:+UseParallelOldGC  -XX:+HeapDumpOnOutOfMemoryError  -XX:HeapDumpPath=/svc/infinispan/domains/hana11/logs/heapdump  -Djboss.server.base.dir=/svc/infinispan/domains/hana11 -Djboss.server.config.dir=/svc/infinispan/domains/hana11/configuration  -Djboss.server.log.dir=/svc/infinispan/domains/hana11/logs -Djboss.socket.binding.port-offset=100 -Djboss.bind.address=192.168.110.141 -Djboss.bind.address.management=192.168.110.141
+=========================================================================
+
+  JBoss Bootstrap Environment
+
+  JBOSS_HOME: /svc/infinispan/infinispan-server-9.4.17.Final
+
+  JAVA: /usr/java/jdk1.8/bin/java
+
+  JAVA_OPTS:  -verbose:gc -Xloggc:"/svc/infinispan/domains/hana11/logs/gc.log" -XX:+PrintGCDetails -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=5 -XX:GCLogFileSize=3M -XX:-TraceClassUnloading               -server  -Xms128m -Xmx512m -Xss256k -XX:+PrintGCTimeStamps  -XX:+PrintGCDetails  -Xloggc:/svc/infinispan/domains/hana11/logs/gclog/gc_20191223_104729.log  -XX:+UseParallelGC  -XX:+UseParallelOldGC  -XX:+HeapDumpOnOutOfMemoryError  -XX:HeapDumpPath=/svc/infinispan/domains/hana11/logs/heapdump  -Djboss.server.base.dir=/svc/infinispan/domains/hana11 -Djboss.server.config.dir=/svc/infinispan/domains/hana11/configuration  -Djboss.server.log.dir=/svc/infinispan/domains/hana11/logs -Djboss.socket.binding.port-offset=100 -Djboss.bind.address=192.168.110.141 -Djboss.bind.address.management=192.168.110.141 
+
+=========================================================================
+
+[0m10:47:30,884 INFO  [org.jboss.modules] (main) JBoss Modules version 1.8.6.Final
+[0m[0m10:47:31,853 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.3.Final
+[0m[0m10:47:31,881 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.2.Final
+[0m[0m10:47:32,130 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: Infinispan Server 9.4.17.Final (WildFly Core 6.0.2.Final) starting
+[0m[0m10:47:33,891 INFO  [org.wildfly.security] (ServerService Thread Pool -- 14) ELY00001: WildFly Elytron version 1.6.0.Final
+[0m[0m10:47:35,485 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+[0m[0m10:47:35,564 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 6) WFLYCTL0028: Attribute 'default-stack' in the resource at address '/subsystem=datagrid-jgroups' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+[0m[0m10:47:36,022 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+[0m[0m10:47:36,088 INFO  [org.xnio] (MSC service thread 1-8) XNIO version 3.6.5.Final
+[0m[0m10:47:36,106 INFO  [org.xnio.nio] (MSC service thread 1-8) XNIO NIO Implementation Version 3.6.5.Final
+[0m[0m10:47:36,252 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 17) Activating Infinispan subsystem.
+[0m[0m10:47:36,284 INFO  [org.infinispan.server.jgroups] (ServerService Thread Pool -- 20) DGJGRP0001: Activating JGroups subsystem.
+[0m[0m10:47:36,288 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 28) WFLYNAM0001: Activating Naming Subsystem
+[0m[0m10:47:36,298 INFO  [org.jboss.remoting] (MSC service thread 1-4) JBoss Remoting version 5.0.8.Final
+[0m[0m10:47:36,303 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 30) WFLYSEC0002: Activating Security Subsystem
+[0m[33m10:47:36,314 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 31) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+[0m[0m10:47:36,398 INFO  [org.jboss.as.naming] (MSC service thread 1-3) WFLYNAM0003: Starting Naming Service
+[0m[0m10:47:36,463 INFO  [org.jboss.as.security] (MSC service thread 1-1) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+[0m[0m10:47:36,703 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 21) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+[0m[0m10:47:36,880 INFO  [org.jboss.as.connector] (MSC service thread 1-7) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.11.Final)
+[0m[0m10:47:36,899 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0018: Started Driver service with driver-name = h2
+[0m[0m10:47:37,052 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+[0m[0m10:47:38,132 INFO  [org.jboss.as.patching] (MSC service thread 1-6) WFLYPAT0050: Infinispan Server cumulative patch ID is: base, one-off patches include: none
+[0m[33m10:47:38,219 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-6) WFLYDM0111: Keystore /svc/infinispan/domains/hana11/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+[0m[0m10:47:38,242 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-7) WFLYDS0013: Started FileSystemDeploymentService for directory /svc/infinispan/domains/hana11/deployments
+[0m[0m10:47:38,468 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+[0m[0m10:47:44,095 INFO  [org.jgroups.protocols.pbcast.GMS] (MSC service thread 1-4) hana11: no members discovered after 5010 ms: creating cluster as first member
+[0m[0m10:47:46,498 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-1) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.17.Final
+[0m[0m10:47:46,500 INFO  [org.infinispan.globalstate.impl.GlobalStateManagerImpl] (MSC service thread 1-1) ISPN000389: Loaded global state, version=9.4.17.Final timestamp=2019-12-23T01:47:04.764Z
+[0m[0m10:47:46,815 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-1) ISPN000078: Starting JGroups channel clustered
+[0m[0m10:47:46,818 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-1) ISPN000094: Received new cluster view for channel cluster: [hana11|0] (1) [hana11]
+[0m[0m10:47:46,832 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-1) ISPN000079: Channel clustered local address is hana11, physical addresses are [192.168.110.141:55300]
+[0m[0m10:47:47,592 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-1) DGISPN0023: Started clustered cache container
+[0m[0m10:47:47,889 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-4) DGISPN0001: Started repl cache from clustered container
+[0m[0m10:47:47,903 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-8) DGISPN0001: Started HANA_CACHE cache from clustered container
+[0m[0m10:47:47,916 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-7) DGISPN0001: Started default cache from clustered container
+[0m[0m10:47:47,919 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-5) DGENDPT10000: HotRodServer starting
+[0m[0m10:47:47,928 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-8) DGENDPT10000:  starting
+[0m[0m10:47:47,932 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-5) DGENDPT10001: HotRodServer listening on 192.168.110.141:11322
+[0m[0m10:47:48,432 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-8) DGENDPT10002:  listening on 192.168.110.141:8180 (mapped to rest)
+[0m[0m10:47:48,771 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+[0m[0m10:47:48,776 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://192.168.110.141:10090/management
+[0m[0m10:47:48,776 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://192.168.110.141:10090
+[0m[0m10:47:48,777 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: Infinispan Server 9.4.17.Final (WildFly Core 6.0.2.Final) started in 18870ms - Started 229 of 277 services (134 services are lazy, passive or on-demand)
+[0m[0m10:53:23,139 INFO  [org.infinispan.CLUSTER] (jgroups-7,hana11) ISPN000094: Received new cluster view for channel cluster: [hana11|1] (2) [hana11, hana12]
+[0m[0m10:53:23,144 INFO  [org.infinispan.CLUSTER] (jgroups-7,hana11) ISPN100000: Node hana12 joined the cluster
+[0m[0m10:53:25,279 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t1) [Context=org.infinispan.CONFIG]ISPN100002: Starting rebalance with members [hana11, hana12], phase READ_OLD_WRITE_ALL, topology id 2
+[0m[0m10:53:25,397 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t1) [Context=org.infinispan.CONFIG]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 3
+[0m[0m10:53:25,430 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t1) [Context=org.infinispan.CONFIG]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 4
+[0m[0m10:53:25,438 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t1) [Context=org.infinispan.CONFIG]ISPN100010: Finished rebalance with members [hana11, hana12], topology id 5
+[0m[0m10:53:25,951 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t1) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100002: Starting rebalance with members [hana11, hana12], phase READ_OLD_WRITE_ALL, topology id 2
+[0m[0m10:53:26,123 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t1) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 3
+[0m[0m10:53:26,138 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t1) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 4
+[0m[0m10:53:26,154 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t1) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100010: Finished rebalance with members [hana11, hana12], topology id 5
+[0m[0m10:53:26,267 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t1) [Context=___protobuf_metadata]ISPN100002: Starting rebalance with members [hana11, hana12], phase READ_OLD_WRITE_ALL, topology id 2
+[0m[0m10:53:26,339 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t1) [Context=___protobuf_metadata]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 3
+[0m[0m10:53:26,350 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t1) [Context=___protobuf_metadata]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 4
+[0m[0m10:53:26,372 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t1) [Context=___protobuf_metadata]ISPN100010: Finished rebalance with members [hana11, hana12], topology id 5
+[0m[0m10:53:26,382 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t1) [Context=HANA_CACHE]ISPN100002: Starting rebalance with members [hana11, hana12], phase READ_OLD_WRITE_ALL, topology id 2
+[0m[0m10:53:26,391 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t1) [Context=default]ISPN100002: Starting rebalance with members [hana11, hana12], phase READ_OLD_WRITE_ALL, topology id 2
+[0m[0m10:53:26,391 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t2) [Context=repl]ISPN100002: Starting rebalance with members [hana11, hana12], phase READ_OLD_WRITE_ALL, topology id 2
+[0m[0m10:53:26,464 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t2) [Context=HANA_CACHE]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 3
+[0m[0m10:53:26,476 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t1) [Context=default]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 3
+[0m[0m10:53:26,489 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t1) [Context=default]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 4
+[0m[0m10:53:26,493 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t2) [Context=HANA_CACHE]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 4
+[0m[0m10:53:26,499 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t2) [Context=default]ISPN100010: Finished rebalance with members [hana11, hana12], topology id 5
+[0m[0m10:53:26,499 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t1) [Context=repl]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 3
+[0m[0m10:53:26,507 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t2) [Context=repl]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 4
+[0m[0m10:53:26,515 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t2) [Context=repl]ISPN100010: Finished rebalance with members [hana11, hana12], topology id 5
+[0m[0m10:53:26,524 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t2) [Context=HANA_CACHE]ISPN100010: Finished rebalance with members [hana11, hana12], topology id 5
+[0m[0m10:53:26,660 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t2) [Context=___script_cache]ISPN100002: Starting rebalance with members [hana11, hana12], phase READ_OLD_WRITE_ALL, topology id 2
+[0m[0m10:53:26,691 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t1) [Context=___script_cache]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 3
+[0m[0m10:53:26,698 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t1) [Context=___script_cache]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 4
+[0m[0m10:53:26,702 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t1) [Context=___script_cache]ISPN100010: Finished rebalance with members [hana11, hana12], topology id 5
+[0m[0m10:53:27,288 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t1) [Context=___hotRodTopologyCache]ISPN100002: Starting rebalance with members [hana11, hana12], phase READ_OLD_WRITE_ALL, topology id 2
+[0m[0m10:53:27,356 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t1) [Context=___hotRodTopologyCache]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 3
+[0m[0m10:53:27,365 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t1) [Context=___hotRodTopologyCache]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 4
+[0m[0m10:53:27,372 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t1) [Context=___hotRodTopologyCache]ISPN100010: Finished rebalance with members [hana11, hana12], topology id 5
+[0m[0m10:56:38,120 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0236: Suspending server with no timeout.
+[0m[0m10:56:38,127 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+[0m[0m10:56:38,167 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+[0m[0m10:56:38,185 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-3) [Context=repl]ISPN100008: Updating cache members list [hana12], topology id 6
+[0m[0m10:56:38,207 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-3) DGISPN0002: Stopped repl cache from clustered container
+[0m[0m10:56:38,213 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0019: Stopped Driver service with driver-name = h2
+[0m[0m10:56:38,245 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-8) [Context=HANA_CACHE]ISPN100008: Updating cache members list [hana12], topology id 6
+[0m[0m10:56:38,253 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-8) DGISPN0002: Stopped HANA_CACHE cache from clustered container
+[0m[0m10:56:38,256 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-2) [Context=___hotRodTopologyCache]ISPN100008: Updating cache members list [hana12], topology id 6
+[0m[0m10:56:39,304 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-2) [Context=default]ISPN100008: Updating cache members list [hana12], topology id 6
+[0m[0m10:56:39,324 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-2) DGISPN0002: Stopped default cache from clustered container
+[0m[0m10:56:39,341 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-1) [Context=___protobuf_metadata]ISPN100008: Updating cache members list [hana12], topology id 6
+[0m[0m10:56:39,353 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (MSC service thread 1-1) ISPN000029: Passivating all entries to disk
+[0m[0m10:56:39,440 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (MSC service thread 1-1) ISPN000030: Passivated 38 entries in 87 milliseconds
+[0m[0m10:56:39,458 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-1) [Context=org.infinispan.CONFIG]ISPN100008: Updating cache members list [hana12], topology id 6
+[0m[0m10:56:39,466 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-1) [Context=___script_cache]ISPN100008: Updating cache members list [hana12], topology id 6
+[0m[0m10:56:39,476 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-1) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100008: Updating cache members list [hana12], topology id 6
+[0m[0m10:56:39,487 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-1) ISPN000080: Disconnecting JGroups channel clustered
+[0m[0m10:56:39,521 INFO  [org.infinispan.globalstate.impl.GlobalStateManagerImpl] (MSC service thread 1-1) ISPN000390: Persisted state, version=9.4.17.Final timestamp=2019-12-23T01:56:39.500Z
+[0m[0m10:56:39,522 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-1) DGISPN0024: Stopped clustered cache container
+[0m[0m10:56:39,602 INFO  [org.jboss.as] (MSC service thread 1-3) WFLYSRV0050: Infinispan Server 9.4.17.Final (WildFly Core 6.0.2.Final) stopped in 1466ms
+[0m

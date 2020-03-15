@@ -1,0 +1,53 @@
+JAVA_OPTS already set in environment; overriding default settings with values:               -server  -Xms128m -Xmx512m -Xss256k -XX:+PrintGCTimeStamps  -XX:+PrintGCDetails  -Xloggc:/svc/infinispan/domains/hana11/logs/gclog/gc_20191223_102855.log  -XX:+UseParallelGC  -XX:+UseParallelOldGC  -XX:+HeapDumpOnOutOfMemoryError  -XX:HeapDumpPath=/svc/infinispan/domains/hana11/logs/heapdump  -Djboss.server.base.dir=/svc/infinispan/domains/hana11 -Djboss.server.config.dir=/svc/infinispan/domains/hana11/configuration  -Djboss.server.log.dir=/svc/infinispan/domains/hana11/logs -Djboss.socket.binding.port-offset=100 -Djboss.bind.address=192.168.110.141 -Djboss.bind.address.management=192.168.110.141
+=========================================================================
+
+  JBoss Bootstrap Environment
+
+  JBOSS_HOME: /svc/infinispan/infinispan-server-9.4.17.Final
+
+  JAVA: /usr/java/jdk1.8/bin/java
+
+  JAVA_OPTS:  -verbose:gc -Xloggc:"/svc/infinispan/domains/hana11/logs/gc.log" -XX:+PrintGCDetails -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=5 -XX:GCLogFileSize=3M -XX:-TraceClassUnloading               -server  -Xms128m -Xmx512m -Xss256k -XX:+PrintGCTimeStamps  -XX:+PrintGCDetails  -Xloggc:/svc/infinispan/domains/hana11/logs/gclog/gc_20191223_102855.log  -XX:+UseParallelGC  -XX:+UseParallelOldGC  -XX:+HeapDumpOnOutOfMemoryError  -XX:HeapDumpPath=/svc/infinispan/domains/hana11/logs/heapdump  -Djboss.server.base.dir=/svc/infinispan/domains/hana11 -Djboss.server.config.dir=/svc/infinispan/domains/hana11/configuration  -Djboss.server.log.dir=/svc/infinispan/domains/hana11/logs -Djboss.socket.binding.port-offset=100 -Djboss.bind.address=192.168.110.141 -Djboss.bind.address.management=192.168.110.141 
+
+=========================================================================
+
+[0m10:28:57,005 INFO  [org.jboss.modules] (main) JBoss Modules version 1.8.6.Final
+[0m[0m10:28:57,751 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.3.Final
+[0m[0m10:28:57,801 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.2.Final
+[0m[0m10:28:58,005 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: Infinispan Server 9.4.17.Final (WildFly Core 6.0.2.Final) starting
+[0m[31m10:28:59,636 ERROR [org.jboss.as.controller] (Controller Boot Thread) 
+
+OPVDX001: Validation error in clustered.xml ------------------------------------
+|
+|  54: </audit-log>
+|  55: <management-interfaces>
+|  56:     <http-interface security-realm="ManagementRealm" http-upgrade-enabled="true">
+|                                                           ^^^^ 'http-upgrade-enabled' isn't an allowed attribute for the
+|                                                                  'http-interface' element
+|                                                                
+|                                                                Attributes allowed here are: 
+|                                                                  allowed-origins              security-realm               
+|                                                                  console-enabled              server-name                  
+|                                                                  http-authentication-factory  ssl-context                  
+|                                                                  sasl-protocol                
+|
+|  57:         <socket-binding http="management-http"/>
+|  58:     </http-interface>
+|  59: </management-interfaces>
+|
+| The primary underlying error message was:
+| > ParseError at [row,col]:[56,13]
+| > Message: WFLYCTL0197: Unexpected attribute 'http-upgrade-enabled'
+| >   encountered
+|
+|-------------------------------------------------------------------------------
+
+[0m[31m10:28:59,639 ERROR [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0055: Caught exception during boot: org.jboss.as.controller.persistence.ConfigurationPersistenceException: WFLYCTL0085: Failed to parse configuration
+	at org.jboss.as.controller.persistence.XmlConfigurationPersister.load(XmlConfigurationPersister.java:143) [wildfly-controller-6.0.2.Final.jar:6.0.2.Final]
+	at org.jboss.as.server.ServerService.boot(ServerService.java:377) [wildfly-server-6.0.2.Final.jar:6.0.2.Final]
+	at org.jboss.as.controller.AbstractControllerService$1.run(AbstractControllerService.java:372) [wildfly-controller-6.0.2.Final.jar:6.0.2.Final]
+	at java.lang.Thread.run(Thread.java:748) [rt.jar:1.8.0_202]
+
+[0m[31m10:28:59,645 FATAL [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0056: Server boot has failed in an unrecoverable manner; exiting. See previous messages for details.
+[0m[0m10:28:59,692 INFO  [org.jboss.as] (MSC service thread 1-4) WFLYSRV0050: Infinispan Server 9.4.17.Final (WildFly Core 6.0.2.Final) stopped in 28ms
+[0m

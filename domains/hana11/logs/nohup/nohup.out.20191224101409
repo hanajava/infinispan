@@ -1,0 +1,40 @@
+JAVA_OPTS already set in environment; overriding default settings with values:        -server  -Xms128m -Xmx512m -Xss256k -Djboss.server.base.dir=/svc/infinispan/domains/hana11 -Djboss.server.config.dir=/svc/infinispan/domains/hana11/configuration  -Djboss.server.log.dir=/svc/infinispan/domains/hana11/logs -Djboss.socket.binding.port-offset=100 -Djboss.bind.address=192.168.110.141 -Djboss.bind.address.management=192.168.110.141
+=========================================================================
+
+  JBoss Bootstrap Environment
+
+  JBOSS_HOME: /svc/infinispan/infinispan-server-9.4.17.Final
+
+  JAVA: /usr/java/jdk1.8/bin/java
+
+  JAVA_OPTS:  -verbose:gc -Xloggc:"/svc/infinispan/domains/hana11/logs/gc.log" -XX:+PrintGCDetails -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=5 -XX:GCLogFileSize=3M -XX:-TraceClassUnloading        -server  -Xms128m -Xmx512m -Xss256k -Djboss.server.base.dir=/svc/infinispan/domains/hana11 -Djboss.server.config.dir=/svc/infinispan/domains/hana11/configuration  -Djboss.server.log.dir=/svc/infinispan/domains/hana11/logs -Djboss.socket.binding.port-offset=100 -Djboss.bind.address=192.168.110.141 -Djboss.bind.address.management=192.168.110.141 
+
+=========================================================================
+
+[0m10:06:51,679 INFO  [org.jboss.modules] (main) JBoss Modules version 1.8.6.Final
+[0m[0m10:07:45,533 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.3.Final
+[0m[0m10:07:45,834 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.2.Final
+[0m[0m10:07:52,894 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: Infinispan Server 9.4.17.Final (WildFly Core 6.0.2.Final) starting
+[0m[0m10:10:24,128 INFO  [org.wildfly.security] (ServerService Thread Pool -- 14) ELY00001: WildFly Elytron version 1.6.0.Final
+[0m[0m10:13:03,761 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+[0m[0m10:13:09,868 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 30) WFLYCTL0028: Attribute 'default-stack' in the resource at address '/subsystem=datagrid-jgroups' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+[0m[0m10:13:20,235 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+[0m[0m10:13:22,491 INFO  [org.xnio] (MSC service thread 1-1) XNIO version 3.6.5.Final
+[0m[0m10:13:23,394 INFO  [org.xnio.nio] (MSC service thread 1-1) XNIO NIO Implementation Version 3.6.5.Final
+[0m[0m10:13:27,684 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 42) Activating Infinispan subsystem.
+[0m[0m10:13:31,589 INFO  [org.infinispan.server.jgroups] (ServerService Thread Pool -- 45) DGJGRP0001: Activating JGroups subsystem.
+[0m[33m10:13:35,398 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 58) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+[0m[0m10:13:35,511 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 53) WFLYNAM0001: Activating Naming Subsystem
+[0m[0m10:13:36,772 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 56) WFLYSEC0002: Activating Security Subsystem
+[0m[0m10:13:37,501 INFO  [org.jboss.as.security] (MSC service thread 1-8) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+[0m[0m10:13:37,640 INFO  [org.jboss.remoting] (MSC service thread 1-3) JBoss Remoting version 5.0.8.Final
+[0m[0m10:13:37,671 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 46) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+[0m[0m10:13:38,279 INFO  [org.jboss.as.connector] (MSC service thread 1-6) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.11.Final)
+[0m[0m10:13:38,868 INFO  [org.jboss.as.naming] (MSC service thread 1-4) WFLYNAM0003: Starting Naming Service
+[0m[0m10:13:38,870 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = h2
+[0m[0m10:13:39,488 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+[0m[0m10:13:42,835 INFO  [org.jboss.as.patching] (MSC service thread 1-5) WFLYPAT0050: Infinispan Server cumulative patch ID is: base, one-off patches include: none
+[0m[0m10:13:43,098 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-1) WFLYDS0013: Started FileSystemDeploymentService for directory /svc/infinispan/domains/hana11/deployments
+[0m[33m10:13:43,098 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-4) WFLYDM0111: Keystore /svc/infinispan/domains/hana11/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+[0m[0m10:13:43,529 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+[0m/svc/infinispan/infinispan-server-9.4.17.Final/bin/standalone.sh: line 334: 19292 Killed                  "/usr/java/jdk1.8/bin/java" -D"[Standalone]" -verbose:gc -Xloggc:"/svc/infinispan/domains/hana11/logs/gc.log" -XX:+PrintGCDetails -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=5 -XX:GCLogFileSize=3M -XX:-TraceClassUnloading -server -Xms128m -Xmx512m -Xss256k -Djboss.server.base.dir=/svc/infinispan/domains/hana11 -Djboss.server.config.dir=/svc/infinispan/domains/hana11/configuration -Djboss.server.log.dir=/svc/infinispan/domains/hana11/logs -Djboss.socket.binding.port-offset=100 -Djboss.bind.address=192.168.110.141 -Djboss.bind.address.management=192.168.110.141 "-Dorg.jboss.boot.log.file=/svc/infinispan/domains/hana11/logs/server.log" "-Dlogging.configuration=file:/svc/infinispan/domains/hana11/configuration/logging.properties" -jar "/svc/infinispan/infinispan-server-9.4.17.Final/jboss-modules.jar" -mp "/svc/infinispan/infinispan-server-9.4.17.Final/modules" org.jboss.as.standalone -Djboss.home.dir="/svc/infinispan/infinispan-server-9.4.17.Final" -Djboss.server.base.dir="/svc/infinispan/domains/hana11" '-Djboss.node.name=hana11' '-c' 'clustered.xml'

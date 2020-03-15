@@ -1,0 +1,10 @@
+Java HotSpot(TM) 64-Bit Server VM (25.202-b08) for linux-amd64 JRE (1.8.0_202-b08), built on Dec 15 2018 12:40:22 by "java_re" with gcc 7.3.0
+Memory: 4k page, physical 1878756k(1162764k free), swap 2097148k(2097148k free)
+CommandLine flags: -XX:GCLogFileSize=3145728 -XX:InitialHeapSize=134217728 -XX:MaxHeapSize=536870912 -XX:NumberOfGCLogFiles=5 -XX:+PrintGC -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:ThreadStackSize=256 -XX:-TraceClassUnloading -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseGCLogFileRotation -XX:+UseParallelGC 
+176.009: [GC (Allocation Failure) [PSYoungGen: 33280K->5099K(38400K)] 33280K->5688K(125952K), 9.1491803 secs] [Times: user=1.50 sys=18.15, real=9.15 secs] 
+219.136: [GC (Metadata GC Threshold) [PSYoungGen: 37625K->5088K(71680K)] 38213K->12844K(159232K), 19.3492363 secs] [Times: user=28.78 sys=24.72, real=19.35 secs] 
+238.485: [Full GC (Metadata GC Threshold) [PSYoungGen: 5088K->0K(71680K)] [ParOldGen: 7756K->11913K(87552K)] 12844K->11913K(159232K), [Metaspace: 19821K->19821K(1067008K)], 0.1017454 secs] [Times: user=0.26 sys=0.00, real=0.10 secs] 
+292.079: [GC (Allocation Failure) [PSYoungGen: 66560K->5103K(71680K)] 78473K->17640K(159232K), 13.8537642 secs] [Times: user=29.51 sys=4.39, real=13.89 secs] 
+384.852: [GC (Allocation Failure) [PSYoungGen: 71663K->5111K(138240K)] 84200K->21731K(225792K), 53.9223440 secs] [Times: user=80.22 sys=1.49, real=54.07 secs] 
+468.023: [GC (Metadata GC Threshold) [PSYoungGen: 32376K->5112K(138240K)] 48995K->28004K(225792K), 35.1849153 secs] [Times: user=47.79 sys=17.93, real=35.18 secs] 
+503.208: [Full GC (Metadata GC Threshold) [PSYoungGen: 5112K->0K(138240K)] [ParOldGen: 22892K->16489K(87552K)] 28004K->16489K(225792K), [Metaspace: 32325K->32320K(1079296K)], 6.7531733 secs] [Times: user=3.35 sys=2.26, real=6.74 secs] 

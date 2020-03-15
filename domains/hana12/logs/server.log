@@ -1,0 +1,731 @@
+2019-12-24 10:06:18,501 INFO  [org.jboss.modules] (main) JBoss Modules version 1.8.6.Final
+2019-12-24 10:07:48,369 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.3.Final
+2019-12-24 10:07:48,861 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.2.Final
+2019-12-24 10:08:23,406 INFO  [org.jboss.as] (MSC service thread 1-3) WFLYSRV0049: Infinispan Server 9.4.17.Final (WildFly Core 6.0.2.Final) starting
+2019-12-24 10:08:23,596 DEBUG [org.jboss.as.config] (MSC service thread 1-3) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /svc/infinispan/infinispan-server-9.4.17.Final/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /usr/java/jdk1.8.0_202/jre/lib/endorsed
+	java.ext.dirs = /usr/java/jdk1.8.0_202/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/java/jdk1.8.0_202/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_202-b08
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_202
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.202-b08
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = 192.168.110.141
+	jboss.home.dir = /svc/infinispan/infinispan-server-9.4.17.Final
+	jboss.host.name = was01
+	jboss.modules.dir = /svc/infinispan/infinispan-server-9.4.17.Final/modules
+	jboss.node.name = hana12
+	jboss.qualified.host.name = was01
+	jboss.server.base.dir = /svc/infinispan/domains/hana12
+	jboss.server.config.dir = /svc/infinispan/domains/hana12/configuration
+	jboss.server.data.dir = /svc/infinispan/domains/hana12/data
+	jboss.server.deploy.dir = /svc/infinispan/domains/hana12/data/content
+	jboss.server.log.dir = /svc/infinispan/domains/hana12/logs
+	jboss.server.name = was01
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /svc/infinispan/domains/hana12/tmp
+	jboss.socket.binding.port-offset = 200
+	line.separator = 
+
+	logging.configuration = file:/svc/infinispan/domains/hana12/configuration/logging.properties
+	module.path = /svc/infinispan/infinispan-server-9.4.17.Final/modules
+	org.jboss.boot.log.file = /svc/infinispan/domains/hana12/logs/server.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Linux
+	os.version = 3.10.0-862.el7.x86_64
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.class.path = /usr/java/jdk1.8.0_202/jre/lib/resources.jar:/usr/java/jdk1.8.0_202/jre/lib/rt.jar:/usr/java/jdk1.8.0_202/jre/lib/sunrsasign.jar:/usr/java/jdk1.8.0_202/jre/lib/jsse.jar:/usr/java/jdk1.8.0_202/jre/lib/jce.jar:/usr/java/jdk1.8.0_202/jre/lib/charsets.jar:/usr/java/jdk1.8.0_202/jre/lib/jfr.jar:/usr/java/jdk1.8.0_202/jre/classes
+	sun.boot.library.path = /usr/java/jdk1.8.0_202/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /svc/infinispan/infinispan-server-9.4.17.Final/jboss-modules.jar -mp /svc/infinispan/infinispan-server-9.4.17.Final/modules org.jboss.as.standalone -Djboss.home.dir=/svc/infinispan/infinispan-server-9.4.17.Final -Djboss.server.base.dir=/svc/infinispan/domains/hana12 -Djboss.node.name=hana12 -c clustered.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = US
+	user.dir = /svc/infinispan/domains/hana12
+	user.home = /home/jboss
+	user.language = en
+	user.name = jboss
+	user.timezone = Asia/Seoul
+2019-12-24 10:08:23,761 DEBUG [org.jboss.as.config] (MSC service thread 1-3) VM Arguments: -D[Standalone] -verbose:gc -Xloggc:/svc/infinispan/domains/hana12/logs/gc.log -XX:+PrintGCDetails -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=5 -XX:GCLogFileSize=3M -XX:-TraceClassUnloading -Xms128m -Xmx512m -Xss256k -Djboss.server.base.dir=/svc/infinispan/domains/hana12 -Djboss.server.config.dir=/svc/infinispan/domains/hana12/configuration -Djboss.server.log.dir=/svc/infinispan/domains/hana12/logs -Djboss.socket.binding.port-offset=200 -Djboss.bind.address=192.168.110.141 -Dorg.jboss.boot.log.file=/svc/infinispan/domains/hana12/logs/server.log -Dlogging.configuration=file:/svc/infinispan/domains/hana12/configuration/logging.properties 
+2019-12-24 10:13:01,352 INFO  [org.wildfly.security] (ServerService Thread Pool -- 14) ELY00001: WildFly Elytron version 1.6.0.Final
+2019-12-24 10:13:38,970 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-12-24 10:13:39,006 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 21) WFLYCTL0028: Attribute 'default-stack' in the resource at address '/subsystem=datagrid-jgroups' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-12-24 10:13:39,732 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2019-12-24 10:13:39,946 INFO  [org.xnio] (MSC service thread 1-3) XNIO version 3.6.5.Final
+2019-12-24 10:13:39,953 INFO  [org.xnio.nio] (MSC service thread 1-3) XNIO NIO Implementation Version 3.6.5.Final
+2019-12-24 10:13:40,420 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 44) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2019-12-24 10:13:40,529 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 43) WFLYSEC0002: Activating Security Subsystem
+2019-12-24 10:13:40,563 INFO  [org.jboss.remoting] (MSC service thread 1-4) JBoss Remoting version 5.0.8.Final
+2019-12-24 10:13:40,567 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 30) Activating Infinispan subsystem.
+2019-12-24 10:13:40,596 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 41) WFLYNAM0001: Activating Naming Subsystem
+2019-12-24 10:13:40,617 INFO  [org.infinispan.server.jgroups] (ServerService Thread Pool -- 33) DGJGRP0001: Activating JGroups subsystem.
+2019-12-24 10:13:40,649 INFO  [org.jboss.as.naming] (MSC service thread 1-3) WFLYNAM0003: Starting Naming Service
+2019-12-24 10:13:40,869 INFO  [org.jboss.as.connector] (MSC service thread 1-6) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.11.Final)
+2019-12-24 10:13:40,873 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 34) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2019-12-24 10:13:41,154 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = h2
+2019-12-24 10:13:41,167 INFO  [org.jboss.as.security] (MSC service thread 1-7) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2019-12-24 10:13:41,758 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-12-24 10:13:43,501 INFO  [org.jboss.as.patching] (MSC service thread 1-4) WFLYPAT0050: Infinispan Server cumulative patch ID is: base, one-off patches include: none
+2019-12-24 10:13:43,722 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-2) WFLYDM0111: Keystore /svc/infinispan/domains/hana12/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2019-12-24 10:13:43,717 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-4) WFLYDS0013: Started FileSystemDeploymentService for directory /svc/infinispan/domains/hana12/deployments
+2019-12-24 10:13:44,137 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2019-12-24 10:14:23,450 INFO  [org.jboss.modules] (main) JBoss Modules version 1.8.6.Final
+2019-12-24 10:14:24,439 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.3.Final
+2019-12-24 10:14:24,459 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.2.Final
+2019-12-24 10:14:25,141 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: Infinispan Server 9.4.17.Final (WildFly Core 6.0.2.Final) starting
+2019-12-24 10:14:25,143 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /svc/infinispan/infinispan-server-9.4.17.Final/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /usr/java/jdk1.8.0_202/jre/lib/endorsed
+	java.ext.dirs = /usr/java/jdk1.8.0_202/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/java/jdk1.8.0_202/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_202-b08
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_202
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.202-b08
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = 192.168.110.141
+	jboss.home.dir = /svc/infinispan/infinispan-server-9.4.17.Final
+	jboss.host.name = was01
+	jboss.modules.dir = /svc/infinispan/infinispan-server-9.4.17.Final/modules
+	jboss.node.name = hana12
+	jboss.qualified.host.name = was01
+	jboss.server.base.dir = /svc/infinispan/domains/hana12
+	jboss.server.config.dir = /svc/infinispan/domains/hana12/configuration
+	jboss.server.data.dir = /svc/infinispan/domains/hana12/data
+	jboss.server.deploy.dir = /svc/infinispan/domains/hana12/data/content
+	jboss.server.log.dir = /svc/infinispan/domains/hana12/logs
+	jboss.server.name = was01
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /svc/infinispan/domains/hana12/tmp
+	jboss.socket.binding.port-offset = 200
+	line.separator = 
+
+	logging.configuration = file:/svc/infinispan/domains/hana12/configuration/logging.properties
+	module.path = /svc/infinispan/infinispan-server-9.4.17.Final/modules
+	org.jboss.boot.log.file = /svc/infinispan/domains/hana12/logs/server.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Linux
+	os.version = 3.10.0-862.el7.x86_64
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.class.path = /usr/java/jdk1.8.0_202/jre/lib/resources.jar:/usr/java/jdk1.8.0_202/jre/lib/rt.jar:/usr/java/jdk1.8.0_202/jre/lib/sunrsasign.jar:/usr/java/jdk1.8.0_202/jre/lib/jsse.jar:/usr/java/jdk1.8.0_202/jre/lib/jce.jar:/usr/java/jdk1.8.0_202/jre/lib/charsets.jar:/usr/java/jdk1.8.0_202/jre/lib/jfr.jar:/usr/java/jdk1.8.0_202/jre/classes
+	sun.boot.library.path = /usr/java/jdk1.8.0_202/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /svc/infinispan/infinispan-server-9.4.17.Final/jboss-modules.jar -mp /svc/infinispan/infinispan-server-9.4.17.Final/modules org.jboss.as.standalone -Djboss.home.dir=/svc/infinispan/infinispan-server-9.4.17.Final -Djboss.server.base.dir=/svc/infinispan/domains/hana12 -Djboss.node.name=hana12 -c clustered.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = US
+	user.dir = /svc/infinispan/domains/hana12
+	user.home = /home/jboss
+	user.language = en
+	user.name = jboss
+	user.timezone = Asia/Seoul
+2019-12-24 10:14:25,143 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -verbose:gc -Xloggc:/svc/infinispan/domains/hana12/logs/gc.log -XX:+PrintGCDetails -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=5 -XX:GCLogFileSize=3M -XX:-TraceClassUnloading -Xms128m -Xmx512m -Xss256k -Djboss.server.base.dir=/svc/infinispan/domains/hana12 -Djboss.server.config.dir=/svc/infinispan/domains/hana12/configuration -Djboss.server.log.dir=/svc/infinispan/domains/hana12/logs -Djboss.socket.binding.port-offset=200 -Djboss.bind.address=192.168.110.141 -Dorg.jboss.boot.log.file=/svc/infinispan/domains/hana12/logs/server.log -Dlogging.configuration=file:/svc/infinispan/domains/hana12/configuration/logging.properties 
+2019-12-24 10:14:45,933 INFO  [org.wildfly.security] (ServerService Thread Pool -- 14) ELY00001: WildFly Elytron version 1.6.0.Final
+2019-12-24 10:15:03,413 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-12-24 10:15:03,780 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 11) WFLYCTL0028: Attribute 'default-stack' in the resource at address '/subsystem=datagrid-jgroups' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-12-24 10:15:05,485 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2019-12-24 10:15:05,588 INFO  [org.xnio] (MSC service thread 1-3) XNIO version 3.6.5.Final
+2019-12-24 10:15:05,601 INFO  [org.xnio.nio] (MSC service thread 1-3) XNIO NIO Implementation Version 3.6.5.Final
+2019-12-24 10:15:05,631 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 17) Activating Infinispan subsystem.
+2019-12-24 10:15:05,646 INFO  [org.infinispan.server.jgroups] (ServerService Thread Pool -- 20) DGJGRP0001: Activating JGroups subsystem.
+2019-12-24 10:15:05,711 INFO  [org.jboss.remoting] (MSC service thread 1-5) JBoss Remoting version 5.0.8.Final
+2019-12-24 10:15:05,884 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 30) WFLYSEC0002: Activating Security Subsystem
+2019-12-24 10:15:05,933 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 28) WFLYNAM0001: Activating Naming Subsystem
+2019-12-24 10:15:05,910 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 31) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2019-12-24 10:15:05,956 INFO  [org.jboss.as.security] (MSC service thread 1-8) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2019-12-24 10:15:06,120 INFO  [org.jboss.as.connector] (MSC service thread 1-8) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.11.Final)
+2019-12-24 10:15:06,188 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 21) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2019-12-24 10:15:06,242 INFO  [org.jboss.as.naming] (MSC service thread 1-8) WFLYNAM0003: Starting Naming Service
+2019-12-24 10:15:06,275 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = h2
+2019-12-24 10:15:07,776 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-12-24 10:15:13,829 INFO  [org.jboss.as.patching] (MSC service thread 1-4) WFLYPAT0050: Infinispan Server cumulative patch ID is: base, one-off patches include: none
+2019-12-24 10:15:14,215 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-6) WFLYDM0111: Keystore /svc/infinispan/domains/hana12/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2019-12-24 10:15:14,479 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-7) WFLYDS0013: Started FileSystemDeploymentService for directory /svc/infinispan/domains/hana12/deployments
+2019-12-24 10:15:15,385 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2019-12-24 10:15:32,075 WARN  [org.jgroups.protocols.pbcast.GMS] (jgroups-14,hana12) hana12: not member of view [hana11|2]; discarding it
+2019-12-24 10:15:33,276 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-7) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.17.Final
+2019-12-24 10:15:33,280 INFO  [org.infinispan.globalstate.impl.GlobalStateManagerImpl] (MSC service thread 1-7) ISPN000389: Loaded global state, version=9.4.17.Final timestamp=2019-12-23T01:53:24.960Z
+2019-12-24 10:15:35,651 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-7) ISPN000078: Starting JGroups channel clustered
+2019-12-24 10:15:35,664 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-7) ISPN000094: Received new cluster view for channel cluster: [hana11|1] (2) [hana11, hana12]
+2019-12-24 10:15:35,675 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-7) ISPN000079: Channel clustered local address is hana12, physical addresses are [192.168.110.141:55400]
+2019-12-24 10:16:17,298 INFO  [org.infinispan.CLUSTER] (jgroups-15,hana12) ISPN000093: Received new, MERGED cluster view for channel cluster: MergeView::[hana11|3] (2) [hana11, hana12], 2 subgroups: [hana11|2] (1) [hana11], [hana11|1] (2) [hana11, hana12]
+2019-12-24 10:16:19,354 WARN  [org.jgroups.protocols.pbcast.GMS] (jgroups-15,hana12) hana12: failed to collect all ACKs (expected=1) for view [hana11|3] after 2000ms, missing 1 ACKs from (1) hana11
+2019-12-24 10:16:24,160 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-7) DGISPN0023: Started clustered cache container
+2019-12-24 10:16:27,087 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-3) DGISPN0001: Started repl cache from clustered container
+2019-12-24 10:16:27,675 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-4) DGISPN0001: Started HANA_CACHE cache from clustered container
+2019-12-24 10:16:27,821 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-6) DGISPN0001: Started default cache from clustered container
+2019-12-24 10:16:27,609 WARN  [org.infinispan.expiration.impl.ClusterExpirationManager] (pool-10-thread-1) ISPN000026: Caught exception purging data container!: java.lang.IllegalArgumentException: Node hana12 is not a member
+	at org.infinispan.distribution.ch.impl.DefaultConsistentHash.getPrimarySegmentsForOwner(DefaultConsistentHash.java:128)
+	at org.infinispan.distribution.group.impl.PartitionerConsistentHash.getPrimarySegmentsForOwner(PartitionerConsistentHash.java:76)
+	at org.infinispan.expiration.impl.ClusterExpirationManager.purgeInMemoryContents(ClusterExpirationManager.java:119)
+	at org.infinispan.expiration.impl.ClusterExpirationManager.processExpiration(ClusterExpirationManager.java:94)
+	at org.infinispan.expiration.impl.ExpirationManagerImpl$ScheduledTask.run(ExpirationManagerImpl.java:245)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-12-24 10:16:32,009 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-1) DGENDPT10000: HotRodServer starting
+2019-12-24 10:16:32,019 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-7) DGENDPT10000:  starting
+2019-12-24 10:16:32,022 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-1) DGENDPT10001: HotRodServer listening on 192.168.110.141:11422
+2019-12-24 10:16:34,555 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-7) DGENDPT10002:  listening on 192.168.110.141:8280 (mapped to rest)
+2019-12-24 10:16:39,192 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2019-12-24 10:16:39,197 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:10190/management
+2019-12-24 10:16:39,197 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:10190
+2019-12-24 10:16:39,198 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: Infinispan Server 9.4.17.Final (WildFly Core 6.0.2.Final) started in 136529ms - Started 229 of 277 services (134 services are lazy, passive or on-demand)
+2019-12-24 10:20:46,862 WARN  [org.jgroups.protocols.pbcast.GMS] (jgroups-24,hana12) hana12: not member of view [hana11|4]; discarding it
+2019-12-24 10:21:34,344 INFO  [org.infinispan.CLUSTER] (jgroups-23,hana12) ISPN000093: Received new, MERGED cluster view for channel cluster: MergeView::[hana11|5] (2) [hana11, hana12], 2 subgroups: [hana11|3] (2) [hana11, hana12], [hana11|4] (1) [hana11]
+2019-12-24 10:21:36,356 WARN  [org.jgroups.protocols.pbcast.GMS] (jgroups-23,hana12) hana12: failed to collect all ACKs (expected=1) for view [hana11|5] after 2000ms, missing 1 ACKs from (1) hana11
+2019-12-24 10:26:15,444 WARN  [org.jgroups.protocols.pbcast.GMS] (jgroups-42,hana12) hana12: not member of view [hana11|6]; discarding it
+2019-12-24 10:27:03,885 INFO  [org.infinispan.CLUSTER] (jgroups-43,hana12) ISPN000093: Received new, MERGED cluster view for channel cluster: MergeView::[hana11|7] (2) [hana11, hana12], 2 subgroups: [hana11|5] (2) [hana11, hana12], [hana11|6] (1) [hana11]
+2019-12-24 10:27:06,361 INFO  [org.infinispan.CLUSTER] (VERIFY_SUSPECT.TimerThread-50,hana12) ISPN000094: Received new cluster view for channel cluster: [hana12|8] (1) [hana12]
+2019-12-24 10:27:06,378 INFO  [org.infinispan.CLUSTER] (VERIFY_SUSPECT.TimerThread-50,hana12) ISPN100001: Node hana11 left the cluster
+2019-12-24 10:27:06,379 WARN  [org.jgroups.protocols.pbcast.NAKACK2] (jgroups-58,hana12) JGRP000011: hana12: dropped message 135 from non-member hana11 (view=[hana12|8] (1) [hana12])
+2019-12-24 10:27:06,764 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t110) [Context=___hotRodTopologyCache]ISPN100007: After merge (or coordinator change), recovered members [hana11, hana12] with topology id 13
+2019-12-24 10:27:06,764 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t115) [Context=___protobuf_metadata]ISPN100007: After merge (or coordinator change), recovered members [hana11, hana12] with topology id 13
+2019-12-24 10:27:06,764 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t114) [Context=default]ISPN100007: After merge (or coordinator change), recovered members [hana11, hana12] with topology id 13
+2019-12-24 10:27:06,778 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t114) [Context=default]ISPN100008: Updating cache members list [hana12], topology id 14
+2019-12-24 10:27:06,789 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t115) [Context=___protobuf_metadata]ISPN100008: Updating cache members list [hana12], topology id 14
+2019-12-24 10:27:06,791 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t114) [Context=org.infinispan.CONFIG]ISPN100007: After merge (or coordinator change), recovered members [hana11, hana12] with topology id 13
+2019-12-24 10:27:06,791 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t110) [Context=___hotRodTopologyCache]ISPN100008: Updating cache members list [hana12], topology id 14
+2019-12-24 10:27:06,794 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t114) [Context=org.infinispan.CONFIG]ISPN100008: Updating cache members list [hana12], topology id 14
+2019-12-24 10:27:06,799 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t110) [Context=repl]ISPN100007: After merge (or coordinator change), recovered members [hana11, hana12] with topology id 13
+2019-12-24 10:27:06,805 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t114) [Context=___script_cache]ISPN100007: After merge (or coordinator change), recovered members [hana11, hana12] with topology id 13
+2019-12-24 10:27:06,807 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t115) [Context=HANA_CACHE]ISPN100007: After merge (or coordinator change), recovered members [hana11, hana12] with topology id 13
+2019-12-24 10:27:06,808 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t115) [Context=HANA_CACHE]ISPN100008: Updating cache members list [hana12], topology id 14
+2019-12-24 10:27:06,809 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t110) [Context=repl]ISPN100008: Updating cache members list [hana12], topology id 14
+2019-12-24 10:27:06,810 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t115) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100007: After merge (or coordinator change), recovered members [hana11, hana12] with topology id 13
+2019-12-24 10:27:06,813 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t115) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100008: Updating cache members list [hana12], topology id 14
+2019-12-24 10:27:06,824 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t114) [Context=___script_cache]ISPN100008: Updating cache members list [hana12], topology id 14
+2019-12-24 10:28:10,566 INFO  [org.jboss.modules] (main) JBoss Modules version 1.8.6.Final
+2019-12-24 10:28:13,020 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.3.Final
+2019-12-24 10:28:13,092 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.2.Final
+2019-12-24 10:28:13,341 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: Infinispan Server 9.4.17.Final (WildFly Core 6.0.2.Final) starting
+2019-12-24 10:28:13,343 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /svc/infinispan/infinispan-server-9.4.17.Final/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /usr/java/jdk1.8.0_202/jre/lib/endorsed
+	java.ext.dirs = /usr/java/jdk1.8.0_202/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/java/jdk1.8.0_202/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_202-b08
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_202
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.202-b08
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = 192.168.110.141
+	jboss.home.dir = /svc/infinispan/infinispan-server-9.4.17.Final
+	jboss.host.name = was01
+	jboss.modules.dir = /svc/infinispan/infinispan-server-9.4.17.Final/modules
+	jboss.node.name = hana12
+	jboss.qualified.host.name = was01
+	jboss.server.base.dir = /svc/infinispan/domains/hana12
+	jboss.server.config.dir = /svc/infinispan/domains/hana12/configuration
+	jboss.server.data.dir = /svc/infinispan/domains/hana12/data
+	jboss.server.deploy.dir = /svc/infinispan/domains/hana12/data/content
+	jboss.server.log.dir = /svc/infinispan/domains/hana12/logs
+	jboss.server.name = was01
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /svc/infinispan/domains/hana12/tmp
+	jboss.socket.binding.port-offset = 200
+	line.separator = 
+
+	logging.configuration = file:/svc/infinispan/domains/hana12/configuration/logging.properties
+	module.path = /svc/infinispan/infinispan-server-9.4.17.Final/modules
+	org.jboss.boot.log.file = /svc/infinispan/domains/hana12/logs/server.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Linux
+	os.version = 3.10.0-862.el7.x86_64
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.class.path = /usr/java/jdk1.8.0_202/jre/lib/resources.jar:/usr/java/jdk1.8.0_202/jre/lib/rt.jar:/usr/java/jdk1.8.0_202/jre/lib/sunrsasign.jar:/usr/java/jdk1.8.0_202/jre/lib/jsse.jar:/usr/java/jdk1.8.0_202/jre/lib/jce.jar:/usr/java/jdk1.8.0_202/jre/lib/charsets.jar:/usr/java/jdk1.8.0_202/jre/lib/jfr.jar:/usr/java/jdk1.8.0_202/jre/classes
+	sun.boot.library.path = /usr/java/jdk1.8.0_202/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /svc/infinispan/infinispan-server-9.4.17.Final/jboss-modules.jar -mp /svc/infinispan/infinispan-server-9.4.17.Final/modules org.jboss.as.standalone -Djboss.home.dir=/svc/infinispan/infinispan-server-9.4.17.Final -Djboss.server.base.dir=/svc/infinispan/domains/hana12 -Djboss.node.name=hana12 -c clustered.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = US
+	user.dir = /svc/infinispan/domains/hana12
+	user.home = /home/jboss
+	user.language = en
+	user.name = jboss
+	user.timezone = Asia/Seoul
+2019-12-24 10:28:13,344 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -verbose:gc -Xloggc:/svc/infinispan/domains/hana12/logs/gc.log -XX:+PrintGCDetails -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=5 -XX:GCLogFileSize=3M -XX:-TraceClassUnloading -Xms128m -Xmx512m -Xss256k -Djboss.server.base.dir=/svc/infinispan/domains/hana12 -Djboss.server.config.dir=/svc/infinispan/domains/hana12/configuration -Djboss.server.log.dir=/svc/infinispan/domains/hana12/logs -Djboss.socket.binding.port-offset=200 -Djboss.bind.address=192.168.110.141 -Dorg.jboss.boot.log.file=/svc/infinispan/domains/hana12/logs/server.log -Dlogging.configuration=file:/svc/infinispan/domains/hana12/configuration/logging.properties 
+2019-12-24 10:28:15,353 INFO  [org.wildfly.security] (ServerService Thread Pool -- 14) ELY00001: WildFly Elytron version 1.6.0.Final
+2019-12-24 10:28:17,398 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-12-24 10:28:17,478 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 13) WFLYCTL0028: Attribute 'default-stack' in the resource at address '/subsystem=datagrid-jgroups' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-12-24 10:28:17,802 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2019-12-24 10:28:17,864 INFO  [org.xnio] (MSC service thread 1-8) XNIO version 3.6.5.Final
+2019-12-24 10:28:17,880 INFO  [org.xnio.nio] (MSC service thread 1-8) XNIO NIO Implementation Version 3.6.5.Final
+2019-12-24 10:28:17,948 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 17) Activating Infinispan subsystem.
+2019-12-24 10:28:17,958 INFO  [org.infinispan.server.jgroups] (ServerService Thread Pool -- 20) DGJGRP0001: Activating JGroups subsystem.
+2019-12-24 10:28:17,975 INFO  [org.jboss.remoting] (MSC service thread 1-4) JBoss Remoting version 5.0.8.Final
+2019-12-24 10:28:17,982 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 31) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2019-12-24 10:28:17,983 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 28) WFLYNAM0001: Activating Naming Subsystem
+2019-12-24 10:28:17,995 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 30) WFLYSEC0002: Activating Security Subsystem
+2019-12-24 10:28:18,010 INFO  [org.jboss.as.security] (MSC service thread 1-3) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2019-12-24 10:28:18,161 INFO  [org.jboss.as.connector] (MSC service thread 1-3) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.11.Final)
+2019-12-24 10:28:18,192 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 21) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2019-12-24 10:28:18,205 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0018: Started Driver service with driver-name = h2
+2019-12-24 10:28:18,212 INFO  [org.jboss.as.naming] (MSC service thread 1-7) WFLYNAM0003: Starting Naming Service
+2019-12-24 10:28:18,441 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-12-24 10:28:19,310 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2019-12-24 10:28:19,328 INFO  [org.jboss.as.patching] (MSC service thread 1-6) WFLYPAT0050: Infinispan Server cumulative patch ID is: base, one-off patches include: none
+2019-12-24 10:28:19,366 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-7) WFLYDM0111: Keystore /svc/infinispan/domains/hana12/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2019-12-24 10:28:19,433 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-5) WFLYDS0013: Started FileSystemDeploymentService for directory /svc/infinispan/domains/hana12/deployments
+2019-12-24 10:28:22,499 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-8) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.17.Final
+2019-12-24 10:28:22,502 INFO  [org.infinispan.globalstate.impl.GlobalStateManagerImpl] (MSC service thread 1-8) ISPN000389: Loaded global state, version=9.4.17.Final timestamp=2019-12-23T01:53:24.960Z
+2019-12-24 10:28:22,683 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-8) ISPN000078: Starting JGroups channel clustered
+2019-12-24 10:28:22,686 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-8) ISPN000094: Received new cluster view for channel cluster: [hana11|10] (2) [hana11, hana12]
+2019-12-24 10:28:22,694 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-8) ISPN000079: Channel clustered local address is hana12, physical addresses are [192.168.110.141:55400]
+2019-12-24 10:28:23,571 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-8) DGISPN0023: Started clustered cache container
+2019-12-24 10:28:24,265 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-7) DGISPN0001: Started default cache from clustered container
+2019-12-24 10:28:24,280 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-6) DGISPN0001: Started HANA_CACHE cache from clustered container
+2019-12-24 10:28:24,322 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-1) DGISPN0001: Started repl cache from clustered container
+2019-12-24 10:28:24,450 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-4) DGENDPT10000: HotRodServer starting
+2019-12-24 10:28:24,446 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-1) DGENDPT10000:  starting
+2019-12-24 10:28:24,461 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-4) DGENDPT10001: HotRodServer listening on 192.168.110.141:11422
+2019-12-24 10:28:24,869 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-1) DGENDPT10002:  listening on 192.168.110.141:8280 (mapped to rest)
+2019-12-24 10:28:25,147 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2019-12-24 10:28:25,152 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:10190/management
+2019-12-24 10:28:25,153 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:10190
+2019-12-24 10:28:25,153 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: Infinispan Server 9.4.17.Final (WildFly Core 6.0.2.Final) started in 15754ms - Started 229 of 277 services (134 services are lazy, passive or on-demand)
+2019-12-24 10:36:21,091 INFO  [org.jboss.modules] (main) JBoss Modules version 1.8.6.Final
+2019-12-24 10:36:22,162 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.3.Final
+2019-12-24 10:36:22,179 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.2.Final
+2019-12-24 10:36:22,408 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: Infinispan Server 9.4.17.Final (WildFly Core 6.0.2.Final) starting
+2019-12-24 10:36:22,410 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /svc/infinispan/infinispan-server-9.4.17.Final/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /usr/java/jdk1.8.0_202/jre/lib/endorsed
+	java.ext.dirs = /usr/java/jdk1.8.0_202/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/java/jdk1.8.0_202/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_202-b08
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_202
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.202-b08
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = 192.168.110.141
+	jboss.bind.address.management = 192.168.110.141
+	jboss.home.dir = /svc/infinispan/infinispan-server-9.4.17.Final
+	jboss.host.name = was01
+	jboss.modules.dir = /svc/infinispan/infinispan-server-9.4.17.Final/modules
+	jboss.node.name = hana12
+	jboss.qualified.host.name = was01
+	jboss.server.base.dir = /svc/infinispan/domains/hana12
+	jboss.server.config.dir = /svc/infinispan/domains/hana12/configuration
+	jboss.server.data.dir = /svc/infinispan/domains/hana12/data
+	jboss.server.deploy.dir = /svc/infinispan/domains/hana12/data/content
+	jboss.server.log.dir = /svc/infinispan/domains/hana12/logs
+	jboss.server.name = was01
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /svc/infinispan/domains/hana12/tmp
+	jboss.socket.binding.port-offset = 200
+	line.separator = 
+
+	logging.configuration = file:/svc/infinispan/domains/hana12/configuration/logging.properties
+	module.path = /svc/infinispan/infinispan-server-9.4.17.Final/modules
+	org.jboss.boot.log.file = /svc/infinispan/domains/hana12/logs/server.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Linux
+	os.version = 3.10.0-862.el7.x86_64
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.class.path = /usr/java/jdk1.8.0_202/jre/lib/resources.jar:/usr/java/jdk1.8.0_202/jre/lib/rt.jar:/usr/java/jdk1.8.0_202/jre/lib/sunrsasign.jar:/usr/java/jdk1.8.0_202/jre/lib/jsse.jar:/usr/java/jdk1.8.0_202/jre/lib/jce.jar:/usr/java/jdk1.8.0_202/jre/lib/charsets.jar:/usr/java/jdk1.8.0_202/jre/lib/jfr.jar:/usr/java/jdk1.8.0_202/jre/classes
+	sun.boot.library.path = /usr/java/jdk1.8.0_202/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /svc/infinispan/infinispan-server-9.4.17.Final/jboss-modules.jar -mp /svc/infinispan/infinispan-server-9.4.17.Final/modules org.jboss.as.standalone -Djboss.home.dir=/svc/infinispan/infinispan-server-9.4.17.Final -Djboss.server.base.dir=/svc/infinispan/domains/hana12 -Djboss.node.name=hana12 -c clustered.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = US
+	user.dir = /svc/infinispan/domains/hana12
+	user.home = /home/jboss
+	user.language = en
+	user.name = jboss
+	user.timezone = Asia/Seoul
+2019-12-24 10:36:22,411 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -verbose:gc -Xloggc:/svc/infinispan/domains/hana12/logs/gc.log -XX:+PrintGCDetails -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=5 -XX:GCLogFileSize=3M -XX:-TraceClassUnloading -Xms128m -Xmx512m -Xss256k -Djboss.server.base.dir=/svc/infinispan/domains/hana12 -Djboss.server.config.dir=/svc/infinispan/domains/hana12/configuration -Djboss.server.log.dir=/svc/infinispan/domains/hana12/logs -Djboss.socket.binding.port-offset=200 -Djboss.bind.address=192.168.110.141 -Djboss.bind.address.management=192.168.110.141 -Dorg.jboss.boot.log.file=/svc/infinispan/domains/hana12/logs/server.log -Dlogging.configuration=file:/svc/infinispan/domains/hana12/configuration/logging.properties 
+2019-12-24 10:36:24,240 INFO  [org.wildfly.security] (ServerService Thread Pool -- 14) ELY00001: WildFly Elytron version 1.6.0.Final
+2019-12-24 10:36:25,876 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-12-24 10:36:25,928 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 8) WFLYCTL0028: Attribute 'default-stack' in the resource at address '/subsystem=datagrid-jgroups' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-12-24 10:36:26,246 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2019-12-24 10:36:26,283 INFO  [org.xnio] (MSC service thread 1-5) XNIO version 3.6.5.Final
+2019-12-24 10:36:26,293 INFO  [org.xnio.nio] (MSC service thread 1-5) XNIO NIO Implementation Version 3.6.5.Final
+2019-12-24 10:36:26,429 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 17) Activating Infinispan subsystem.
+2019-12-24 10:36:26,434 INFO  [org.infinispan.server.jgroups] (ServerService Thread Pool -- 20) DGJGRP0001: Activating JGroups subsystem.
+2019-12-24 10:36:26,517 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 28) WFLYNAM0001: Activating Naming Subsystem
+2019-12-24 10:36:26,516 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 30) WFLYSEC0002: Activating Security Subsystem
+2019-12-24 10:36:26,501 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 31) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2019-12-24 10:36:26,552 INFO  [org.jboss.remoting] (MSC service thread 1-7) JBoss Remoting version 5.0.8.Final
+2019-12-24 10:36:26,552 INFO  [org.jboss.as.security] (MSC service thread 1-5) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2019-12-24 10:36:26,724 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 21) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2019-12-24 10:36:26,787 INFO  [org.jboss.as.connector] (MSC service thread 1-4) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.11.Final)
+2019-12-24 10:36:26,803 INFO  [org.jboss.as.naming] (MSC service thread 1-6) WFLYNAM0003: Starting Naming Service
+2019-12-24 10:36:26,807 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0018: Started Driver service with driver-name = h2
+2019-12-24 10:36:27,251 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-12-24 10:36:27,774 INFO  [org.jboss.as.patching] (MSC service thread 1-6) WFLYPAT0050: Infinispan Server cumulative patch ID is: base, one-off patches include: none
+2019-12-24 10:36:27,853 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-8) WFLYDM0111: Keystore /svc/infinispan/domains/hana12/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2019-12-24 10:36:27,921 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-8) WFLYDS0013: Started FileSystemDeploymentService for directory /svc/infinispan/domains/hana12/deployments
+2019-12-24 10:36:28,405 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2019-12-24 10:36:30,768 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-1) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.17.Final
+2019-12-24 10:36:30,771 INFO  [org.infinispan.globalstate.impl.GlobalStateManagerImpl] (MSC service thread 1-1) ISPN000389: Loaded global state, version=9.4.17.Final timestamp=2019-12-23T01:53:24.960Z
+2019-12-24 10:36:30,939 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-1) ISPN000078: Starting JGroups channel clustered
+2019-12-24 10:36:30,942 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-1) ISPN000094: Received new cluster view for channel cluster: [hana11|12] (2) [hana11, hana12]
+2019-12-24 10:36:30,951 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-1) ISPN000079: Channel clustered local address is hana12, physical addresses are [192.168.110.141:55400]
+2019-12-24 10:36:31,767 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-1) DGISPN0023: Started clustered cache container
+2019-12-24 10:36:32,531 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-6) DGISPN0001: Started default cache from clustered container
+2019-12-24 10:36:32,525 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-2) DGISPN0001: Started HANA_CACHE cache from clustered container
+2019-12-24 10:36:32,597 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-7) DGISPN0001: Started repl cache from clustered container
+2019-12-24 10:36:32,810 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-6) DGENDPT10000: HotRodServer starting
+2019-12-24 10:36:32,814 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-5) DGENDPT10000:  starting
+2019-12-24 10:36:32,820 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-6) DGENDPT10001: HotRodServer listening on 192.168.110.141:11422
+2019-12-24 10:36:33,288 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-5) DGENDPT10002:  listening on 192.168.110.141:8280 (mapped to rest)
+2019-12-24 10:36:33,685 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2019-12-24 10:36:33,690 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://192.168.110.141:10190/management
+2019-12-24 10:36:33,691 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://192.168.110.141:10190
+2019-12-24 10:36:33,691 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: Infinispan Server 9.4.17.Final (WildFly Core 6.0.2.Final) started in 13510ms - Started 229 of 277 services (134 services are lazy, passive or on-demand)
+2019-12-24 10:53:25,746 INFO  [org.infinispan.CLUSTER] (VERIFY_SUSPECT.TimerThread-19,hana12) ISPN000094: Received new cluster view for channel cluster: [hana12|13] (1) [hana12]
+2019-12-24 10:53:26,618 INFO  [org.infinispan.CLUSTER] (VERIFY_SUSPECT.TimerThread-19,hana12) ISPN100001: Node hana11 left the cluster
+2019-12-24 10:53:27,904 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t61) [Context=___hotRodTopologyCache]ISPN100007: After merge (or coordinator change), recovered members [hana11, hana12] with topology id 27
+2019-12-24 10:53:27,968 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t62) [Context=default]ISPN100007: After merge (or coordinator change), recovered members [hana11, hana12] with topology id 27
+2019-12-24 10:53:28,029 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t50) [Context=___protobuf_metadata]ISPN100007: After merge (or coordinator change), recovered members [hana11, hana12] with topology id 27
+2019-12-24 10:53:28,031 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t62) [Context=default]ISPN100008: Updating cache members list [hana12], topology id 28
+2019-12-24 10:53:28,135 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t50) [Context=___protobuf_metadata]ISPN100008: Updating cache members list [hana12], topology id 28
+2019-12-24 10:53:28,167 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t61) [Context=___hotRodTopologyCache]ISPN100008: Updating cache members list [hana12], topology id 28
+2019-12-24 10:53:28,198 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t50) [Context=org.infinispan.CONFIG]ISPN100007: After merge (or coordinator change), recovered members [hana11, hana12] with topology id 27
+2019-12-24 10:53:28,329 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t62) [Context=repl]ISPN100007: After merge (or coordinator change), recovered members [hana11, hana12] with topology id 27
+2019-12-24 10:53:28,333 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t62) [Context=repl]ISPN100008: Updating cache members list [hana12], topology id 28
+2019-12-24 10:53:28,335 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t61) [Context=___script_cache]ISPN100007: After merge (or coordinator change), recovered members [hana11, hana12] with topology id 27
+2019-12-24 10:53:28,347 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t62) [Context=HANA_CACHE]ISPN100007: After merge (or coordinator change), recovered members [hana11, hana12] with topology id 27
+2019-12-24 10:53:28,348 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t62) [Context=HANA_CACHE]ISPN100008: Updating cache members list [hana12], topology id 28
+2019-12-24 10:53:28,349 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t61) [Context=___script_cache]ISPN100008: Updating cache members list [hana12], topology id 28
+2019-12-24 10:53:28,350 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t62) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100007: After merge (or coordinator change), recovered members [hana11, hana12] with topology id 27
+2019-12-24 10:53:28,403 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t62) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100008: Updating cache members list [hana12], topology id 28
+2019-12-24 10:53:28,603 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t50) [Context=org.infinispan.CONFIG]ISPN100008: Updating cache members list [hana12], topology id 28
+2019-12-24 10:54:15,786 INFO  [org.infinispan.CLUSTER] (jgroups-16,hana12) ISPN000093: Received new, MERGED cluster view for channel cluster: MergeView::[hana11|14] (2) [hana11, hana12], 2 subgroups: [hana11|12] (2) [hana11, hana12], [hana12|13] (1) [hana12]
+2019-12-24 10:54:15,787 INFO  [org.infinispan.CLUSTER] (jgroups-16,hana12) ISPN100000: Node hana11 joined the cluster
+2019-12-24 10:59:09,560 INFO  [org.infinispan.CLUSTER] (VERIFY_SUSPECT.TimerThread-26,hana12) ISPN000094: Received new cluster view for channel cluster: [hana12|15] (1) [hana12]
+2019-12-24 10:59:09,874 INFO  [org.infinispan.CLUSTER] (VERIFY_SUSPECT.TimerThread-26,hana12) ISPN100001: Node hana11 left the cluster
+2019-12-24 10:59:09,933 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t50) [Context=___hotRodTopologyCache]ISPN100007: After merge (or coordinator change), recovered members [hana12, hana11] with topology id 34
+2019-12-24 10:59:09,966 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t64) [Context=___protobuf_metadata]ISPN100007: After merge (or coordinator change), recovered members [hana12, hana11] with topology id 34
+2019-12-24 10:59:09,966 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t63) [Context=default]ISPN100007: After merge (or coordinator change), recovered members [hana12, hana11] with topology id 34
+2019-12-24 10:59:09,969 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t50) [Context=___hotRodTopologyCache]ISPN100008: Updating cache members list [hana12], topology id 35
+2019-12-24 10:59:09,972 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t50) [Context=org.infinispan.CONFIG]ISPN100007: After merge (or coordinator change), recovered members [hana12, hana11] with topology id 34
+2019-12-24 10:59:09,974 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t50) [Context=org.infinispan.CONFIG]ISPN100008: Updating cache members list [hana12], topology id 35
+2019-12-24 10:59:09,975 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t63) [Context=default]ISPN100008: Updating cache members list [hana12], topology id 35
+2019-12-24 10:59:10,007 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t50) [Context=repl]ISPN100007: After merge (or coordinator change), recovered members [hana12, hana11] with topology id 34
+2019-12-24 10:59:10,013 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t63) [Context=___script_cache]ISPN100007: After merge (or coordinator change), recovered members [hana12, hana11] with topology id 34
+2019-12-24 10:59:10,019 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t64) [Context=___protobuf_metadata]ISPN100008: Updating cache members list [hana12], topology id 35
+2019-12-24 10:59:10,020 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t63) [Context=___script_cache]ISPN100008: Updating cache members list [hana12], topology id 35
+2019-12-24 10:59:10,024 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t63) [Context=HANA_CACHE]ISPN100007: After merge (or coordinator change), recovered members [hana12, hana11] with topology id 34
+2019-12-24 10:59:10,026 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t50) [Context=repl]ISPN100008: Updating cache members list [hana12], topology id 35
+2019-12-24 10:59:10,033 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t50) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100007: After merge (or coordinator change), recovered members [hana12, hana11] with topology id 34
+2019-12-24 10:59:10,034 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t63) [Context=HANA_CACHE]ISPN100008: Updating cache members list [hana12], topology id 35
+2019-12-24 10:59:10,036 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t50) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100008: Updating cache members list [hana12], topology id 35
+2019-12-24 10:59:58,006 INFO  [org.infinispan.CLUSTER] (jgroups-23,hana12) ISPN000093: Received new, MERGED cluster view for channel cluster: MergeView::[hana11|16] (2) [hana11, hana12], 2 subgroups: [hana11|14] (2) [hana11, hana12], [hana12|15] (1) [hana12]
+2019-12-24 10:59:58,007 INFO  [org.infinispan.CLUSTER] (jgroups-23,hana12) ISPN100000: Node hana11 joined the cluster
+2019-12-24 11:18:58,601 INFO  [org.infinispan.CLUSTER] (VERIFY_SUSPECT.TimerThread-37,hana12) ISPN000094: Received new cluster view for channel cluster: [hana12|17] (1) [hana12]
+2019-12-24 11:18:59,216 INFO  [org.infinispan.CLUSTER] (VERIFY_SUSPECT.TimerThread-37,hana12) ISPN100001: Node hana11 left the cluster
+2019-12-24 11:19:00,753 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t50) [Context=___hotRodTopologyCache]ISPN100007: After merge (or coordinator change), recovered members [hana12, hana11] with topology id 41
+2019-12-24 11:19:00,831 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t66) [Context=default]ISPN100007: After merge (or coordinator change), recovered members [hana12, hana11] with topology id 41
+2019-12-24 11:19:00,833 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t65) [Context=___protobuf_metadata]ISPN100007: After merge (or coordinator change), recovered members [hana12, hana11] with topology id 41
+2019-12-24 11:19:01,358 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t66) [Context=default]ISPN100008: Updating cache members list [hana12], topology id 42
+2019-12-24 11:19:01,483 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t50) [Context=___hotRodTopologyCache]ISPN100008: Updating cache members list [hana12], topology id 42
+2019-12-24 11:19:01,565 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t66) [Context=org.infinispan.CONFIG]ISPN100007: After merge (or coordinator change), recovered members [hana12, hana11] with topology id 41
+2019-12-24 11:19:01,565 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t50) [Context=repl]ISPN100007: After merge (or coordinator change), recovered members [hana12, hana11] with topology id 41
+2019-12-24 11:19:01,690 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t50) [Context=repl]ISPN100008: Updating cache members list [hana12], topology id 42
+2019-12-24 11:19:01,695 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t50) [Context=___script_cache]ISPN100007: After merge (or coordinator change), recovered members [hana12, hana11] with topology id 41
+2019-12-24 11:19:01,697 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t66) [Context=org.infinispan.CONFIG]ISPN100008: Updating cache members list [hana12], topology id 42
+2019-12-24 11:19:01,737 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t50) [Context=___script_cache]ISPN100008: Updating cache members list [hana12], topology id 42
+2019-12-24 11:19:01,973 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t65) [Context=___protobuf_metadata]ISPN100008: Updating cache members list [hana12], topology id 42
+2019-12-24 11:19:02,119 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t66) [Context=HANA_CACHE]ISPN100007: After merge (or coordinator change), recovered members [hana12, hana11] with topology id 41
+2019-12-24 11:19:02,181 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t50) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100007: After merge (or coordinator change), recovered members [hana12, hana11] with topology id 41
+2019-12-24 11:19:02,536 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t66) [Context=HANA_CACHE]ISPN100008: Updating cache members list [hana12], topology id 42
+2019-12-24 11:19:02,693 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t50) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100008: Updating cache members list [hana12], topology id 42
+2019-12-24 11:19:58,211 INFO  [org.infinispan.CLUSTER] (jgroups-35,hana12) ISPN000093: Received new, MERGED cluster view for channel cluster: MergeView::[hana11|18] (2) [hana11, hana12], 2 subgroups: [hana11|16] (2) [hana11, hana12], [hana12|17] (1) [hana12]
+2019-12-24 11:19:58,241 INFO  [org.infinispan.CLUSTER] (jgroups-35,hana12) ISPN100000: Node hana11 joined the cluster
+2019-12-24 13:41:24,813 ERROR [org.jgroups.protocols.UDP] (Timer runner-1,hana12) JGRP000029: hana12: failed sending message to cluster (39 bytes): java.io.IOException: Invalid argument (sendto failed), headers: FD_ALL: heartbeat, TP: [cluster_name=cluster]
+2019-12-24 13:41:32,186 ERROR [org.jgroups.protocols.UDP] (Timer runner-1,hana12) JGRP000029: hana12: failed sending message to hana11 (125 bytes): java.io.IOException: Invalid argument (sendto failed), headers: STABLE: [STABLE_GOSSIP] view-id= [hana11|18], TP: [cluster_name=cluster]
+2019-12-24 13:41:33,539 ERROR [org.jgroups.protocols.UDP] (Timer runner-1,hana12) JGRP000029: hana12: failed sending message to hana11 (75 bytes): java.io.IOException: Invalid argument (sendto failed), headers: VERIFY_SUSPECT: [VERIFY_SUSPECT: ARE_YOU_DEAD], TP: [cluster_name=cluster]
+2019-12-24 13:41:33,616 ERROR [org.jgroups.protocols.UDP] (Timer runner-1,hana12) JGRP000029: hana12: failed sending message to cluster (77 bytes): java.io.IOException: Invalid argument (sendto failed), headers: MERGE3: INFO: view_id=[hana11|18], logical_name=hana12, physical_addr=192.168.110.141:55400, TP: [cluster_name=cluster]
+2019-12-24 13:41:34,038 ERROR [org.jgroups.protocols.UDP] (Timer runner-1,hana12) JGRP000029: hana12: failed sending message to cluster (39 bytes): java.io.IOException: Invalid argument (sendto failed), headers: FD_ALL: heartbeat, TP: [cluster_name=cluster]
+2019-12-24 13:41:36,466 ERROR [org.jgroups.protocols.UDP] (Timer runner-1,hana12) JGRP000029: hana12: failed sending message to hana11 (75 bytes): java.io.IOException: Invalid argument (sendto failed), headers: VERIFY_SUSPECT: [VERIFY_SUSPECT: ARE_YOU_DEAD], TP: [cluster_name=cluster]
+2019-12-24 13:41:40,144 ERROR [org.jgroups.protocols.UDP] (Timer runner-1,hana12) JGRP000029: hana12: failed sending message to hana11 (75 bytes): java.io.IOException: Invalid argument (sendto failed), headers: VERIFY_SUSPECT: [VERIFY_SUSPECT: ARE_YOU_DEAD], TP: [cluster_name=cluster]
+2019-12-24 13:41:40,220 ERROR [org.jgroups.protocols.UDP] (Timer runner-1,hana12) JGRP000029: hana12: failed sending message to cluster (39 bytes): java.io.IOException: Invalid argument (sendto failed), headers: FD_ALL: heartbeat, TP: [cluster_name=cluster]
+2019-12-24 13:41:49,504 INFO  [org.infinispan.CLUSTER] (VERIFY_SUSPECT.TimerThread-59,hana12) ISPN000094: Received new cluster view for channel cluster: [hana12|19] (1) [hana12]
+2019-12-24 13:41:50,639 INFO  [org.infinispan.CLUSTER] (VERIFY_SUSPECT.TimerThread-59,hana12) ISPN100001: Node hana11 left the cluster
+2019-12-24 13:41:57,501 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t50) [Context=___hotRodTopologyCache]ISPN100007: After merge (or coordinator change), recovered members [hana12, hana11] with topology id 48
+2019-12-24 13:41:57,499 WARN  [org.jgroups.protocols.pbcast.NAKACK2] (jgroups-57,hana12) JGRP000011: hana12: dropped message batch from non-member hana11 (view=[hana12|19] (1) [hana12])
+2019-12-24 13:41:57,995 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t68) [Context=___protobuf_metadata]ISPN100007: After merge (or coordinator change), recovered members [hana12, hana11] with topology id 48
+2019-12-24 13:41:57,844 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t67) [Context=default]ISPN100007: After merge (or coordinator change), recovered members [hana12, hana11] with topology id 48
+2019-12-24 13:41:58,862 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t67) [Context=default]ISPN100008: Updating cache members list [hana12], topology id 49
+2019-12-24 13:41:59,055 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t50) [Context=___hotRodTopologyCache]ISPN100008: Updating cache members list [hana12], topology id 49
+2019-12-24 13:42:00,189 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t67) [Context=org.infinispan.CONFIG]ISPN100007: After merge (or coordinator change), recovered members [hana12, hana11] with topology id 48
+2019-12-24 13:42:00,245 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t50) [Context=repl]ISPN100007: After merge (or coordinator change), recovered members [hana12, hana11] with topology id 48
+2019-12-24 13:42:00,708 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t68) [Context=___protobuf_metadata]ISPN100008: Updating cache members list [hana12], topology id 49
+2019-12-24 13:42:01,909 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t67) [Context=org.infinispan.CONFIG]ISPN100008: Updating cache members list [hana12], topology id 49
+2019-12-24 13:42:02,628 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t50) [Context=repl]ISPN100008: Updating cache members list [hana12], topology id 49
+2019-12-24 13:42:02,918 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t67) [Context=___script_cache]ISPN100007: After merge (or coordinator change), recovered members [hana12, hana11] with topology id 48
+2019-12-24 13:42:03,116 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t68) [Context=HANA_CACHE]ISPN100007: After merge (or coordinator change), recovered members [hana12, hana11] with topology id 48
+2019-12-24 13:42:03,741 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t68) [Context=HANA_CACHE]ISPN100008: Updating cache members list [hana12], topology id 49
+2019-12-24 13:42:03,969 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t68) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100007: After merge (or coordinator change), recovered members [hana12, hana11] with topology id 48
+2019-12-24 13:42:04,548 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t67) [Context=___script_cache]ISPN100008: Updating cache members list [hana12], topology id 49
+2019-12-24 13:42:05,023 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t68) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100008: Updating cache members list [hana12], topology id 49
+2019-12-24 13:42:34,780 INFO  [org.infinispan.CLUSTER] (jgroups-53,hana12) ISPN000093: Received new, MERGED cluster view for channel cluster: MergeView::[hana11|20] (2) [hana11, hana12], 2 subgroups: [hana11|19] (1) [hana11], [hana12|19] (1) [hana12]
+2019-12-24 13:42:34,798 INFO  [org.infinispan.CLUSTER] (jgroups-53,hana12) ISPN100000: Node hana11 joined the cluster
+2019-12-24 14:31:29,253 WARN  [org.jgroups.protocols.pbcast.GMS] (jgroups-79,hana12) hana12: not member of view [hana11|21]; discarding it
+2019-12-24 14:31:33,392 INFO  [org.infinispan.CLUSTER] (VERIFY_SUSPECT.TimerThread-85,hana12) ISPN000094: Received new cluster view for channel cluster: [hana12|22] (1) [hana12]
+2019-12-24 14:31:33,456 INFO  [org.infinispan.CLUSTER] (VERIFY_SUSPECT.TimerThread-85,hana12) ISPN100001: Node hana11 left the cluster
+2019-12-24 14:31:37,445 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t69) [Context=___hotRodTopologyCache]ISPN100007: After merge (or coordinator change), recovered members [hana12, hana11] with topology id 56
+2019-12-24 14:31:37,446 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t68) [Context=default]ISPN100007: After merge (or coordinator change), recovered members [hana12, hana11] with topology id 56
+2019-12-24 14:31:37,549 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t70) [Context=___protobuf_metadata]ISPN100007: After merge (or coordinator change), recovered members [hana12, hana11] with topology id 56
+2019-12-24 14:31:38,165 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t68) [Context=default]ISPN100008: Updating cache members list [hana12], topology id 57
+2019-12-24 14:31:38,839 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t69) [Context=___hotRodTopologyCache]ISPN100008: Updating cache members list [hana12], topology id 57
+2019-12-24 14:31:39,029 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t68) [Context=org.infinispan.CONFIG]ISPN100007: After merge (or coordinator change), recovered members [hana12, hana11] with topology id 56
+2019-12-24 14:31:39,563 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t70) [Context=___protobuf_metadata]ISPN100008: Updating cache members list [hana12], topology id 57
+2019-12-24 14:31:39,738 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t70) [Context=repl]ISPN100007: After merge (or coordinator change), recovered members [hana12, hana11] with topology id 56
+2019-12-24 14:31:40,765 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t68) [Context=org.infinispan.CONFIG]ISPN100008: Updating cache members list [hana12], topology id 57
+2019-12-24 14:31:41,044 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t70) [Context=repl]ISPN100008: Updating cache members list [hana12], topology id 57
+2019-12-24 14:31:41,513 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t69) [Context=___script_cache]ISPN100007: After merge (or coordinator change), recovered members [hana12, hana11] with topology id 56
+2019-12-24 14:31:41,804 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t70) [Context=HANA_CACHE]ISPN100007: After merge (or coordinator change), recovered members [hana12, hana11] with topology id 56
+2019-12-24 14:31:41,823 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t70) [Context=HANA_CACHE]ISPN100008: Updating cache members list [hana12], topology id 57
+2019-12-24 14:31:42,353 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t70) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100007: After merge (or coordinator change), recovered members [hana12, hana11] with topology id 56
+2019-12-24 14:31:42,595 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t69) [Context=___script_cache]ISPN100008: Updating cache members list [hana12], topology id 57
+2019-12-24 14:31:43,119 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t70) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100008: Updating cache members list [hana12], topology id 57
+2019-12-24 14:31:50,693 INFO  [org.infinispan.CLUSTER] (jgroups-81,hana12) ISPN000093: Received new, MERGED cluster view for channel cluster: MergeView::[hana11|23] (2) [hana11, hana12], 2 subgroups: [hana11|21] (1) [hana11], [hana12|22] (1) [hana12]
+2019-12-24 14:31:50,704 INFO  [org.infinispan.CLUSTER] (jgroups-81,hana12) ISPN100000: Node hana11 joined the cluster
+2019-12-24 14:57:47,125 INFO  [org.infinispan.CLUSTER] (VERIFY_SUSPECT.TimerThread-98,hana12) ISPN000094: Received new cluster view for channel cluster: [hana12|24] (1) [hana12]
+2019-12-24 14:57:56,635 INFO  [org.infinispan.CLUSTER] (VERIFY_SUSPECT.TimerThread-98,hana12) ISPN100001: Node hana11 left the cluster
+2019-12-24 14:58:05,359 WARN  [org.jgroups.protocols.pbcast.NAKACK2] (jgroups-102,hana12) JGRP000011: hana12: dropped message batch from non-member hana11 (view=[hana12|24] (1) [hana12])
+2019-12-24 14:58:17,501 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t70) [Context=___hotRodTopologyCache]ISPN100007: After merge (or coordinator change), recovered members [hana12, hana11] with topology id 64
+2019-12-24 14:58:19,758 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t72) [Context=___protobuf_metadata]ISPN100007: After merge (or coordinator change), recovered members [hana12, hana11] with topology id 64
+2019-12-24 14:58:19,808 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t71) [Context=default]ISPN100007: After merge (or coordinator change), recovered members [hana12, hana11] with topology id 64
+2019-12-24 14:58:20,996 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t70) [Context=___hotRodTopologyCache]ISPN100008: Updating cache members list [hana12], topology id 65
+2019-12-24 14:58:20,971 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t71) [Context=default]ISPN100008: Updating cache members list [hana12], topology id 65
+2019-12-24 14:58:21,471 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t72) [Context=___protobuf_metadata]ISPN100008: Updating cache members list [hana12], topology id 65
+2019-12-24 14:58:22,563 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t71) [Context=org.infinispan.CONFIG]ISPN100007: After merge (or coordinator change), recovered members [hana12, hana11] with topology id 64
+2019-12-24 14:58:23,337 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t71) [Context=org.infinispan.CONFIG]ISPN100008: Updating cache members list [hana12], topology id 65
+2019-12-24 14:58:25,079 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t71) [Context=___script_cache]ISPN100007: After merge (or coordinator change), recovered members [hana12, hana11] with topology id 64
+2019-12-24 14:58:25,388 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t70) [Context=HANA_CACHE]ISPN100007: After merge (or coordinator change), recovered members [hana12, hana11] with topology id 64
+2019-12-24 14:58:25,733 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t70) [Context=HANA_CACHE]ISPN100008: Updating cache members list [hana12], topology id 65
+2019-12-24 14:58:25,757 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t72) [Context=repl]ISPN100007: After merge (or coordinator change), recovered members [hana12, hana11] with topology id 64
+2019-12-24 14:58:26,071 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t71) [Context=___script_cache]ISPN100008: Updating cache members list [hana12], topology id 65
+2019-12-24 14:58:26,353 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t71) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100007: After merge (or coordinator change), recovered members [hana12, hana11] with topology id 64
+2019-12-24 14:58:26,911 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t71) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100008: Updating cache members list [hana12], topology id 65
+2019-12-24 14:58:27,214 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t72) [Context=repl]ISPN100008: Updating cache members list [hana12], topology id 65
+2019-12-24 14:59:13,514 INFO  [org.infinispan.CLUSTER] (jgroups-99,hana12) ISPN000093: Received new, MERGED cluster view for channel cluster: MergeView::[hana11|25] (2) [hana11, hana12], 2 subgroups: [hana11|24] (1) [hana11], [hana12|24] (1) [hana12]
+2019-12-24 14:59:14,253 INFO  [org.infinispan.CLUSTER] (jgroups-99,hana12) ISPN100000: Node hana11 joined the cluster
+2019-12-24 14:59:27,812 ERROR [org.infinispan.interceptors.impl.InvocationContextInterceptor] (remote-thread--p2-t18) ISPN000136: Error executing command PutKeyValueCommand on Cache '___hotRodTopologyCache', writing keys [hana11]: org.infinispan.util.concurrent.TimeoutException: ISPN000299: Unable to acquire lock after 1 seconds for key hana11 and requestor CommandInvocation:hana11:770. Lock is held by CommandInvocation:hana11:771
+	at org.infinispan.util.concurrent.locks.impl.DefaultLockManager$KeyAwareExtendedLockPromise.get(DefaultLockManager.java:288)
+	at org.infinispan.util.concurrent.locks.impl.DefaultLockManager$KeyAwareExtendedLockPromise.get(DefaultLockManager.java:218)
+	at org.infinispan.util.concurrent.locks.impl.InfinispanLock$LockPlaceHolder.checkState(InfinispanLock.java:436)
+	at org.infinispan.util.concurrent.locks.impl.InfinispanLock$LockPlaceHolder.toInvocationStage(InfinispanLock.java:408)
+	at org.infinispan.util.concurrent.locks.impl.DefaultLockManager$KeyAwareExtendedLockPromise.toInvocationStage(DefaultLockManager.java:248)
+	at org.infinispan.util.concurrent.locks.impl.DefaultLockManager$KeyAwareExtendedLockPromise.toInvocationStage(DefaultLockManager.java:272)
+	at org.infinispan.interceptors.locking.AbstractLockingInterceptor.nonTxLockAndInvokeNext(AbstractLockingInterceptor.java:292)
+	at org.infinispan.interceptors.locking.AbstractLockingInterceptor.visitNonTxDataWriteCommand(AbstractLockingInterceptor.java:128)
+	at org.infinispan.interceptors.locking.NonTransactionalLockingInterceptor.visitDataWriteCommand(NonTransactionalLockingInterceptor.java:40)
+	at org.infinispan.interceptors.locking.AbstractLockingInterceptor.visitPutKeyValueCommand(AbstractLockingInterceptor.java:82)
+	at org.infinispan.commands.write.PutKeyValueCommand.acceptVisitor(PutKeyValueCommand.java:73)
+	at org.infinispan.interceptors.BaseAsyncInterceptor.invokeNext(BaseAsyncInterceptor.java:54)
+	at org.infinispan.statetransfer.StateTransferInterceptor.handleNonTxWriteCommand(StateTransferInterceptor.java:306)
+	at org.infinispan.statetransfer.StateTransferInterceptor.handleWriteCommand(StateTransferInterceptor.java:252)
+	at org.infinispan.statetransfer.StateTransferInterceptor.visitPutKeyValueCommand(StateTransferInterceptor.java:96)
+	at org.infinispan.commands.write.PutKeyValueCommand.acceptVisitor(PutKeyValueCommand.java:73)
+	at org.infinispan.interceptors.BaseAsyncInterceptor.invokeNext(BaseAsyncInterceptor.java:54)
+	at org.infinispan.interceptors.impl.CacheMgmtInterceptor.updateStoreStatistics(CacheMgmtInterceptor.java:217)
+	at org.infinispan.interceptors.impl.CacheMgmtInterceptor.visitPutKeyValueCommand(CacheMgmtInterceptor.java:182)
+	at org.infinispan.commands.write.PutKeyValueCommand.acceptVisitor(PutKeyValueCommand.java:73)
+	at org.infinispan.interceptors.BaseAsyncInterceptor.invokeNext(BaseAsyncInterceptor.java:54)
+	at org.infinispan.interceptors.DDAsyncInterceptor.handleDefault(DDAsyncInterceptor.java:54)
+	at org.infinispan.interceptors.DDAsyncInterceptor.visitPutKeyValueCommand(DDAsyncInterceptor.java:60)
+	at org.infinispan.commands.write.PutKeyValueCommand.acceptVisitor(PutKeyValueCommand.java:73)
+	at org.infinispan.interceptors.BaseAsyncInterceptor.invokeNextAndExceptionally(BaseAsyncInterceptor.java:123)
+	at org.infinispan.interceptors.impl.InvocationContextInterceptor.visitCommand(InvocationContextInterceptor.java:90)
+	at org.infinispan.interceptors.BaseAsyncInterceptor.invokeNext(BaseAsyncInterceptor.java:56)
+	at org.infinispan.interceptors.DDAsyncInterceptor.handleDefault(DDAsyncInterceptor.java:54)
+	at org.infinispan.interceptors.DDAsyncInterceptor.visitPutKeyValueCommand(DDAsyncInterceptor.java:60)
+	at org.infinispan.commands.write.PutKeyValueCommand.acceptVisitor(PutKeyValueCommand.java:73)
+	at org.infinispan.interceptors.DDAsyncInterceptor.visitCommand(DDAsyncInterceptor.java:50)
+	at org.infinispan.interceptors.impl.AsyncInterceptorChainImpl.invokeAsync(AsyncInterceptorChainImpl.java:234)
+	at org.infinispan.commands.remote.BaseRpcInvokingCommand.processVisitableCommandAsync(BaseRpcInvokingCommand.java:63)
+	at org.infinispan.commands.remote.SingleRpcCommand.invokeAsync(SingleRpcCommand.java:57)
+	at org.infinispan.remoting.inboundhandler.BasePerCacheInboundInvocationHandler.invokeCommand(BasePerCacheInboundInvocationHandler.java:117)
+	at org.infinispan.remoting.inboundhandler.BaseBlockingRunnable.invoke(BaseBlockingRunnable.java:99)
+	at org.infinispan.remoting.inboundhandler.BaseBlockingRunnable.runAsync(BaseBlockingRunnable.java:71)
+	at org.infinispan.remoting.inboundhandler.BaseBlockingRunnable.run(BaseBlockingRunnable.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-12-24 14:59:44,430 INFO  [org.infinispan.CLUSTER] (VERIFY_SUSPECT.TimerThread-117,hana12) ISPN000094: Received new cluster view for channel cluster: [hana12|26] (1) [hana12]
+2019-12-24 14:59:44,492 WARN  [org.infinispan.remoting.inboundhandler.NonTotalOrderPerCacheInboundInvocationHandler] (remote-thread--p2-t18) ISPN000071: Caught exception when handling command SingleRpcCommand{cacheName='___hotRodTopologyCache', command=PutKeyValueCommand{key=hana11, value=ServerAddress{host='192.168.110.141', port=11322}, flags=[], commandInvocationId=CommandInvocation:hana11:770, putIfAbsent=false, valueMatcher=MATCH_ALWAYS, metadata=EmbeddedExpirableMetadata{lifespan=-1, maxIdle=-1, version=null}, successful=true, topologyId=68}}: org.infinispan.util.concurrent.TimeoutException: ISPN000299: Unable to acquire lock after 1 seconds for key hana11 and requestor CommandInvocation:hana11:770. Lock is held by CommandInvocation:hana11:771
+	at org.infinispan.util.concurrent.locks.impl.DefaultLockManager$KeyAwareExtendedLockPromise.get(DefaultLockManager.java:288)
+	at org.infinispan.util.concurrent.locks.impl.DefaultLockManager$KeyAwareExtendedLockPromise.get(DefaultLockManager.java:218)
+	at org.infinispan.util.concurrent.locks.impl.InfinispanLock$LockPlaceHolder.checkState(InfinispanLock.java:436)
+	at org.infinispan.util.concurrent.locks.impl.InfinispanLock$LockPlaceHolder.toInvocationStage(InfinispanLock.java:408)
+	at org.infinispan.util.concurrent.locks.impl.DefaultLockManager$KeyAwareExtendedLockPromise.toInvocationStage(DefaultLockManager.java:248)
+	at org.infinispan.util.concurrent.locks.impl.DefaultLockManager$KeyAwareExtendedLockPromise.toInvocationStage(DefaultLockManager.java:272)
+	at org.infinispan.interceptors.locking.AbstractLockingInterceptor.nonTxLockAndInvokeNext(AbstractLockingInterceptor.java:292)
+	at org.infinispan.interceptors.locking.AbstractLockingInterceptor.visitNonTxDataWriteCommand(AbstractLockingInterceptor.java:128)
+	at org.infinispan.interceptors.locking.NonTransactionalLockingInterceptor.visitDataWriteCommand(NonTransactionalLockingInterceptor.java:40)
+	at org.infinispan.interceptors.locking.AbstractLockingInterceptor.visitPutKeyValueCommand(AbstractLockingInterceptor.java:82)
+	at org.infinispan.commands.write.PutKeyValueCommand.acceptVisitor(PutKeyValueCommand.java:73)
+	at org.infinispan.interceptors.BaseAsyncInterceptor.invokeNext(BaseAsyncInterceptor.java:54)
+	at org.infinispan.statetransfer.StateTransferInterceptor.handleNonTxWriteCommand(StateTransferInterceptor.java:306)
+	at org.infinispan.statetransfer.StateTransferInterceptor.handleWriteCommand(StateTransferInterceptor.java:252)
+	at org.infinispan.statetransfer.StateTransferInterceptor.visitPutKeyValueCommand(StateTransferInterceptor.java:96)
+	at org.infinispan.commands.write.PutKeyValueCommand.acceptVisitor(PutKeyValueCommand.java:73)
+	at org.infinispan.interceptors.BaseAsyncInterceptor.invokeNext(BaseAsyncInterceptor.java:54)
+	at org.infinispan.interceptors.impl.CacheMgmtInterceptor.updateStoreStatistics(CacheMgmtInterceptor.java:217)
+	at org.infinispan.interceptors.impl.CacheMgmtInterceptor.visitPutKeyValueCommand(CacheMgmtInterceptor.java:182)
+	at org.infinispan.commands.write.PutKeyValueCommand.acceptVisitor(PutKeyValueCommand.java:73)
+	at org.infinispan.interceptors.BaseAsyncInterceptor.invokeNext(BaseAsyncInterceptor.java:54)
+	at org.infinispan.interceptors.DDAsyncInterceptor.handleDefault(DDAsyncInterceptor.java:54)
+	at org.infinispan.interceptors.DDAsyncInterceptor.visitPutKeyValueCommand(DDAsyncInterceptor.java:60)
+	at org.infinispan.commands.write.PutKeyValueCommand.acceptVisitor(PutKeyValueCommand.java:73)
+	at org.infinispan.interceptors.BaseAsyncInterceptor.invokeNextAndExceptionally(BaseAsyncInterceptor.java:123)
+	at org.infinispan.interceptors.impl.InvocationContextInterceptor.visitCommand(InvocationContextInterceptor.java:90)
+	at org.infinispan.interceptors.BaseAsyncInterceptor.invokeNext(BaseAsyncInterceptor.java:56)
+	at org.infinispan.interceptors.DDAsyncInterceptor.handleDefault(DDAsyncInterceptor.java:54)
+	at org.infinispan.interceptors.DDAsyncInterceptor.visitPutKeyValueCommand(DDAsyncInterceptor.java:60)
+	at org.infinispan.commands.write.PutKeyValueCommand.acceptVisitor(PutKeyValueCommand.java:73)
+	at org.infinispan.interceptors.DDAsyncInterceptor.visitCommand(DDAsyncInterceptor.java:50)
+	at org.infinispan.interceptors.impl.AsyncInterceptorChainImpl.invokeAsync(AsyncInterceptorChainImpl.java:234)
+	at org.infinispan.commands.remote.BaseRpcInvokingCommand.processVisitableCommandAsync(BaseRpcInvokingCommand.java:63)
+	at org.infinispan.commands.remote.SingleRpcCommand.invokeAsync(SingleRpcCommand.java:57)
+	at org.infinispan.remoting.inboundhandler.BasePerCacheInboundInvocationHandler.invokeCommand(BasePerCacheInboundInvocationHandler.java:117)
+	at org.infinispan.remoting.inboundhandler.BaseBlockingRunnable.invoke(BaseBlockingRunnable.java:99)
+	at org.infinispan.remoting.inboundhandler.BaseBlockingRunnable.runAsync(BaseBlockingRunnable.java:71)
+	at org.infinispan.remoting.inboundhandler.BaseBlockingRunnable.run(BaseBlockingRunnable.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-12-24 14:59:46,422 INFO  [org.infinispan.CLUSTER] (VERIFY_SUSPECT.TimerThread-117,hana12) ISPN100001: Node hana11 left the cluster
+2019-12-24 15:00:00,926 WARN  [org.jgroups.protocols.pbcast.NAKACK2] (jgroups-106,hana12) JGRP000011: hana12: dropped message 592 from non-member hana11 (view=[hana12|26] (1) [hana12])
+2019-12-24 15:00:27,434 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t71) [Context=___hotRodTopologyCache]ISPN100007: After merge (or coordinator change), recovered members [hana12] with topology id 69
+2019-12-24 15:00:44,340 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t74) [Context=___protobuf_metadata]ISPN100007: After merge (or coordinator change), recovered members [hana12] with topology id 69
+2019-12-24 15:00:44,407 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t73) [Context=default]ISPN100007: After merge (or coordinator change), recovered members [hana12] with topology id 69
+2019-12-24 15:00:44,434 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t71) [Context=org.infinispan.CONFIG]ISPN100007: After merge (or coordinator change), recovered members [hana12] with topology id 69
+2019-12-24 15:00:44,721 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t74) [Context=repl]ISPN100007: After merge (or coordinator change), recovered members [hana12] with topology id 69
+2019-12-24 15:00:45,815 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t73) [Context=___script_cache]ISPN100007: After merge (or coordinator change), recovered members [hana12] with topology id 69
+2019-12-24 15:00:46,413 INFO  [org.infinispan.CLUSTER] (jgroups-108,hana12) ISPN000093: Received new, MERGED cluster view for channel cluster: MergeView::[hana11|27] (2) [hana11, hana12], 2 subgroups: [hana11|26] (1) [hana11], [hana12|26] (1) [hana12]
+2019-12-24 15:00:46,628 INFO  [org.infinispan.CLUSTER] (jgroups-108,hana12) ISPN100000: Node hana11 joined the cluster
+2019-12-24 15:00:46,535 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t74) [Context=HANA_CACHE]ISPN100007: After merge (or coordinator change), recovered members [hana12] with topology id 69
+2019-12-24 15:00:46,913 INFO  [org.infinispan.CLUSTER] (stateTransferExecutor-thread--p5-t74) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100007: After merge (or coordinator change), recovered members [hana12] with topology id 69

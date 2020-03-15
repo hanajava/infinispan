@@ -1,0 +1,15 @@
+Java HotSpot(TM) 64-Bit Server VM (25.202-b08) for linux-amd64 JRE (1.8.0_202-b08), built on Dec 15 2018 12:40:22 by "java_re" with gcc 7.3.0
+Memory: 4k page, physical 1878756k(1192208k free), swap 2097148k(2097148k free)
+CommandLine flags: -XX:GCLogFileSize=3145728 -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/svc/infinispan/domains/hana11/logs/heapdump -XX:InitialHeapSize=134217728 -XX:MaxHeapSize=536870912 -XX:NumberOfGCLogFiles=5 -XX:+PrintGC -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:ThreadStackSize=256 -XX:-TraceClassUnloading -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseGCLogFileRotation -XX:+UseParallelGC -XX:+UseParallelOldGC 
+1.079: [GC (Allocation Failure) [PSYoungGen: 33280K->5118K(38400K)] 33280K->5587K(125952K), 0.0444256 secs] [Times: user=0.11 sys=0.04, real=0.04 secs] 
+2.191: [GC (Metadata GC Threshold) [PSYoungGen: 37595K->5104K(71680K)] 38063K->12669K(159232K), 0.0523949 secs] [Times: user=0.13 sys=0.07, real=0.05 secs] 
+2.243: [Full GC (Metadata GC Threshold) [PSYoungGen: 5104K->0K(71680K)] [ParOldGen: 7565K->11843K(87552K)] 12669K->11843K(159232K), [Metaspace: 19798K->19798K(1067008K)], 0.0745859 secs] [Times: user=0.22 sys=0.04, real=0.07 secs] 
+Heap
+ PSYoungGen      total 71680K, used 39532K [0x00000000f5580000, 0x00000000fa080000, 0x0000000100000000)
+  eden space 66560K, 59% used [0x00000000f5580000,0x00000000f7c1b318,0x00000000f9680000)
+  from space 5120K, 0% used [0x00000000f9b80000,0x00000000f9b80000,0x00000000fa080000)
+  to   space 5120K, 0% used [0x00000000f9680000,0x00000000f9680000,0x00000000f9b80000)
+ ParOldGen       total 87552K, used 11843K [0x00000000e0000000, 0x00000000e5580000, 0x00000000f5580000)
+  object space 87552K, 13% used [0x00000000e0000000,0x00000000e0b90ec8,0x00000000e5580000)
+ Metaspace       used 24134K, capacity 25872K, committed 26112K, reserved 1073152K
+  class space    used 2848K, capacity 3312K, committed 3328K, reserved 1048576K

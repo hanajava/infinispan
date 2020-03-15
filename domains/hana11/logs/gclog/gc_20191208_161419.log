@@ -1,0 +1,21 @@
+Java HotSpot(TM) 64-Bit Server VM (25.202-b08) for linux-amd64 JRE (1.8.0_202-b08), built on Dec 15 2018 12:40:22 by "java_re" with gcc 7.3.0
+Memory: 4k page, physical 1527524k(970068k free), swap 2097148k(2096628k free)
+CommandLine flags: -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/svc/was/nsdg01/domains/hana11/logs/heapdump -XX:InitialHeapSize=134217728 -XX:MaxHeapSize=536870912 -XX:+PrintGC -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:ThreadStackSize=256 -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC -XX:+UseParallelOldGC 
+0.867: [GC (Allocation Failure) [PSYoungGen: 33280K->5109K(38400K)] 33280K->6327K(125952K), 0.0309111 secs] [Times: user=0.10 sys=0.01, real=0.03 secs] 
+1.468: [GC (GCLocker Initiated GC) [PSYoungGen: 38389K->5096K(71680K)] 39612K->11321K(159232K), 0.0219421 secs] [Times: user=0.06 sys=0.02, real=0.02 secs] 
+1.760: [GC (Metadata GC Threshold) [PSYoungGen: 32211K->5092K(71680K)] 38435K->14157K(159232K), 0.0134384 secs] [Times: user=0.05 sys=0.01, real=0.01 secs] 
+1.774: [Full GC (Metadata GC Threshold) [PSYoungGen: 5092K->0K(71680K)] [ParOldGen: 9065K->8309K(87552K)] 14157K->8309K(159232K), [Metaspace: 19484K->19484K(1067008K)], 0.0657136 secs] [Times: user=0.20 sys=0.03, real=0.07 secs] 
+3.460: [GC (Metadata GC Threshold) [PSYoungGen: 63881K->5088K(103424K)] 72190K->25109K(190976K), 0.0245767 secs] [Times: user=0.05 sys=0.05, real=0.03 secs] 
+3.485: [Full GC (Metadata GC Threshold) [PSYoungGen: 5088K->0K(103424K)] [ParOldGen: 20021K->22391K(113152K)] 25109K->22391K(216576K), [Metaspace: 32322K->32322K(1079296K)], 0.0995188 secs] [Times: user=0.29 sys=0.00, real=0.10 secs] 
+6.280: [GC (Allocation Failure) [PSYoungGen: 98304K->5108K(138240K)] 120697K->37121K(251392K), 0.0282630 secs] [Times: user=0.05 sys=0.03, real=0.03 secs] 
+20.984: [GC (Metadata GC Threshold) [PSYoungGen: 76392K->18933K(149504K)] 108404K->51487K(262656K), 0.0252678 secs] [Times: user=0.04 sys=0.04, real=0.03 secs] 
+21.009: [Full GC (Metadata GC Threshold) [PSYoungGen: 18933K->0K(149504K)] [ParOldGen: 32554K->30296K(153088K)] 51487K->30296K(302592K), [Metaspace: 54563K->54555K(1099776K)], 0.1863952 secs] [Times: user=0.57 sys=0.01, real=0.19 secs] 
+Heap
+ PSYoungGen      total 149504K, used 101741K [0x00000000f5580000, 0x0000000100000000, 0x0000000100000000)
+  eden space 130560K, 77% used [0x00000000f5580000,0x00000000fb8db740,0x00000000fd500000)
+  from space 18944K, 0% used [0x00000000feb80000,0x00000000feb80000,0x00000000ffe00000)
+  to   space 22016K, 0% used [0x00000000fd500000,0x00000000fd500000,0x00000000fea80000)
+ ParOldGen       total 153088K, used 30296K [0x00000000e0000000, 0x00000000e9580000, 0x00000000f5580000)
+  object space 153088K, 19% used [0x00000000e0000000,0x00000000e1d96108,0x00000000e9580000)
+ Metaspace       used 60207K, capacity 65276K, committed 65536K, reserved 1105920K
+  class space    used 7513K, capacity 8938K, committed 8960K, reserved 1048576K

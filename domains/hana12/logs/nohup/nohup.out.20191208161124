@@ -1,0 +1,94 @@
+JAVA_OPTS already set in environment; overriding default settings with values:                              -server  -Xms128m -Xmx512m -Xss256k -XX:+PrintGCTimeStamps  -XX:+PrintGCDetails  -Xloggc:/svc/was/nsdg01/domains/sessionCache12/logs/gclog/gc_20191208_123831.log  -XX:+UseParallelGC  -XX:+UseParallelOldGC  -XX:+HeapDumpOnOutOfMemoryError  -XX:HeapDumpPath=/svc/was/nsdg01/domains/sessionCache12/logs/heapdump  -Djava.net.preferIPv4Stack=true -Dorg.jboss.resolver.warning=true -Dsun.rmi.dgc.client.gcInterval=0x7FFFFFFFFFFFFFFE -Dsun.rmi.dgc.server.gcInterval=0x7FFFFFFFFFFFFFFE -Djava.awt.headless=true -Djboss.modules.system.pkgs=org.jboss.byteman,scouter -Djboss.server.base.dir=/svc/was/nsdg01/domains/sessionCache12 -Djboss.server.config.dir=/svc/was/nsdg01/domains/sessionCache12/configuration  -Djboss.server.log.dir=/svc/was/nsdg01/domains/sessionCache12/logs -Djboss.socket.binding.port-offset=200 -Djboss.bind.address.management=192.168.110.141 -Djboss.management.http.port=19990 -Djboss.bind.address=192.168.110.141 -Djboss.default.multicast.address=224.0.0.117 -Djboss.modcluster.multicast.address=224.0.0.118 -Djboss.default.multicast.jgroups.udp.multicast.port=55201 -Djboss.default.multicast.jgroups.udp.multicast.port=45689 -Djboss.socket.bind.rest.port=18080 -Djboss.default.jgroups.stack=udp  -Djboss.jgroups.transport.machine=was01  -Djgroups.tcpping.initial_hosts=192.168.110.141[7700],192.168.110.141[7800],192.168.110.142[7700],192.168.110.142[7800], 
+=========================================================================
+
+  JBoss Bootstrap Environment
+
+  JBOSS_HOME: /svc/infinispan/infinispan-server-7.2.5.Final
+
+  JAVA: /usr/java/jdk1.8/bin/java
+
+  JAVA_OPTS:                               -server  -Xms128m -Xmx512m -Xss256k -XX:+PrintGCTimeStamps  -XX:+PrintGCDetails  -Xloggc:/svc/was/nsdg01/domains/sessionCache12/logs/gclog/gc_20191208_123831.log  -XX:+UseParallelGC  -XX:+UseParallelOldGC  -XX:+HeapDumpOnOutOfMemoryError  -XX:HeapDumpPath=/svc/was/nsdg01/domains/sessionCache12/logs/heapdump  -Djava.net.preferIPv4Stack=true -Dorg.jboss.resolver.warning=true -Dsun.rmi.dgc.client.gcInterval=0x7FFFFFFFFFFFFFFE -Dsun.rmi.dgc.server.gcInterval=0x7FFFFFFFFFFFFFFE -Djava.awt.headless=true -Djboss.modules.system.pkgs=org.jboss.byteman,scouter -Djboss.server.base.dir=/svc/was/nsdg01/domains/sessionCache12 -Djboss.server.config.dir=/svc/was/nsdg01/domains/sessionCache12/configuration  -Djboss.server.log.dir=/svc/was/nsdg01/domains/sessionCache12/logs -Djboss.socket.binding.port-offset=200 -Djboss.bind.address.management=192.168.110.141 -Djboss.management.http.port=19990 -Djboss.bind.address=192.168.110.141 -Djboss.default.multicast.address=224.0.0.117 -Djboss.modcluster.multicast.address=224.0.0.118 -Djboss.default.multicast.jgroups.udp.multicast.port=55201 -Djboss.default.multicast.jgroups.udp.multicast.port=45689 -Djboss.socket.bind.rest.port=18080 -Djboss.default.jgroups.stack=udp  -Djboss.jgroups.transport.machine=was01  -Djgroups.tcpping.initial_hosts=192.168.110.141[7700],192.168.110.141[7800],192.168.110.142[7700],192.168.110.142[7800], 
+
+=========================================================================
+
+[0m12:39:02,897 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
+[0m[0m12:39:14,873 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
+[0m[0m12:39:16,906 INFO  [org.jboss.as] (MSC service thread 1-7) JBAS015899: JBoss Infinispan Server 7.2.5.Final (WildFly 8.2.0.Final) starting
+[0m[0m12:40:07,564 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS015888: Creating http management service using socket-binding (management-http)
+[0m[0m12:40:07,787 INFO  [org.xnio] (MSC service thread 1-4) XNIO version 3.3.0.Final
+[0m[0m12:40:07,915 INFO  [org.xnio.nio] (MSC service thread 1-4) XNIO NIO Implementation Version 3.3.0.Final
+[0m[0m12:40:08,258 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 35) JBAS010280: Activating Infinispan subsystem.
+[0m[0m12:40:08,380 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 42) JBAS011800: Activating Naming Subsystem
+[0m[0m12:40:08,959 INFO  [org.jboss.as.clustering.jgroups] (ServerService Thread Pool -- 39) JBAS010260: Activating JGroups subsystem.
+[0m[0m12:40:08,940 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 44) JBAS013171: Activating Security Subsystem
+[0m[33m12:40:08,959 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 46) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+[0m[0m12:40:10,127 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 36) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+[0m[0m12:40:10,148 INFO  [org.jboss.as.naming] (MSC service thread 1-3) JBAS011802: Starting Naming Service
+[0m[0m12:40:10,332 INFO  [org.jboss.as.security] (MSC service thread 1-6) JBAS013170: Current PicketBox version=4.0.21.Final
+[0m[0m12:40:10,887 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-7) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
+[0m[0m12:40:19,234 INFO  [org.jboss.remoting] (MSC service thread 1-4) JBoss Remoting version 4.0.6.Final
+[0m[33m12:40:29,746 WARN  [org.jgroups.stack.Configurator] (MSC service thread 1-3) JGRP000014: TP.singleton_name has been deprecated: Use fork channels instead
+[0m[0m12:40:35,446 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-6) JBAS015012: Started FileSystemDeploymentService for directory /svc/was/nsdg01/domains/sessionCache12/deployments
+[0m[0m12:40:43,146 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-1) JDGS010000: REST starting
+[0m[31m12:40:45,460 ERROR [stderr] (MSC service thread 1-3) ScriptEngineManager providers.next(): javax.script.ScriptEngineFactory: Provider com.sun.script.javascript.RhinoScriptEngineFactory not found
+[0m[0m12:40:50,493 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-3) ISPN000078: Starting JGroups channel clustered
+[0m[0m12:40:57,764 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-3) ISPN000094: Received new cluster view for channel clustered: [sessionCache11/clustered|1] (2) [sessionCache11/clustered, sessionCache12/clustered]
+[0m[0m12:41:00,217 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-3) ISPN000079: Channel clustered local address is sessionCache12/clustered, physical addresses are [192.168.110.141:55400]
+[0m[0m12:41:02,646 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-3) ISPN000128: Infinispan version: Infinispan 'Insanely Bad Elf' 7.2.5.Final
+[0m[0m12:41:02,785 INFO  [stdout] (Attach Listener) I> No access restrictor found, access to all MBean is allowed
+[0m[0m12:41:53,199 INFO  [stdout] (Attach Listener) Jolokia: Agent started with URL http://192.168.110.141:20191/jolokia/
+[0m[0m12:41:54,266 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-5) JBAS010281: Started ___protobuf_metadata cache from clustered container
+[0m[0m12:41:54,330 INFO  [org.infinispan.expiration.impl.ExpirationManagerImpl] (MSC service thread 1-4) ISPN000025: wakeUpInterval is <= 0, not starting expired purge thread
+[0m[0m12:41:54,444 INFO  [org.infinispan.expiration.impl.ExpirationManagerImpl] (MSC service thread 1-2) ISPN000025: wakeUpInterval is <= 0, not starting expired purge thread
+[0m[0m12:41:54,448 INFO  [org.infinispan.expiration.impl.ExpirationManagerImpl] (MSC service thread 1-3) ISPN000025: wakeUpInterval is <= 0, not starting expired purge thread
+[0m[0m12:41:54,495 INFO  [org.infinispan.expiration.impl.ExpirationManagerImpl] (MSC service thread 1-6) ISPN000025: wakeUpInterval is <= 0, not starting expired purge thread
+[0m[0m12:42:09,674 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-7) JBAS010281: Started USER_CACHE cache from clustered container
+[0m[0m12:42:09,735 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-5) JBAS010281: Started KHAN_SESSION_PMS cache from clustered container
+[0m[0m12:42:10,086 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-3) JBAS010281: Started namedCache cache from clustered container
+[0m[0m12:42:10,177 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-2) JBAS010281: Started memcachedCache cache from clustered container
+[0m[0m12:42:10,468 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-4) JBAS010281: Started default cache from clustered container
+[0m[0m12:42:10,472 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-3) JDGS010000: WebSocketServer starting
+[0m[0m12:42:10,471 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-4) JDGS010000: MemcachedServer starting
+[0m[0m12:42:10,473 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-5) JDGS010000: HotRodServer starting
+[0m[0m12:42:10,525 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-4) JDGS010001: MemcachedServer listening on 192.168.110.141:11411
+[0m[0m12:42:10,537 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-5) JDGS010001: HotRodServer listening on 192.168.110.141:11422
+[0m[0m12:42:10,569 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-3) JDGS010001: WebSocketServer listening on 192.168.110.141:8381
+[0m[0m12:42:11,080 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-6) JBAS010281: Started transactionalCache cache from clustered container
+[0m[0m12:42:18,497 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-5) JBAS010281: Started ___script_cache cache from clustered container
+[0m[0m12:42:27,466 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-5) JBAS010281: Started ___hotRodTopologyCache cache from clustered container
+[0m[0m12:42:28,232 INFO  [org.infinispan.rest.NettyRestServer] (MSC service thread 1-1) ISPN012003: REST server starting, listening on 192.168.110.141:18280
+[0m[0m12:42:28,233 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-1) JDGS010002: REST mapped to /rest
+[0m[0m12:42:29,601 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015961: Http management interface listening on http://192.168.110.141:20190/management
+[0m[0m12:42:29,603 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015951: Admin console listening on http://192.168.110.141:20190
+[0m[0m12:42:29,603 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: JBoss Infinispan Server 7.2.5.Final (WildFly 8.2.0.Final) started in 229381ms - Started 148 of 163 services (56 services are lazy, passive or on-demand)
+[0m[0m12:48:00,585 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (Incoming-6,shared=udp) ISPN000094: Received new cluster view for channel clustered: [sessionCache11/clustered|2] (3) [sessionCache11/clustered, sessionCache12/clustered, sessionCache21/clustered]
+[0m[0m12:53:25,663 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (Incoming-8,shared=udp) ISPN000094: Received new cluster view for channel clustered: [sessionCache11/clustered|3] (4) [sessionCache11/clustered, sessionCache12/clustered, sessionCache21/clustered, sessionCache22/clustered]
+[0m[0m12:57:48,873 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (Incoming-9,shared=udp) ISPN000094: Received new cluster view for channel clustered: [sessionCache12/clustered|4] (3) [sessionCache12/clustered, sessionCache21/clustered, sessionCache22/clustered]
+[0m[0m12:57:49,275 INFO  [org.infinispan.CLUSTER] (infinispan 4-19) ISPN000310: Starting cluster-wide rebalance for cache default, topology CacheTopology{id=10, rebalanceId=5, currentCH=DefaultConsistentHash{ns=20, owners = (3)[sessionCache12/clustered: 5+5, sessionCache21/clustered: 5+5, sessionCache22/clustered: 10+0]}, pendingCH=DefaultConsistentHash{ns=20, owners = (3)[sessionCache12/clustered: 6+14, sessionCache21/clustered: 7+3, sessionCache22/clustered: 7+3]}, unionCH=null, actualMembers=[sessionCache12/clustered, sessionCache21/clustered, sessionCache22/clustered]}
+[0m[0m12:57:49,502 INFO  [org.infinispan.CLUSTER] (infinispan 4-4) ISPN000336: Finished cluster-wide rebalance for cache default, topology id = 10
+[0m[0m12:58:54,952 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 49) MODCLUSTER000002: Initiating mod_cluster shutdown
+[0m[0m12:58:54,971 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-6) ISPN000310: Starting cluster-wide rebalance for cache transactionalCache, topology CacheTopology{id=12, rebalanceId=5, currentCH=DefaultConsistentHash{ns=80, owners = (2)[sessionCache21/clustered: 40+0, sessionCache22/clustered: 40+0]}, pendingCH=DefaultConsistentHash{ns=80, owners = (2)[sessionCache21/clustered: 40+40, sessionCache22/clustered: 40+40]}, unionCH=null, actualMembers=[sessionCache21/clustered, sessionCache22/clustered]}
+[0m[0m12:58:55,005 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-6) JBAS010282: Stopped transactionalCache cache from clustered container
+[0m[0m12:58:55,005 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-1) ISPN000310: Starting cluster-wide rebalance for cache namedCache, topology CacheTopology{id=12, rebalanceId=5, currentCH=DefaultConsistentHash{ns=80, owners = (2)[sessionCache21/clustered: 40+0, sessionCache22/clustered: 40+0]}, pendingCH=DefaultConsistentHash{ns=80, owners = (2)[sessionCache21/clustered: 40+40, sessionCache22/clustered: 40+40]}, unionCH=null, actualMembers=[sessionCache21/clustered, sessionCache22/clustered]}
+[0m[0m12:58:55,020 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-1) JBAS010282: Stopped namedCache cache from clustered container
+[0m[0m12:58:55,043 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-5) ISPN000310: Starting cluster-wide rebalance for cache KHAN_SESSION_PMS, topology CacheTopology{id=12, rebalanceId=5, currentCH=DefaultConsistentHash{ns=50, owners = (2)[sessionCache21/clustered: 25+0, sessionCache22/clustered: 25+0]}, pendingCH=DefaultConsistentHash{ns=50, owners = (2)[sessionCache21/clustered: 25+25, sessionCache22/clustered: 25+25]}, unionCH=null, actualMembers=[sessionCache21/clustered, sessionCache22/clustered]}
+[0m[0m12:58:55,047 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-5) JBAS010282: Stopped KHAN_SESSION_PMS cache from clustered container
+[0m[0m12:58:55,087 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-8) ISPN000310: Starting cluster-wide rebalance for cache USER_CACHE, topology CacheTopology{id=12, rebalanceId=5, currentCH=DefaultConsistentHash{ns=50, owners = (2)[sessionCache21/clustered: 25+0, sessionCache22/clustered: 25+0]}, pendingCH=DefaultConsistentHash{ns=50, owners = (2)[sessionCache21/clustered: 25+25, sessionCache22/clustered: 25+25]}, unionCH=null, actualMembers=[sessionCache21/clustered, sessionCache22/clustered]}
+[0m[0m12:58:55,090 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-8) JBAS010282: Stopped USER_CACHE cache from clustered container
+[0m[0m12:58:55,094 INFO  [org.infinispan.CLUSTER] (remote-thread--p3-t17) ISPN000336: Finished cluster-wide rebalance for cache transactionalCache, topology id = 12
+[0m[0m12:58:55,139 INFO  [org.infinispan.CLUSTER] (remote-thread--p3-t11) ISPN000336: Finished cluster-wide rebalance for cache namedCache, topology id = 12
+[0m[0m12:58:55,185 INFO  [org.infinispan.CLUSTER] (remote-thread--p3-t17) ISPN000336: Finished cluster-wide rebalance for cache USER_CACHE, topology id = 12
+[0m[0m12:58:55,211 INFO  [org.infinispan.CLUSTER] (remote-thread--p3-t19) ISPN000336: Finished cluster-wide rebalance for cache KHAN_SESSION_PMS, topology id = 12
+[0m[0m12:58:55,901 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-2) ISPN000310: Starting cluster-wide rebalance for cache default, topology CacheTopology{id=13, rebalanceId=6, currentCH=DefaultConsistentHash{ns=20, owners = (2)[sessionCache21/clustered: 10+0, sessionCache22/clustered: 10+0]}, pendingCH=DefaultConsistentHash{ns=20, owners = (2)[sessionCache21/clustered: 10+10, sessionCache22/clustered: 10+10]}, unionCH=null, actualMembers=[sessionCache21/clustered, sessionCache22/clustered]}
+[0m[0m12:58:55,901 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-1) ISPN000310: Starting cluster-wide rebalance for cache memcachedCache, topology CacheTopology{id=12, rebalanceId=5, currentCH=DefaultConsistentHash{ns=20, owners = (2)[sessionCache21/clustered: 10+0, sessionCache22/clustered: 10+0]}, pendingCH=DefaultConsistentHash{ns=20, owners = (2)[sessionCache21/clustered: 10+10, sessionCache22/clustered: 10+10]}, unionCH=null, actualMembers=[sessionCache21/clustered, sessionCache22/clustered]}
+[0m[0m12:58:55,902 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-1) JBAS010282: Stopped memcachedCache cache from clustered container
+[0m[0m12:58:55,902 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-2) JBAS010282: Stopped default cache from clustered container
+[0m[0m12:58:55,999 INFO  [org.infinispan.CLUSTER] (remote-thread--p3-t18) ISPN000336: Finished cluster-wide rebalance for cache memcachedCache, topology id = 12
+[0m[0m12:58:56,078 INFO  [org.infinispan.CLUSTER] (remote-thread--p3-t17) ISPN000336: Finished cluster-wide rebalance for cache default, topology id = 13
+[0m[0m12:58:56,101 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-6) JBAS010282: Stopped ___hotRodTopologyCache cache from clustered container
+[0m[0m12:58:56,119 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-6) JBAS010282: Stopped ___protobuf_metadata cache from clustered container
+[0m[0m12:58:56,134 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-6) JBAS010282: Stopped ___script_cache cache from clustered container
+[0m[0m12:58:56,138 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-6) ISPN000080: Disconnecting JGroups channel clustered
+[0m[0m12:58:56,213 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-6) ISPN000082: Stopping the RpcDispatcher for channel clustered
+[0m[0m12:58:56,245 INFO  [org.jboss.as] (MSC service thread 1-1) JBAS015950: JBoss Infinispan Server 7.2.5.Final (WildFly 8.2.0.Final) stopped in 1351ms
+[0m

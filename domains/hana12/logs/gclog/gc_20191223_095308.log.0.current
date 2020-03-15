@@ -1,0 +1,16 @@
+Java HotSpot(TM) 64-Bit Server VM (25.202-b08) for linux-amd64 JRE (1.8.0_202-b08), built on Dec 15 2018 12:40:22 by "java_re" with gcc 7.3.0
+Memory: 4k page, physical 1878756k(1205144k free), swap 2097148k(2097148k free)
+CommandLine flags: -XX:GCLogFileSize=3145728 -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/svc/infinispan/domains/hana12/logs/heapdump -XX:InitialHeapSize=134217728 -XX:MaxHeapSize=536870912 -XX:NumberOfGCLogFiles=5 -XX:+PrintGC -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:ThreadStackSize=256 -XX:-TraceClassUnloading -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseGCLogFileRotation -XX:+UseParallelGC -XX:+UseParallelOldGC 
+0.824: [GC (Allocation Failure) [PSYoungGen: 33280K->5116K(38400K)] 33280K->5534K(125952K), 0.0172886 secs] [Times: user=0.05 sys=0.01, real=0.02 secs] 
+1.744: [GC (Metadata GC Threshold) [PSYoungGen: 37716K->5104K(71680K)] 38134K->12705K(159232K), 0.0255787 secs] [Times: user=0.05 sys=0.04, real=0.03 secs] 
+1.770: [Full GC (Metadata GC Threshold) [PSYoungGen: 5104K->0K(71680K)] [ParOldGen: 7601K->11943K(87552K)] 12705K->11943K(159232K), [Metaspace: 19885K->19885K(1067008K)], 0.0468119 secs] [Times: user=0.13 sys=0.03, real=0.04 secs] 
+2.223: [GC (Allocation Failure) [PSYoungGen: 66560K->5095K(71680K)] 78503K->17039K(159232K), 0.0142004 secs] [Times: user=0.05 sys=0.00, real=0.01 secs] 
+Heap
+ PSYoungGen      total 71680K, used 46802K [0x00000000f5580000, 0x00000000fc100000, 0x0000000100000000)
+  eden space 66560K, 62% used [0x00000000f5580000,0x00000000f7e3ad10,0x00000000f9680000)
+  from space 5120K, 99% used [0x00000000f9680000,0x00000000f9b79ec8,0x00000000f9b80000)
+  to   space 5120K, 0% used [0x00000000fbc00000,0x00000000fbc00000,0x00000000fc100000)
+ ParOldGen       total 87552K, used 11943K [0x00000000e0000000, 0x00000000e5580000, 0x00000000f5580000)
+  object space 87552K, 13% used [0x00000000e0000000,0x00000000e0ba9d98,0x00000000e5580000)
+ Metaspace       used 24338K, capacity 26446K, committed 26624K, reserved 1073152K
+  class space    used 2897K, capacity 3496K, committed 3584K, reserved 1048576K

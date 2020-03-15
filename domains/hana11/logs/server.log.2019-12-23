@@ -1,0 +1,1069 @@
+2019-12-23 10:30:54,309 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-7) WFLYDM0111: Keystore /svc/infinispan/domains/hana11/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2019-12-23 10:30:54,488 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-4) WFLYDS0013: Started FileSystemDeploymentService for directory /svc/infinispan/domains/hana11/deployments
+2019-12-23 10:31:02,689 INFO  [org.jgroups.protocols.pbcast.GMS] (MSC service thread 1-1) hana11: no members discovered after 5041 ms: creating cluster as first member
+2019-12-23 10:31:04,758 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-1) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.17.Final
+2019-12-23 10:31:05,022 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-1) ISPN000078: Starting JGroups channel clustered
+2019-12-23 10:31:05,024 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-1) ISPN000094: Received new cluster view for channel cluster: [hana11|0] (1) [hana11]
+2019-12-23 10:31:05,033 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-1) ISPN000079: Channel clustered local address is hana11, physical addresses are [192.168.110.141:55300]
+2019-12-23 10:31:05,044 INFO  [org.infinispan.globalstate.impl.GlobalStateManagerImpl] (MSC service thread 1-1) ISPN000390: Persisted state, version=9.4.17.Final timestamp=2019-12-23T01:31:05.041Z
+2019-12-23 10:31:05,864 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-1) DGISPN0023: Started clustered cache container
+2019-12-23 10:31:06,307 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-8) DGISPN0001: Started repl cache from clustered container
+2019-12-23 10:31:06,314 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-4) DGISPN0001: Started default cache from clustered container
+2019-12-23 10:31:06,327 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-4) DGENDPT10000: HotRodServer starting
+2019-12-23 10:31:06,322 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-7) DGENDPT10000:  starting
+2019-12-23 10:31:06,343 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-4) DGENDPT10001: HotRodServer listening on 192.168.110.141:11322
+2019-12-23 10:31:06,723 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-7) DGENDPT10002:  listening on 192.168.110.141:8180 (mapped to rest)
+2019-12-23 10:31:06,880 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2019-12-23 10:31:06,883 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://192.168.110.141:10090/management
+2019-12-23 10:31:06,884 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://192.168.110.141:10090
+2019-12-23 10:31:06,884 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: Infinispan Server 9.4.17.Final (WildFly Core 6.0.2.Final) started in 32453ms - Started 226 of 274 services (132 services are lazy, passive or on-demand)
+2019-12-23 10:33:01,212 INFO  [org.jboss.modules] (main) JBoss Modules version 1.8.6.Final
+2019-12-23 10:33:01,791 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.3.Final
+2019-12-23 10:33:01,808 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.2.Final
+2019-12-23 10:33:01,987 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: Infinispan Server 9.4.17.Final (WildFly Core 6.0.2.Final) starting
+2019-12-23 10:33:01,990 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /svc/infinispan/infinispan-server-9.4.17.Final/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /usr/java/jdk1.8.0_202/jre/lib/endorsed
+	java.ext.dirs = /usr/java/jdk1.8.0_202/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/java/jdk1.8.0_202/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_202-b08
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_202
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.202-b08
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = 192.168.110.141
+	jboss.bind.address.management = 192.168.110.141
+	jboss.home.dir = /svc/infinispan/infinispan-server-9.4.17.Final
+	jboss.host.name = was01
+	jboss.modules.dir = /svc/infinispan/infinispan-server-9.4.17.Final/modules
+	jboss.node.name = hana11
+	jboss.qualified.host.name = was01
+	jboss.server.base.dir = /svc/infinispan/domains/hana11
+	jboss.server.config.dir = /svc/infinispan/domains/hana11/configuration
+	jboss.server.data.dir = /svc/infinispan/domains/hana11/data
+	jboss.server.deploy.dir = /svc/infinispan/domains/hana11/data/content
+	jboss.server.log.dir = /svc/infinispan/domains/hana11/logs
+	jboss.server.name = was01
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /svc/infinispan/domains/hana11/tmp
+	jboss.socket.binding.port-offset = 100
+	line.separator = 
+
+	logging.configuration = file:/svc/infinispan/domains/hana11/configuration/logging.properties
+	module.path = /svc/infinispan/infinispan-server-9.4.17.Final/modules
+	org.jboss.boot.log.file = /svc/infinispan/domains/hana11/logs/server.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Linux
+	os.version = 3.10.0-862.el7.x86_64
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.class.path = /usr/java/jdk1.8.0_202/jre/lib/resources.jar:/usr/java/jdk1.8.0_202/jre/lib/rt.jar:/usr/java/jdk1.8.0_202/jre/lib/sunrsasign.jar:/usr/java/jdk1.8.0_202/jre/lib/jsse.jar:/usr/java/jdk1.8.0_202/jre/lib/jce.jar:/usr/java/jdk1.8.0_202/jre/lib/charsets.jar:/usr/java/jdk1.8.0_202/jre/lib/jfr.jar:/usr/java/jdk1.8.0_202/jre/classes
+	sun.boot.library.path = /usr/java/jdk1.8.0_202/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /svc/infinispan/infinispan-server-9.4.17.Final/jboss-modules.jar -mp /svc/infinispan/infinispan-server-9.4.17.Final/modules org.jboss.as.standalone -Djboss.home.dir=/svc/infinispan/infinispan-server-9.4.17.Final -Djboss.server.base.dir=/svc/infinispan/domains/hana11 -Djboss.node.name=hana11 -c clustered.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = US
+	user.dir = /svc/infinispan/domains/hana11
+	user.home = /home/jboss
+	user.language = en
+	user.name = jboss
+	user.timezone = Asia/Seoul
+2019-12-23 10:33:01,991 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -verbose:gc -Xloggc:/svc/infinispan/domains/hana11/logs/gc.log -XX:+PrintGCDetails -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=5 -XX:GCLogFileSize=3M -XX:-TraceClassUnloading -Xms128m -Xmx512m -Xss256k -XX:+PrintGCTimeStamps -XX:+PrintGCDetails -Xloggc:/svc/infinispan/domains/hana11/logs/gclog/gc_20191223_103300.log -XX:+UseParallelGC -XX:+UseParallelOldGC -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/svc/infinispan/domains/hana11/logs/heapdump -Djboss.server.base.dir=/svc/infinispan/domains/hana11 -Djboss.server.config.dir=/svc/infinispan/domains/hana11/configuration -Djboss.server.log.dir=/svc/infinispan/domains/hana11/logs -Djboss.socket.binding.port-offset=100 -Djboss.bind.address=192.168.110.141 -Djboss.bind.address.management=192.168.110.141 -Dorg.jboss.boot.log.file=/svc/infinispan/domains/hana11/logs/server.log -Dlogging.configuration=file:/svc/infinispan/domains/hana11/configuration/logging.properties 
+2019-12-23 10:33:03,672 INFO  [org.wildfly.security] (ServerService Thread Pool -- 14) ELY00001: WildFly Elytron version 1.6.0.Final
+2019-12-23 10:33:04,814 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-12-23 10:33:04,876 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 6) WFLYCTL0028: Attribute 'default-stack' in the resource at address '/subsystem=datagrid-jgroups' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-12-23 10:33:05,145 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2019-12-23 10:33:05,173 INFO  [org.xnio] (MSC service thread 1-7) XNIO version 3.6.5.Final
+2019-12-23 10:33:05,188 INFO  [org.xnio.nio] (MSC service thread 1-7) XNIO NIO Implementation Version 3.6.5.Final
+2019-12-23 10:33:05,254 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 31) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2019-12-23 10:33:05,264 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 21) Activating Infinispan subsystem.
+2019-12-23 10:33:05,274 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 28) WFLYNAM0001: Activating Naming Subsystem
+2019-12-23 10:33:05,275 INFO  [org.infinispan.server.jgroups] (ServerService Thread Pool -- 23) DGJGRP0001: Activating JGroups subsystem.
+2019-12-23 10:33:05,300 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 30) WFLYSEC0002: Activating Security Subsystem
+2019-12-23 10:33:05,348 INFO  [org.jboss.remoting] (MSC service thread 1-5) JBoss Remoting version 5.0.8.Final
+2019-12-23 10:33:05,361 INFO  [org.jboss.as.security] (MSC service thread 1-8) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2019-12-23 10:33:05,450 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 19) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2019-12-23 10:33:05,457 INFO  [org.jboss.as.naming] (MSC service thread 1-3) WFLYNAM0003: Starting Naming Service
+2019-12-23 10:33:05,487 INFO  [org.jboss.as.connector] (MSC service thread 1-1) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.11.Final)
+2019-12-23 10:33:05,542 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0018: Started Driver service with driver-name = h2
+2019-12-23 10:33:05,678 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-12-23 10:33:06,489 INFO  [org.jboss.as.patching] (MSC service thread 1-4) WFLYPAT0050: Infinispan Server cumulative patch ID is: base, one-off patches include: none
+2019-12-23 10:33:06,546 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-1) WFLYDM0111: Keystore /svc/infinispan/domains/hana11/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2019-12-23 10:33:06,576 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-3) WFLYDS0013: Started FileSystemDeploymentService for directory /svc/infinispan/domains/hana11/deployments
+2019-12-23 10:33:06,741 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2019-12-23 10:33:12,148 INFO  [org.jgroups.protocols.pbcast.GMS] (MSC service thread 1-2) hana11: no members discovered after 5007 ms: creating cluster as first member
+2019-12-23 10:33:13,425 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-4) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.17.Final
+2019-12-23 10:33:13,427 INFO  [org.infinispan.globalstate.impl.GlobalStateManagerImpl] (MSC service thread 1-4) ISPN000389: Loaded global state, version=9.4.17.Final timestamp=2019-12-23T01:31:05.041Z
+2019-12-23 10:33:13,578 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-4) ISPN000078: Starting JGroups channel clustered
+2019-12-23 10:33:13,581 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-4) ISPN000094: Received new cluster view for channel cluster: [hana11|0] (1) [hana11]
+2019-12-23 10:33:13,588 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-4) ISPN000079: Channel clustered local address is hana11, physical addresses are [192.168.110.141:55300]
+2019-12-23 10:33:14,088 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-4) DGISPN0023: Started clustered cache container
+2019-12-23 10:33:14,378 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-1) DGISPN0001: Started repl cache from clustered container
+2019-12-23 10:33:14,391 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-5) DGISPN0001: Started default cache from clustered container
+2019-12-23 10:33:14,394 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-8) DGENDPT10000: HotRodServer starting
+2019-12-23 10:33:14,399 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-5) DGENDPT10000:  starting
+2019-12-23 10:33:14,407 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-8) DGENDPT10001: HotRodServer listening on 192.168.110.141:11322
+2019-12-23 10:33:15,206 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-5) DGENDPT10002:  listening on 192.168.110.141:8180 (mapped to rest)
+2019-12-23 10:33:15,353 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2019-12-23 10:33:15,357 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://192.168.110.141:10090/management
+2019-12-23 10:33:15,358 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://192.168.110.141:10090
+2019-12-23 10:33:15,358 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: Infinispan Server 9.4.17.Final (WildFly Core 6.0.2.Final) started in 14654ms - Started 226 of 274 services (132 services are lazy, passive or on-demand)
+2019-12-23 10:47:03,478 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0236: Suspending server with no timeout.
+2019-12-23 10:47:03,496 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+2019-12-23 10:47:03,559 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-12-23 10:47:03,610 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-8) DGISPN0002: Stopped repl cache from clustered container
+2019-12-23 10:47:03,627 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2019-12-23 10:47:04,693 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-1) DGISPN0002: Stopped default cache from clustered container
+2019-12-23 10:47:04,724 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (MSC service thread 1-2) ISPN000029: Passivating all entries to disk
+2019-12-23 10:47:04,726 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (MSC service thread 1-2) ISPN000030: Passivated 0 entries in 2 milliseconds
+2019-12-23 10:47:04,759 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-2) ISPN000080: Disconnecting JGroups channel clustered
+2019-12-23 10:47:04,827 INFO  [org.infinispan.globalstate.impl.GlobalStateManagerImpl] (MSC service thread 1-2) ISPN000390: Persisted state, version=9.4.17.Final timestamp=2019-12-23T01:47:04.764Z
+2019-12-23 10:47:04,831 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-2) DGISPN0024: Stopped clustered cache container
+2019-12-23 10:47:05,006 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0050: Infinispan Server 9.4.17.Final (WildFly Core 6.0.2.Final) stopped in 1476ms
+2019-12-23 10:47:30,884 INFO  [org.jboss.modules] (main) JBoss Modules version 1.8.6.Final
+2019-12-23 10:47:31,853 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.3.Final
+2019-12-23 10:47:31,881 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.2.Final
+2019-12-23 10:47:32,130 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: Infinispan Server 9.4.17.Final (WildFly Core 6.0.2.Final) starting
+2019-12-23 10:47:32,132 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /svc/infinispan/infinispan-server-9.4.17.Final/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /usr/java/jdk1.8.0_202/jre/lib/endorsed
+	java.ext.dirs = /usr/java/jdk1.8.0_202/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/java/jdk1.8.0_202/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_202-b08
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_202
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.202-b08
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = 192.168.110.141
+	jboss.bind.address.management = 192.168.110.141
+	jboss.home.dir = /svc/infinispan/infinispan-server-9.4.17.Final
+	jboss.host.name = was01
+	jboss.modules.dir = /svc/infinispan/infinispan-server-9.4.17.Final/modules
+	jboss.node.name = hana11
+	jboss.qualified.host.name = was01
+	jboss.server.base.dir = /svc/infinispan/domains/hana11
+	jboss.server.config.dir = /svc/infinispan/domains/hana11/configuration
+	jboss.server.data.dir = /svc/infinispan/domains/hana11/data
+	jboss.server.deploy.dir = /svc/infinispan/domains/hana11/data/content
+	jboss.server.log.dir = /svc/infinispan/domains/hana11/logs
+	jboss.server.name = was01
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /svc/infinispan/domains/hana11/tmp
+	jboss.socket.binding.port-offset = 100
+	line.separator = 
+
+	logging.configuration = file:/svc/infinispan/domains/hana11/configuration/logging.properties
+	module.path = /svc/infinispan/infinispan-server-9.4.17.Final/modules
+	org.jboss.boot.log.file = /svc/infinispan/domains/hana11/logs/server.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Linux
+	os.version = 3.10.0-862.el7.x86_64
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.class.path = /usr/java/jdk1.8.0_202/jre/lib/resources.jar:/usr/java/jdk1.8.0_202/jre/lib/rt.jar:/usr/java/jdk1.8.0_202/jre/lib/sunrsasign.jar:/usr/java/jdk1.8.0_202/jre/lib/jsse.jar:/usr/java/jdk1.8.0_202/jre/lib/jce.jar:/usr/java/jdk1.8.0_202/jre/lib/charsets.jar:/usr/java/jdk1.8.0_202/jre/lib/jfr.jar:/usr/java/jdk1.8.0_202/jre/classes
+	sun.boot.library.path = /usr/java/jdk1.8.0_202/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /svc/infinispan/infinispan-server-9.4.17.Final/jboss-modules.jar -mp /svc/infinispan/infinispan-server-9.4.17.Final/modules org.jboss.as.standalone -Djboss.home.dir=/svc/infinispan/infinispan-server-9.4.17.Final -Djboss.server.base.dir=/svc/infinispan/domains/hana11 -Djboss.node.name=hana11 -c clustered.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = US
+	user.dir = /svc/infinispan/domains/hana11
+	user.home = /home/jboss
+	user.language = en
+	user.name = jboss
+	user.timezone = Asia/Seoul
+2019-12-23 10:47:32,133 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -verbose:gc -Xloggc:/svc/infinispan/domains/hana11/logs/gc.log -XX:+PrintGCDetails -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=5 -XX:GCLogFileSize=3M -XX:-TraceClassUnloading -Xms128m -Xmx512m -Xss256k -XX:+PrintGCTimeStamps -XX:+PrintGCDetails -Xloggc:/svc/infinispan/domains/hana11/logs/gclog/gc_20191223_104729.log -XX:+UseParallelGC -XX:+UseParallelOldGC -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/svc/infinispan/domains/hana11/logs/heapdump -Djboss.server.base.dir=/svc/infinispan/domains/hana11 -Djboss.server.config.dir=/svc/infinispan/domains/hana11/configuration -Djboss.server.log.dir=/svc/infinispan/domains/hana11/logs -Djboss.socket.binding.port-offset=100 -Djboss.bind.address=192.168.110.141 -Djboss.bind.address.management=192.168.110.141 -Dorg.jboss.boot.log.file=/svc/infinispan/domains/hana11/logs/server.log -Dlogging.configuration=file:/svc/infinispan/domains/hana11/configuration/logging.properties 
+2019-12-23 10:47:33,891 INFO  [org.wildfly.security] (ServerService Thread Pool -- 14) ELY00001: WildFly Elytron version 1.6.0.Final
+2019-12-23 10:47:35,485 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-12-23 10:47:35,564 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 6) WFLYCTL0028: Attribute 'default-stack' in the resource at address '/subsystem=datagrid-jgroups' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-12-23 10:47:36,022 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2019-12-23 10:47:36,088 INFO  [org.xnio] (MSC service thread 1-8) XNIO version 3.6.5.Final
+2019-12-23 10:47:36,106 INFO  [org.xnio.nio] (MSC service thread 1-8) XNIO NIO Implementation Version 3.6.5.Final
+2019-12-23 10:47:36,252 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 17) Activating Infinispan subsystem.
+2019-12-23 10:47:36,284 INFO  [org.infinispan.server.jgroups] (ServerService Thread Pool -- 20) DGJGRP0001: Activating JGroups subsystem.
+2019-12-23 10:47:36,288 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 28) WFLYNAM0001: Activating Naming Subsystem
+2019-12-23 10:47:36,298 INFO  [org.jboss.remoting] (MSC service thread 1-4) JBoss Remoting version 5.0.8.Final
+2019-12-23 10:47:36,303 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 30) WFLYSEC0002: Activating Security Subsystem
+2019-12-23 10:47:36,314 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 31) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2019-12-23 10:47:36,398 INFO  [org.jboss.as.naming] (MSC service thread 1-3) WFLYNAM0003: Starting Naming Service
+2019-12-23 10:47:36,463 INFO  [org.jboss.as.security] (MSC service thread 1-1) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2019-12-23 10:47:36,703 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 21) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2019-12-23 10:47:36,880 INFO  [org.jboss.as.connector] (MSC service thread 1-7) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.11.Final)
+2019-12-23 10:47:36,899 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0018: Started Driver service with driver-name = h2
+2019-12-23 10:47:37,052 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-12-23 10:47:38,132 INFO  [org.jboss.as.patching] (MSC service thread 1-6) WFLYPAT0050: Infinispan Server cumulative patch ID is: base, one-off patches include: none
+2019-12-23 10:47:38,219 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-6) WFLYDM0111: Keystore /svc/infinispan/domains/hana11/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2019-12-23 10:47:38,242 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-7) WFLYDS0013: Started FileSystemDeploymentService for directory /svc/infinispan/domains/hana11/deployments
+2019-12-23 10:47:38,468 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2019-12-23 10:47:44,095 INFO  [org.jgroups.protocols.pbcast.GMS] (MSC service thread 1-4) hana11: no members discovered after 5010 ms: creating cluster as first member
+2019-12-23 10:47:46,498 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-1) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.17.Final
+2019-12-23 10:47:46,500 INFO  [org.infinispan.globalstate.impl.GlobalStateManagerImpl] (MSC service thread 1-1) ISPN000389: Loaded global state, version=9.4.17.Final timestamp=2019-12-23T01:47:04.764Z
+2019-12-23 10:47:46,815 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-1) ISPN000078: Starting JGroups channel clustered
+2019-12-23 10:47:46,818 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-1) ISPN000094: Received new cluster view for channel cluster: [hana11|0] (1) [hana11]
+2019-12-23 10:47:46,832 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-1) ISPN000079: Channel clustered local address is hana11, physical addresses are [192.168.110.141:55300]
+2019-12-23 10:47:47,592 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-1) DGISPN0023: Started clustered cache container
+2019-12-23 10:47:47,889 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-4) DGISPN0001: Started repl cache from clustered container
+2019-12-23 10:47:47,903 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-8) DGISPN0001: Started HANA_CACHE cache from clustered container
+2019-12-23 10:47:47,916 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-7) DGISPN0001: Started default cache from clustered container
+2019-12-23 10:47:47,919 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-5) DGENDPT10000: HotRodServer starting
+2019-12-23 10:47:47,928 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-8) DGENDPT10000:  starting
+2019-12-23 10:47:47,932 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-5) DGENDPT10001: HotRodServer listening on 192.168.110.141:11322
+2019-12-23 10:47:48,432 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-8) DGENDPT10002:  listening on 192.168.110.141:8180 (mapped to rest)
+2019-12-23 10:47:48,771 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2019-12-23 10:47:48,776 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://192.168.110.141:10090/management
+2019-12-23 10:47:48,776 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://192.168.110.141:10090
+2019-12-23 10:47:48,777 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: Infinispan Server 9.4.17.Final (WildFly Core 6.0.2.Final) started in 18870ms - Started 229 of 277 services (134 services are lazy, passive or on-demand)
+2019-12-23 10:53:23,139 INFO  [org.infinispan.CLUSTER] (jgroups-7,hana11) ISPN000094: Received new cluster view for channel cluster: [hana11|1] (2) [hana11, hana12]
+2019-12-23 10:53:23,144 INFO  [org.infinispan.CLUSTER] (jgroups-7,hana11) ISPN100000: Node hana12 joined the cluster
+2019-12-23 10:53:25,279 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t1) [Context=org.infinispan.CONFIG]ISPN100002: Starting rebalance with members [hana11, hana12], phase READ_OLD_WRITE_ALL, topology id 2
+2019-12-23 10:53:25,397 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t1) [Context=org.infinispan.CONFIG]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 3
+2019-12-23 10:53:25,430 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t1) [Context=org.infinispan.CONFIG]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 4
+2019-12-23 10:53:25,438 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t1) [Context=org.infinispan.CONFIG]ISPN100010: Finished rebalance with members [hana11, hana12], topology id 5
+2019-12-23 10:53:25,951 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t1) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100002: Starting rebalance with members [hana11, hana12], phase READ_OLD_WRITE_ALL, topology id 2
+2019-12-23 10:53:26,123 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t1) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 3
+2019-12-23 10:53:26,138 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t1) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 4
+2019-12-23 10:53:26,154 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t1) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100010: Finished rebalance with members [hana11, hana12], topology id 5
+2019-12-23 10:53:26,267 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t1) [Context=___protobuf_metadata]ISPN100002: Starting rebalance with members [hana11, hana12], phase READ_OLD_WRITE_ALL, topology id 2
+2019-12-23 10:53:26,339 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t1) [Context=___protobuf_metadata]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 3
+2019-12-23 10:53:26,350 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t1) [Context=___protobuf_metadata]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 4
+2019-12-23 10:53:26,372 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t1) [Context=___protobuf_metadata]ISPN100010: Finished rebalance with members [hana11, hana12], topology id 5
+2019-12-23 10:53:26,382 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t1) [Context=HANA_CACHE]ISPN100002: Starting rebalance with members [hana11, hana12], phase READ_OLD_WRITE_ALL, topology id 2
+2019-12-23 10:53:26,391 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t1) [Context=default]ISPN100002: Starting rebalance with members [hana11, hana12], phase READ_OLD_WRITE_ALL, topology id 2
+2019-12-23 10:53:26,391 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t2) [Context=repl]ISPN100002: Starting rebalance with members [hana11, hana12], phase READ_OLD_WRITE_ALL, topology id 2
+2019-12-23 10:53:26,464 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t2) [Context=HANA_CACHE]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 3
+2019-12-23 10:53:26,476 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t1) [Context=default]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 3
+2019-12-23 10:53:26,489 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t1) [Context=default]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 4
+2019-12-23 10:53:26,493 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t2) [Context=HANA_CACHE]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 4
+2019-12-23 10:53:26,499 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t2) [Context=default]ISPN100010: Finished rebalance with members [hana11, hana12], topology id 5
+2019-12-23 10:53:26,499 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t1) [Context=repl]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 3
+2019-12-23 10:53:26,507 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t2) [Context=repl]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 4
+2019-12-23 10:53:26,515 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t2) [Context=repl]ISPN100010: Finished rebalance with members [hana11, hana12], topology id 5
+2019-12-23 10:53:26,524 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t2) [Context=HANA_CACHE]ISPN100010: Finished rebalance with members [hana11, hana12], topology id 5
+2019-12-23 10:53:26,660 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t2) [Context=___script_cache]ISPN100002: Starting rebalance with members [hana11, hana12], phase READ_OLD_WRITE_ALL, topology id 2
+2019-12-23 10:53:26,691 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t1) [Context=___script_cache]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 3
+2019-12-23 10:53:26,698 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t1) [Context=___script_cache]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 4
+2019-12-23 10:53:26,702 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t1) [Context=___script_cache]ISPN100010: Finished rebalance with members [hana11, hana12], topology id 5
+2019-12-23 10:53:27,288 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t1) [Context=___hotRodTopologyCache]ISPN100002: Starting rebalance with members [hana11, hana12], phase READ_OLD_WRITE_ALL, topology id 2
+2019-12-23 10:53:27,356 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t1) [Context=___hotRodTopologyCache]ISPN100009: Advancing to rebalance phase READ_ALL_WRITE_ALL, topology id 3
+2019-12-23 10:53:27,365 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t1) [Context=___hotRodTopologyCache]ISPN100009: Advancing to rebalance phase READ_NEW_WRITE_ALL, topology id 4
+2019-12-23 10:53:27,372 INFO  [org.infinispan.CLUSTER] (remote-thread--p2-t1) [Context=___hotRodTopologyCache]ISPN100010: Finished rebalance with members [hana11, hana12], topology id 5
+2019-12-23 10:56:38,120 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0236: Suspending server with no timeout.
+2019-12-23 10:56:38,127 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+2019-12-23 10:56:38,167 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-12-23 10:56:38,185 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-3) [Context=repl]ISPN100008: Updating cache members list [hana12], topology id 6
+2019-12-23 10:56:38,207 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-3) DGISPN0002: Stopped repl cache from clustered container
+2019-12-23 10:56:38,213 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2019-12-23 10:56:38,245 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-8) [Context=HANA_CACHE]ISPN100008: Updating cache members list [hana12], topology id 6
+2019-12-23 10:56:38,253 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-8) DGISPN0002: Stopped HANA_CACHE cache from clustered container
+2019-12-23 10:56:38,256 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-2) [Context=___hotRodTopologyCache]ISPN100008: Updating cache members list [hana12], topology id 6
+2019-12-23 10:56:39,304 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-2) [Context=default]ISPN100008: Updating cache members list [hana12], topology id 6
+2019-12-23 10:56:39,324 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-2) DGISPN0002: Stopped default cache from clustered container
+2019-12-23 10:56:39,341 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-1) [Context=___protobuf_metadata]ISPN100008: Updating cache members list [hana12], topology id 6
+2019-12-23 10:56:39,353 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (MSC service thread 1-1) ISPN000029: Passivating all entries to disk
+2019-12-23 10:56:39,440 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (MSC service thread 1-1) ISPN000030: Passivated 38 entries in 87 milliseconds
+2019-12-23 10:56:39,458 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-1) [Context=org.infinispan.CONFIG]ISPN100008: Updating cache members list [hana12], topology id 6
+2019-12-23 10:56:39,466 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-1) [Context=___script_cache]ISPN100008: Updating cache members list [hana12], topology id 6
+2019-12-23 10:56:39,476 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-1) [Context=org.infinispan.CLIENT_SERVER_TX_TABLE]ISPN100008: Updating cache members list [hana12], topology id 6
+2019-12-23 10:56:39,487 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-1) ISPN000080: Disconnecting JGroups channel clustered
+2019-12-23 10:56:39,521 INFO  [org.infinispan.globalstate.impl.GlobalStateManagerImpl] (MSC service thread 1-1) ISPN000390: Persisted state, version=9.4.17.Final timestamp=2019-12-23T01:56:39.500Z
+2019-12-23 10:56:39,522 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-1) DGISPN0024: Stopped clustered cache container
+2019-12-23 10:56:39,602 INFO  [org.jboss.as] (MSC service thread 1-3) WFLYSRV0050: Infinispan Server 9.4.17.Final (WildFly Core 6.0.2.Final) stopped in 1466ms
+2019-12-23 10:56:58,075 INFO  [org.jboss.modules] (main) JBoss Modules version 1.8.6.Final
+2019-12-23 10:56:58,692 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.3.Final
+2019-12-23 10:56:58,712 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.2.Final
+2019-12-23 10:56:58,913 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: Infinispan Server 9.4.17.Final (WildFly Core 6.0.2.Final) starting
+2019-12-23 10:56:58,915 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /svc/infinispan/infinispan-server-9.4.17.Final/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /usr/java/jdk1.8.0_202/jre/lib/endorsed
+	java.ext.dirs = /usr/java/jdk1.8.0_202/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/java/jdk1.8.0_202/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_202-b08
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_202
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.202-b08
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = 192.168.110.141
+	jboss.bind.address.management = 192.168.110.141
+	jboss.home.dir = /svc/infinispan/infinispan-server-9.4.17.Final
+	jboss.host.name = was01
+	jboss.modules.dir = /svc/infinispan/infinispan-server-9.4.17.Final/modules
+	jboss.node.name = hana11
+	jboss.qualified.host.name = was01
+	jboss.server.base.dir = /svc/infinispan/domains/hana11
+	jboss.server.config.dir = /svc/infinispan/domains/hana11/configuration
+	jboss.server.data.dir = /svc/infinispan/domains/hana11/data
+	jboss.server.deploy.dir = /svc/infinispan/domains/hana11/data/content
+	jboss.server.log.dir = /svc/infinispan/domains/hana11/logs
+	jboss.server.name = was01
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /svc/infinispan/domains/hana11/tmp
+	jboss.socket.binding.port-offset = 100
+	line.separator = 
+
+	logging.configuration = file:/svc/infinispan/domains/hana11/configuration/logging.properties
+	module.path = /svc/infinispan/infinispan-server-9.4.17.Final/modules
+	org.jboss.boot.log.file = /svc/infinispan/domains/hana11/logs/server.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Linux
+	os.version = 3.10.0-862.el7.x86_64
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.class.path = /usr/java/jdk1.8.0_202/jre/lib/resources.jar:/usr/java/jdk1.8.0_202/jre/lib/rt.jar:/usr/java/jdk1.8.0_202/jre/lib/sunrsasign.jar:/usr/java/jdk1.8.0_202/jre/lib/jsse.jar:/usr/java/jdk1.8.0_202/jre/lib/jce.jar:/usr/java/jdk1.8.0_202/jre/lib/charsets.jar:/usr/java/jdk1.8.0_202/jre/lib/jfr.jar:/usr/java/jdk1.8.0_202/jre/classes
+	sun.boot.library.path = /usr/java/jdk1.8.0_202/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /svc/infinispan/infinispan-server-9.4.17.Final/jboss-modules.jar -mp /svc/infinispan/infinispan-server-9.4.17.Final/modules org.jboss.as.standalone -Djboss.home.dir=/svc/infinispan/infinispan-server-9.4.17.Final -Djboss.server.base.dir=/svc/infinispan/domains/hana11 -Djboss.node.name=hana11 -c clustered.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = US
+	user.dir = /svc/infinispan/domains/hana11
+	user.home = /home/jboss
+	user.language = en
+	user.name = jboss
+	user.timezone = Asia/Seoul
+2019-12-23 10:56:58,916 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -verbose:gc -Xloggc:/svc/infinispan/domains/hana11/logs/gc.log -XX:+PrintGCDetails -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=5 -XX:GCLogFileSize=3M -XX:-TraceClassUnloading -Xms128m -Xmx512m -Xss256k -XX:+PrintGCTimeStamps -XX:+PrintGCDetails -Xloggc:/svc/infinispan/domains/hana11/logs/gclog/gc_20191223_105657.log -XX:+UseParallelGC -XX:+UseParallelOldGC -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/svc/infinispan/domains/hana11/logs/heapdump -Djava.net.preferIPv4Stack=true -Dorg.jboss.resolver.warning=true -Djboss.server.base.dir=/svc/infinispan/domains/hana11 -Djboss.server.config.dir=/svc/infinispan/domains/hana11/configuration -Djboss.server.log.dir=/svc/infinispan/domains/hana11/logs -Djboss.socket.binding.port-offset=100 -Djboss.bind.address=192.168.110.141 -Djboss.bind.address.management=192.168.110.141 -Dorg.jboss.boot.log.file=/svc/infinispan/domains/hana11/logs/server.log -Dlogging.configuration=file:/svc/infinispan/domains/hana11/configuration/logging.properties 
+2019-12-23 10:57:00,136 INFO  [org.wildfly.security] (ServerService Thread Pool -- 14) ELY00001: WildFly Elytron version 1.6.0.Final
+2019-12-23 10:57:01,748 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-12-23 10:57:01,822 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 12) WFLYCTL0028: Attribute 'default-stack' in the resource at address '/subsystem=datagrid-jgroups' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-12-23 10:57:02,145 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2019-12-23 10:57:02,206 INFO  [org.xnio] (MSC service thread 1-8) XNIO version 3.6.5.Final
+2019-12-23 10:57:02,219 INFO  [org.xnio.nio] (MSC service thread 1-8) XNIO NIO Implementation Version 3.6.5.Final
+2019-12-23 10:57:02,355 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 17) Activating Infinispan subsystem.
+2019-12-23 10:57:02,367 INFO  [org.jboss.remoting] (MSC service thread 1-4) JBoss Remoting version 5.0.8.Final
+2019-12-23 10:57:02,375 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 31) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2019-12-23 10:57:02,392 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 30) WFLYSEC0002: Activating Security Subsystem
+2019-12-23 10:57:02,403 INFO  [org.infinispan.server.jgroups] (ServerService Thread Pool -- 20) DGJGRP0001: Activating JGroups subsystem.
+2019-12-23 10:57:02,409 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 28) WFLYNAM0001: Activating Naming Subsystem
+2019-12-23 10:57:02,535 INFO  [org.jboss.as.security] (MSC service thread 1-2) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2019-12-23 10:57:02,593 INFO  [org.jboss.as.connector] (MSC service thread 1-1) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.11.Final)
+2019-12-23 10:57:02,660 INFO  [org.jboss.as.naming] (MSC service thread 1-5) WFLYNAM0003: Starting Naming Service
+2019-12-23 10:57:02,790 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 21) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2019-12-23 10:57:02,803 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0018: Started Driver service with driver-name = h2
+2019-12-23 10:57:03,020 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-12-23 10:57:03,598 INFO  [org.jboss.as.patching] (MSC service thread 1-7) WFLYPAT0050: Infinispan Server cumulative patch ID is: base, one-off patches include: none
+2019-12-23 10:57:03,616 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2019-12-23 10:57:03,639 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-4) WFLYDM0111: Keystore /svc/infinispan/domains/hana11/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2019-12-23 10:57:03,680 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-4) WFLYDS0013: Started FileSystemDeploymentService for directory /svc/infinispan/domains/hana11/deployments
+2019-12-23 10:57:05,577 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-5) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.17.Final
+2019-12-23 10:57:05,581 INFO  [org.infinispan.globalstate.impl.GlobalStateManagerImpl] (MSC service thread 1-5) ISPN000389: Loaded global state, version=9.4.17.Final timestamp=2019-12-23T01:56:39.500Z
+2019-12-23 10:57:05,760 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-5) ISPN000078: Starting JGroups channel clustered
+2019-12-23 10:57:05,763 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-5) ISPN000094: Received new cluster view for channel cluster: [hana12|3] (2) [hana12, hana11]
+2019-12-23 10:57:05,772 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-5) ISPN000079: Channel clustered local address is hana11, physical addresses are [192.168.110.141:55300]
+2019-12-23 10:57:06,425 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-5) DGISPN0023: Started clustered cache container
+2019-12-23 10:57:06,868 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-5) DGISPN0001: Started HANA_CACHE cache from clustered container
+2019-12-23 10:57:06,881 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-8) DGISPN0001: Started repl cache from clustered container
+2019-12-23 10:57:06,893 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-2) DGISPN0001: Started default cache from clustered container
+2019-12-23 10:57:07,076 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-5) DGENDPT10000: HotRodServer starting
+2019-12-23 10:57:07,080 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-4) DGENDPT10000:  starting
+2019-12-23 10:57:07,084 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-5) DGENDPT10001: HotRodServer listening on 192.168.110.141:11322
+2019-12-23 10:57:07,388 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-4) DGENDPT10002:  listening on 192.168.110.141:8180 (mapped to rest)
+2019-12-23 10:57:07,753 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2019-12-23 10:57:07,771 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://192.168.110.141:10090/management
+2019-12-23 10:57:07,771 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://192.168.110.141:10090
+2019-12-23 10:57:07,772 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: Infinispan Server 9.4.17.Final (WildFly Core 6.0.2.Final) started in 10214ms - Started 229 of 277 services (134 services are lazy, passive or on-demand)
+2019-12-23 10:58:58,813 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0236: Suspending server with no timeout.
+2019-12-23 10:58:58,819 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+2019-12-23 10:58:58,895 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-12-23 10:58:58,917 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2019-12-23 10:58:58,945 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-7) DGISPN0002: Stopped HANA_CACHE cache from clustered container
+2019-12-23 10:58:58,947 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-8) DGISPN0002: Stopped repl cache from clustered container
+2019-12-23 10:58:59,953 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-4) DGISPN0002: Stopped default cache from clustered container
+2019-12-23 10:59:00,027 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-6) ISPN000080: Disconnecting JGroups channel clustered
+2019-12-23 10:59:00,058 INFO  [org.infinispan.globalstate.impl.GlobalStateManagerImpl] (MSC service thread 1-6) ISPN000390: Persisted state, version=9.4.17.Final timestamp=2019-12-23T01:59:00.052Z
+2019-12-23 10:59:00,061 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-6) DGISPN0024: Stopped clustered cache container
+2019-12-23 10:59:00,117 INFO  [org.jboss.as] (MSC service thread 1-4) WFLYSRV0050: Infinispan Server 9.4.17.Final (WildFly Core 6.0.2.Final) stopped in 1279ms
+2019-12-23 10:59:06,731 INFO  [org.jboss.modules] (main) JBoss Modules version 1.8.6.Final
+2019-12-23 10:59:07,413 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.3.Final
+2019-12-23 10:59:07,432 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.2.Final
+2019-12-23 10:59:07,622 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: Infinispan Server 9.4.17.Final (WildFly Core 6.0.2.Final) starting
+2019-12-23 10:59:07,624 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /svc/infinispan/infinispan-server-9.4.17.Final/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /usr/java/jdk1.8.0_202/jre/lib/endorsed
+	java.ext.dirs = /usr/java/jdk1.8.0_202/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/java/jdk1.8.0_202/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_202-b08
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_202
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.202-b08
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = 192.168.110.141
+	jboss.bind.address.management = 192.168.110.141
+	jboss.home.dir = /svc/infinispan/infinispan-server-9.4.17.Final
+	jboss.host.name = was01
+	jboss.modules.dir = /svc/infinispan/infinispan-server-9.4.17.Final/modules
+	jboss.node.name = hana11
+	jboss.qualified.host.name = was01
+	jboss.server.base.dir = /svc/infinispan/domains/hana11
+	jboss.server.config.dir = /svc/infinispan/domains/hana11/configuration
+	jboss.server.data.dir = /svc/infinispan/domains/hana11/data
+	jboss.server.deploy.dir = /svc/infinispan/domains/hana11/data/content
+	jboss.server.log.dir = /svc/infinispan/domains/hana11/logs
+	jboss.server.name = was01
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /svc/infinispan/domains/hana11/tmp
+	jboss.socket.binding.port-offset = 100
+	line.separator = 
+
+	logging.configuration = file:/svc/infinispan/domains/hana11/configuration/logging.properties
+	module.path = /svc/infinispan/infinispan-server-9.4.17.Final/modules
+	org.jboss.boot.log.file = /svc/infinispan/domains/hana11/logs/server.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Linux
+	os.version = 3.10.0-862.el7.x86_64
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.class.path = /usr/java/jdk1.8.0_202/jre/lib/resources.jar:/usr/java/jdk1.8.0_202/jre/lib/rt.jar:/usr/java/jdk1.8.0_202/jre/lib/sunrsasign.jar:/usr/java/jdk1.8.0_202/jre/lib/jsse.jar:/usr/java/jdk1.8.0_202/jre/lib/jce.jar:/usr/java/jdk1.8.0_202/jre/lib/charsets.jar:/usr/java/jdk1.8.0_202/jre/lib/jfr.jar:/usr/java/jdk1.8.0_202/jre/classes
+	sun.boot.library.path = /usr/java/jdk1.8.0_202/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /svc/infinispan/infinispan-server-9.4.17.Final/jboss-modules.jar -mp /svc/infinispan/infinispan-server-9.4.17.Final/modules org.jboss.as.standalone -Djboss.home.dir=/svc/infinispan/infinispan-server-9.4.17.Final -Djboss.server.base.dir=/svc/infinispan/domains/hana11 -Djboss.node.name=hana11 -c clustered.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = US
+	user.dir = /svc/infinispan/domains/hana11
+	user.home = /home/jboss
+	user.language = en
+	user.name = jboss
+	user.timezone = Asia/Seoul
+2019-12-23 10:59:07,626 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -verbose:gc -Xloggc:/svc/infinispan/domains/hana11/logs/gc.log -XX:+PrintGCDetails -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=5 -XX:GCLogFileSize=3M -XX:-TraceClassUnloading -Xms128m -Xmx512m -Xss256k -XX:+PrintGCTimeStamps -XX:+PrintGCDetails -Xloggc:/svc/infinispan/domains/hana11/logs/gclog/gc_20191223_105905.log -XX:+UseParallelGC -XX:+UseParallelOldGC -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/svc/infinispan/domains/hana11/logs/heapdump -Djava.net.preferIPv4Stack=true -Dorg.jboss.resolver.warning=true -Djboss.server.base.dir=/svc/infinispan/domains/hana11 -Djboss.server.config.dir=/svc/infinispan/domains/hana11/configuration -Djboss.server.log.dir=/svc/infinispan/domains/hana11/logs -Djboss.socket.binding.port-offset=100 -Djboss.bind.address=192.168.110.141 -Djboss.bind.address.management=192.168.110.141 -Dorg.jboss.boot.log.file=/svc/infinispan/domains/hana11/logs/server.log -Dlogging.configuration=file:/svc/infinispan/domains/hana11/configuration/logging.properties 
+2019-12-23 10:59:09,288 INFO  [org.wildfly.security] (ServerService Thread Pool -- 12) ELY00001: WildFly Elytron version 1.6.0.Final
+2019-12-23 10:59:10,327 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-12-23 10:59:10,390 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 2) WFLYCTL0028: Attribute 'default-stack' in the resource at address '/subsystem=datagrid-jgroups' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-12-23 10:59:10,627 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2019-12-23 10:59:10,656 INFO  [org.xnio] (MSC service thread 1-1) XNIO version 3.6.5.Final
+2019-12-23 10:59:10,671 INFO  [org.xnio.nio] (MSC service thread 1-1) XNIO NIO Implementation Version 3.6.5.Final
+2019-12-23 10:59:10,731 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 17) Activating Infinispan subsystem.
+2019-12-23 10:59:10,753 INFO  [org.infinispan.server.jgroups] (ServerService Thread Pool -- 20) DGJGRP0001: Activating JGroups subsystem.
+2019-12-23 10:59:10,760 INFO  [org.jboss.remoting] (MSC service thread 1-1) JBoss Remoting version 5.0.8.Final
+2019-12-23 10:59:10,795 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 28) WFLYNAM0001: Activating Naming Subsystem
+2019-12-23 10:59:10,808 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 30) WFLYSEC0002: Activating Security Subsystem
+2019-12-23 10:59:10,813 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 31) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2019-12-23 10:59:10,815 INFO  [org.jboss.as.security] (MSC service thread 1-4) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2019-12-23 10:59:10,942 INFO  [org.jboss.as.naming] (MSC service thread 1-2) WFLYNAM0003: Starting Naming Service
+2019-12-23 10:59:10,948 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 21) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2019-12-23 10:59:10,977 INFO  [org.jboss.as.connector] (MSC service thread 1-7) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.11.Final)
+2019-12-23 10:59:11,014 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0018: Started Driver service with driver-name = h2
+2019-12-23 10:59:11,221 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-12-23 10:59:11,820 INFO  [org.jboss.as.patching] (MSC service thread 1-3) WFLYPAT0050: Infinispan Server cumulative patch ID is: base, one-off patches include: none
+2019-12-23 10:59:11,962 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-2) WFLYDM0111: Keystore /svc/infinispan/domains/hana11/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2019-12-23 10:59:12,003 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2019-12-23 10:59:12,063 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-3) WFLYDS0013: Started FileSystemDeploymentService for directory /svc/infinispan/domains/hana11/deployments
+2019-12-23 10:59:14,378 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-4) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.17.Final
+2019-12-23 10:59:14,383 INFO  [org.infinispan.globalstate.impl.GlobalStateManagerImpl] (MSC service thread 1-4) ISPN000389: Loaded global state, version=9.4.17.Final timestamp=2019-12-23T01:59:00.052Z
+2019-12-23 10:59:14,660 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-4) ISPN000078: Starting JGroups channel clustered
+2019-12-23 10:59:14,664 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-4) ISPN000094: Received new cluster view for channel cluster: [hana12|5] (2) [hana12, hana11]
+2019-12-23 10:59:14,676 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-4) ISPN000079: Channel clustered local address is hana11, physical addresses are [192.168.110.141:55300]
+2019-12-23 10:59:15,406 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-4) DGISPN0023: Started clustered cache container
+2019-12-23 10:59:15,840 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-2) DGISPN0001: Started default cache from clustered container
+2019-12-23 10:59:15,883 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-4) DGISPN0001: Started HANA_CACHE cache from clustered container
+2019-12-23 10:59:15,897 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-1) DGISPN0001: Started repl cache from clustered container
+2019-12-23 10:59:15,983 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-2) DGENDPT10000: HotRodServer starting
+2019-12-23 10:59:15,991 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-3) DGENDPT10000:  starting
+2019-12-23 10:59:16,001 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-2) DGENDPT10001: HotRodServer listening on 192.168.110.141:11322
+2019-12-23 10:59:16,319 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-3) DGENDPT10002:  listening on 192.168.110.141:8180 (mapped to rest)
+2019-12-23 10:59:16,609 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2019-12-23 10:59:16,614 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://192.168.110.141:10090/management
+2019-12-23 10:59:16,615 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://192.168.110.141:10090
+2019-12-23 10:59:16,615 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: Infinispan Server 9.4.17.Final (WildFly Core 6.0.2.Final) started in 10427ms - Started 229 of 277 services (134 services are lazy, passive or on-demand)
+2019-12-23 11:00:58,471 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0236: Suspending server with no timeout.
+2019-12-23 11:00:58,484 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+2019-12-23 11:00:58,604 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-12-23 11:00:58,629 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-6) DGISPN0002: Stopped HANA_CACHE cache from clustered container
+2019-12-23 11:00:58,633 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-5) DGISPN0002: Stopped repl cache from clustered container
+2019-12-23 11:00:58,744 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2019-12-23 11:00:59,905 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-3) DGISPN0002: Stopped default cache from clustered container
+2019-12-23 11:00:59,968 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-4) ISPN000080: Disconnecting JGroups channel clustered
+2019-12-23 11:00:59,980 INFO  [org.infinispan.globalstate.impl.GlobalStateManagerImpl] (MSC service thread 1-4) ISPN000390: Persisted state, version=9.4.17.Final timestamp=2019-12-23T02:00:59.976Z
+2019-12-23 11:00:59,981 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-4) DGISPN0024: Stopped clustered cache container
+2019-12-23 11:01:00,018 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0050: Infinispan Server 9.4.17.Final (WildFly Core 6.0.2.Final) stopped in 1468ms
+2019-12-23 11:02:38,779 INFO  [org.jboss.modules] (main) JBoss Modules version 1.8.6.Final
+2019-12-23 11:02:39,481 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.3.Final
+2019-12-23 11:02:39,492 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.2.Final
+2019-12-23 11:02:39,703 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0049: Infinispan Server 9.4.17.Final (WildFly Core 6.0.2.Final) starting
+2019-12-23 11:02:39,705 DEBUG [org.jboss.as.config] (MSC service thread 1-1) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /svc/infinispan/infinispan-server-9.4.17.Final/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /usr/java/jdk1.8.0_202/jre/lib/endorsed
+	java.ext.dirs = /usr/java/jdk1.8.0_202/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/java/jdk1.8.0_202/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_202-b08
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_202
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.202-b08
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = 192.168.110.141
+	jboss.home.dir = /svc/infinispan/infinispan-server-9.4.17.Final
+	jboss.host.name = was01
+	jboss.modules.dir = /svc/infinispan/infinispan-server-9.4.17.Final/modules
+	jboss.node.name = hana11
+	jboss.qualified.host.name = was01
+	jboss.server.base.dir = /svc/infinispan/domains/hana11
+	jboss.server.config.dir = /svc/infinispan/domains/hana11/configuration
+	jboss.server.data.dir = /svc/infinispan/domains/hana11/data
+	jboss.server.deploy.dir = /svc/infinispan/domains/hana11/data/content
+	jboss.server.log.dir = /svc/infinispan/domains/hana11/logs
+	jboss.server.name = was01
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /svc/infinispan/domains/hana11/tmp
+	jboss.socket.binding.port-offset = 100
+	line.separator = 
+
+	logging.configuration = file:/svc/infinispan/domains/hana11/configuration/logging.properties
+	module.path = /svc/infinispan/infinispan-server-9.4.17.Final/modules
+	org.jboss.boot.log.file = /svc/infinispan/domains/hana11/logs/server.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Linux
+	os.version = 3.10.0-862.el7.x86_64
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.class.path = /usr/java/jdk1.8.0_202/jre/lib/resources.jar:/usr/java/jdk1.8.0_202/jre/lib/rt.jar:/usr/java/jdk1.8.0_202/jre/lib/sunrsasign.jar:/usr/java/jdk1.8.0_202/jre/lib/jsse.jar:/usr/java/jdk1.8.0_202/jre/lib/jce.jar:/usr/java/jdk1.8.0_202/jre/lib/charsets.jar:/usr/java/jdk1.8.0_202/jre/lib/jfr.jar:/usr/java/jdk1.8.0_202/jre/classes
+	sun.boot.library.path = /usr/java/jdk1.8.0_202/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /svc/infinispan/infinispan-server-9.4.17.Final/jboss-modules.jar -mp /svc/infinispan/infinispan-server-9.4.17.Final/modules org.jboss.as.standalone -Djboss.home.dir=/svc/infinispan/infinispan-server-9.4.17.Final -Djboss.server.base.dir=/svc/infinispan/domains/hana11 -Djboss.node.name=hana11 -c clustered.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = US
+	user.dir = /svc/infinispan/domains/hana11
+	user.home = /home/jboss
+	user.language = en
+	user.name = jboss
+	user.timezone = Asia/Seoul
+2019-12-23 11:02:39,707 DEBUG [org.jboss.as.config] (MSC service thread 1-1) VM Arguments: -D[Standalone] -verbose:gc -Xloggc:/svc/infinispan/domains/hana11/logs/gc.log -XX:+PrintGCDetails -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=5 -XX:GCLogFileSize=3M -XX:-TraceClassUnloading -Xms128m -Xmx512m -Xss256k -Djboss.server.base.dir=/svc/infinispan/domains/hana11 -Djboss.server.config.dir=/svc/infinispan/domains/hana11/configuration -Djboss.server.log.dir=/svc/infinispan/domains/hana11/logs -Djboss.socket.binding.port-offset=100 -Djboss.bind.address=192.168.110.141 -Dorg.jboss.boot.log.file=/svc/infinispan/domains/hana11/logs/server.log -Dlogging.configuration=file:/svc/infinispan/domains/hana11/configuration/logging.properties 
+2019-12-23 11:02:40,993 INFO  [org.wildfly.security] (ServerService Thread Pool -- 7) ELY00001: WildFly Elytron version 1.6.0.Final
+2019-12-23 11:02:42,226 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-12-23 11:02:42,328 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 9) WFLYCTL0028: Attribute 'default-stack' in the resource at address '/subsystem=datagrid-jgroups' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-12-23 11:02:42,674 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2019-12-23 11:02:42,719 INFO  [org.xnio] (MSC service thread 1-2) XNIO version 3.6.5.Final
+2019-12-23 11:02:42,731 INFO  [org.xnio.nio] (MSC service thread 1-2) XNIO NIO Implementation Version 3.6.5.Final
+2019-12-23 11:02:42,812 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 17) Activating Infinispan subsystem.
+2019-12-23 11:02:42,842 INFO  [org.infinispan.server.jgroups] (ServerService Thread Pool -- 20) DGJGRP0001: Activating JGroups subsystem.
+2019-12-23 11:02:42,853 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 28) WFLYNAM0001: Activating Naming Subsystem
+2019-12-23 11:02:42,868 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 30) WFLYSEC0002: Activating Security Subsystem
+2019-12-23 11:02:42,874 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 31) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2019-12-23 11:02:42,875 INFO  [org.jboss.remoting] (MSC service thread 1-6) JBoss Remoting version 5.0.8.Final
+2019-12-23 11:02:42,920 INFO  [org.jboss.as.security] (MSC service thread 1-2) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2019-12-23 11:02:43,014 INFO  [org.jboss.as.naming] (MSC service thread 1-8) WFLYNAM0003: Starting Naming Service
+2019-12-23 11:02:43,029 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 21) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2019-12-23 11:02:43,042 INFO  [org.jboss.as.connector] (MSC service thread 1-5) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.11.Final)
+2019-12-23 11:02:43,103 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0018: Started Driver service with driver-name = h2
+2019-12-23 11:02:43,212 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-12-23 11:02:43,849 INFO  [org.jboss.as.patching] (MSC service thread 1-5) WFLYPAT0050: Infinispan Server cumulative patch ID is: base, one-off patches include: none
+2019-12-23 11:02:43,880 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-6) WFLYDM0111: Keystore /svc/infinispan/domains/hana11/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2019-12-23 11:02:43,891 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-7) WFLYDS0013: Started FileSystemDeploymentService for directory /svc/infinispan/domains/hana11/deployments
+2019-12-23 11:02:44,033 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2019-12-23 11:02:45,575 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-4) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.17.Final
+2019-12-23 11:02:45,577 INFO  [org.infinispan.globalstate.impl.GlobalStateManagerImpl] (MSC service thread 1-4) ISPN000389: Loaded global state, version=9.4.17.Final timestamp=2019-12-23T02:00:59.976Z
+2019-12-23 11:02:45,735 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-4) ISPN000078: Starting JGroups channel clustered
+2019-12-23 11:02:45,738 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-4) ISPN000094: Received new cluster view for channel cluster: [hana12|7] (2) [hana12, hana11]
+2019-12-23 11:02:45,745 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-4) ISPN000079: Channel clustered local address is hana11, physical addresses are [192.168.110.141:55300]
+2019-12-23 11:02:46,377 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-4) DGISPN0023: Started clustered cache container
+2019-12-23 11:02:46,870 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-1) DGISPN0001: Started repl cache from clustered container
+2019-12-23 11:02:46,875 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-5) DGISPN0001: Started HANA_CACHE cache from clustered container
+2019-12-23 11:02:46,891 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-3) DGISPN0001: Started default cache from clustered container
+2019-12-23 11:02:47,033 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-6) DGENDPT10000: HotRodServer starting
+2019-12-23 11:02:47,042 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-6) DGENDPT10001: HotRodServer listening on 192.168.110.141:11322
+2019-12-23 11:02:47,044 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-5) DGENDPT10000:  starting
+2019-12-23 11:02:48,029 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-5) DGENDPT10002:  listening on 192.168.110.141:8180 (mapped to rest)
+2019-12-23 11:02:48,399 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2019-12-23 11:02:48,404 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:10090/management
+2019-12-23 11:02:48,405 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:10090
+2019-12-23 11:02:48,406 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: Infinispan Server 9.4.17.Final (WildFly Core 6.0.2.Final) started in 10167ms - Started 229 of 277 services (134 services are lazy, passive or on-demand)
+2019-12-23 11:05:23,053 INFO  [org.jboss.modules] (main) JBoss Modules version 1.8.6.Final
+2019-12-23 11:05:23,660 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.3.Final
+2019-12-23 11:05:23,674 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.2.Final
+2019-12-23 11:05:23,859 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: Infinispan Server 9.4.17.Final (WildFly Core 6.0.2.Final) starting
+2019-12-23 11:05:23,861 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /svc/infinispan/infinispan-server-9.4.17.Final/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /usr/java/jdk1.8.0_202/jre/lib/endorsed
+	java.ext.dirs = /usr/java/jdk1.8.0_202/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/java/jdk1.8.0_202/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_202-b08
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_202
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.202-b08
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = 192.168.110.141
+	jboss.home.dir = /svc/infinispan/infinispan-server-9.4.17.Final
+	jboss.host.name = was01
+	jboss.modules.dir = /svc/infinispan/infinispan-server-9.4.17.Final/modules
+	jboss.node.name = hana11
+	jboss.qualified.host.name = was01
+	jboss.server.base.dir = /svc/infinispan/domains/hana11
+	jboss.server.config.dir = /svc/infinispan/domains/hana11/configuration
+	jboss.server.data.dir = /svc/infinispan/domains/hana11/data
+	jboss.server.deploy.dir = /svc/infinispan/domains/hana11/data/content
+	jboss.server.log.dir = /svc/infinispan/domains/hana11/logs
+	jboss.server.name = was01
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /svc/infinispan/domains/hana11/tmp
+	jboss.socket.binding.port-offset = 100
+	line.separator = 
+
+	logging.configuration = file:/svc/infinispan/domains/hana11/configuration/logging.properties
+	module.path = /svc/infinispan/infinispan-server-9.4.17.Final/modules
+	org.jboss.boot.log.file = /svc/infinispan/domains/hana11/logs/server.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Linux
+	os.version = 3.10.0-862.el7.x86_64
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.class.path = /usr/java/jdk1.8.0_202/jre/lib/resources.jar:/usr/java/jdk1.8.0_202/jre/lib/rt.jar:/usr/java/jdk1.8.0_202/jre/lib/sunrsasign.jar:/usr/java/jdk1.8.0_202/jre/lib/jsse.jar:/usr/java/jdk1.8.0_202/jre/lib/jce.jar:/usr/java/jdk1.8.0_202/jre/lib/charsets.jar:/usr/java/jdk1.8.0_202/jre/lib/jfr.jar:/usr/java/jdk1.8.0_202/jre/classes
+	sun.boot.library.path = /usr/java/jdk1.8.0_202/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /svc/infinispan/infinispan-server-9.4.17.Final/jboss-modules.jar -mp /svc/infinispan/infinispan-server-9.4.17.Final/modules org.jboss.as.standalone -Djboss.home.dir=/svc/infinispan/infinispan-server-9.4.17.Final -Djboss.server.base.dir=/svc/infinispan/domains/hana11 -Djboss.node.name=hana11 -c clustered.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = US
+	user.dir = /svc/infinispan/domains/hana11
+	user.home = /home/jboss
+	user.language = en
+	user.name = jboss
+	user.timezone = Asia/Seoul
+2019-12-23 11:05:23,863 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -verbose:gc -Xloggc:/svc/infinispan/domains/hana11/logs/gc.log -XX:+PrintGCDetails -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=5 -XX:GCLogFileSize=3M -XX:-TraceClassUnloading -Xms128m -Xmx512m -Xss256k -Djboss.server.base.dir=/svc/infinispan/domains/hana11 -Djboss.server.config.dir=/svc/infinispan/domains/hana11/configuration -Djboss.server.log.dir=/svc/infinispan/domains/hana11/logs -Djboss.socket.binding.port-offset=100 -Djboss.bind.address=192.168.110.141 -Dorg.jboss.boot.log.file=/svc/infinispan/domains/hana11/logs/server.log -Dlogging.configuration=file:/svc/infinispan/domains/hana11/configuration/logging.properties 
+2019-12-23 11:05:25,080 INFO  [org.wildfly.security] (ServerService Thread Pool -- 14) ELY00001: WildFly Elytron version 1.6.0.Final
+2019-12-23 11:05:26,243 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-12-23 11:05:26,290 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 4) WFLYCTL0028: Attribute 'default-stack' in the resource at address '/subsystem=datagrid-jgroups' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-12-23 11:05:26,562 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2019-12-23 11:05:26,638 INFO  [org.xnio] (MSC service thread 1-6) XNIO version 3.6.5.Final
+2019-12-23 11:05:26,651 INFO  [org.xnio.nio] (MSC service thread 1-6) XNIO NIO Implementation Version 3.6.5.Final
+2019-12-23 11:05:26,743 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 17) Activating Infinispan subsystem.
+2019-12-23 11:05:26,829 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 31) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2019-12-23 11:05:26,831 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 28) WFLYNAM0001: Activating Naming Subsystem
+2019-12-23 11:05:26,847 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 30) WFLYSEC0002: Activating Security Subsystem
+2019-12-23 11:05:26,851 INFO  [org.infinispan.server.jgroups] (ServerService Thread Pool -- 20) DGJGRP0001: Activating JGroups subsystem.
+2019-12-23 11:05:26,907 INFO  [org.jboss.as.connector] (MSC service thread 1-8) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.11.Final)
+2019-12-23 11:05:26,963 INFO  [org.jboss.as.security] (MSC service thread 1-3) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2019-12-23 11:05:26,993 INFO  [org.jboss.remoting] (MSC service thread 1-6) JBoss Remoting version 5.0.8.Final
+2019-12-23 11:05:27,075 INFO  [org.jboss.as.naming] (MSC service thread 1-4) WFLYNAM0003: Starting Naming Service
+2019-12-23 11:05:27,161 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 21) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2019-12-23 11:05:27,184 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0018: Started Driver service with driver-name = h2
+2019-12-23 11:05:27,539 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-12-23 11:05:28,161 INFO  [org.jboss.as.patching] (MSC service thread 1-7) WFLYPAT0050: Infinispan Server cumulative patch ID is: base, one-off patches include: none
+2019-12-23 11:05:28,223 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-4) WFLYDM0111: Keystore /svc/infinispan/domains/hana11/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2019-12-23 11:05:28,231 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-4) WFLYDS0013: Started FileSystemDeploymentService for directory /svc/infinispan/domains/hana11/deployments
+2019-12-23 11:05:28,356 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2019-12-23 11:05:30,118 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-5) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.17.Final
+2019-12-23 11:05:30,121 INFO  [org.infinispan.globalstate.impl.GlobalStateManagerImpl] (MSC service thread 1-5) ISPN000389: Loaded global state, version=9.4.17.Final timestamp=2019-12-23T02:00:59.976Z
+2019-12-23 11:05:30,281 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-5) ISPN000078: Starting JGroups channel clustered
+2019-12-23 11:05:30,283 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-5) ISPN000094: Received new cluster view for channel cluster: [hana12|9] (2) [hana12, hana11]
+2019-12-23 11:05:30,302 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-5) ISPN000079: Channel clustered local address is hana11, physical addresses are [192.168.110.141:55300]
+2019-12-23 11:05:31,500 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-5) DGISPN0023: Started clustered cache container
+2019-12-23 11:05:31,914 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-5) DGISPN0001: Started default cache from clustered container
+2019-12-23 11:05:31,935 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-1) DGISPN0001: Started repl cache from clustered container
+2019-12-23 11:05:31,949 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-6) DGISPN0001: Started HANA_CACHE cache from clustered container
+2019-12-23 11:05:32,051 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-3) DGENDPT10000: HotRodServer starting
+2019-12-23 11:05:32,050 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-8) DGENDPT10000:  starting
+2019-12-23 11:05:32,072 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-3) DGENDPT10001: HotRodServer listening on 192.168.110.141:11322
+2019-12-23 11:05:32,380 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-8) DGENDPT10002:  listening on 192.168.110.141:8180 (mapped to rest)
+2019-12-23 11:05:32,719 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2019-12-23 11:05:32,725 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:10090/management
+2019-12-23 11:05:32,726 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:10090
+2019-12-23 11:05:32,726 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: Infinispan Server 9.4.17.Final (WildFly Core 6.0.2.Final) started in 10198ms - Started 229 of 277 services (134 services are lazy, passive or on-demand)
+2019-12-23 11:13:20,594 INFO  [org.jboss.modules] (main) JBoss Modules version 1.8.6.Final
+2019-12-23 11:13:21,215 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.3.Final
+2019-12-23 11:13:21,234 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.2.Final
+2019-12-23 11:13:21,436 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: Infinispan Server 9.4.17.Final (WildFly Core 6.0.2.Final) starting
+2019-12-23 11:13:21,439 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /svc/infinispan/infinispan-server-9.4.17.Final/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /usr/java/jdk1.8.0_202/jre/lib/endorsed
+	java.ext.dirs = /usr/java/jdk1.8.0_202/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/java/jdk1.8.0_202/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_202-b08
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_202
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.202-b08
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = 192.168.110.141
+	jboss.bind.address.management = 192.168.110.141
+	jboss.home.dir = /svc/infinispan/infinispan-server-9.4.17.Final
+	jboss.host.name = was01
+	jboss.modules.dir = /svc/infinispan/infinispan-server-9.4.17.Final/modules
+	jboss.node.name = hana11
+	jboss.qualified.host.name = was01
+	jboss.server.base.dir = /svc/infinispan/domains/hana11
+	jboss.server.config.dir = /svc/infinispan/domains/hana11/configuration
+	jboss.server.data.dir = /svc/infinispan/domains/hana11/data
+	jboss.server.deploy.dir = /svc/infinispan/domains/hana11/data/content
+	jboss.server.log.dir = /svc/infinispan/domains/hana11/logs
+	jboss.server.name = was01
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /svc/infinispan/domains/hana11/tmp
+	jboss.socket.binding.port-offset = 100
+	line.separator = 
+
+	logging.configuration = file:/svc/infinispan/domains/hana11/configuration/logging.properties
+	module.path = /svc/infinispan/infinispan-server-9.4.17.Final/modules
+	org.jboss.boot.log.file = /svc/infinispan/domains/hana11/logs/server.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Linux
+	os.version = 3.10.0-862.el7.x86_64
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.class.path = /usr/java/jdk1.8.0_202/jre/lib/resources.jar:/usr/java/jdk1.8.0_202/jre/lib/rt.jar:/usr/java/jdk1.8.0_202/jre/lib/sunrsasign.jar:/usr/java/jdk1.8.0_202/jre/lib/jsse.jar:/usr/java/jdk1.8.0_202/jre/lib/jce.jar:/usr/java/jdk1.8.0_202/jre/lib/charsets.jar:/usr/java/jdk1.8.0_202/jre/lib/jfr.jar:/usr/java/jdk1.8.0_202/jre/classes
+	sun.boot.library.path = /usr/java/jdk1.8.0_202/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /svc/infinispan/infinispan-server-9.4.17.Final/jboss-modules.jar -mp /svc/infinispan/infinispan-server-9.4.17.Final/modules org.jboss.as.standalone -Djboss.home.dir=/svc/infinispan/infinispan-server-9.4.17.Final -Djboss.server.base.dir=/svc/infinispan/domains/hana11 -Djboss.node.name=hana11 -c clustered.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = US
+	user.dir = /svc/infinispan/domains/hana11
+	user.home = /home/jboss
+	user.language = en
+	user.name = jboss
+	user.timezone = Asia/Seoul
+2019-12-23 11:13:21,440 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -verbose:gc -Xloggc:/svc/infinispan/domains/hana11/logs/gc.log -XX:+PrintGCDetails -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=5 -XX:GCLogFileSize=3M -XX:-TraceClassUnloading -Xms128m -Xmx512m -Xss256k -Djboss.server.base.dir=/svc/infinispan/domains/hana11 -Djboss.server.config.dir=/svc/infinispan/domains/hana11/configuration -Djboss.server.log.dir=/svc/infinispan/domains/hana11/logs -Djboss.socket.binding.port-offset=100 -Djboss.bind.address=192.168.110.141 -Djboss.bind.address.management=192.168.110.141 -Dorg.jboss.boot.log.file=/svc/infinispan/domains/hana11/logs/server.log -Dlogging.configuration=file:/svc/infinispan/domains/hana11/configuration/logging.properties 
+2019-12-23 11:13:22,638 INFO  [org.wildfly.security] (ServerService Thread Pool -- 5) ELY00001: WildFly Elytron version 1.6.0.Final
+2019-12-23 11:13:23,843 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-12-23 11:13:23,882 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 9) WFLYCTL0028: Attribute 'default-stack' in the resource at address '/subsystem=datagrid-jgroups' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-12-23 11:13:24,228 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2019-12-23 11:13:24,275 INFO  [org.xnio] (MSC service thread 1-3) XNIO version 3.6.5.Final
+2019-12-23 11:13:24,289 INFO  [org.xnio.nio] (MSC service thread 1-3) XNIO NIO Implementation Version 3.6.5.Final
+2019-12-23 11:13:24,402 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 17) Activating Infinispan subsystem.
+2019-12-23 11:13:24,489 INFO  [org.infinispan.server.jgroups] (ServerService Thread Pool -- 20) DGJGRP0001: Activating JGroups subsystem.
+2019-12-23 11:13:24,533 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 31) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2019-12-23 11:13:24,557 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 28) WFLYNAM0001: Activating Naming Subsystem
+2019-12-23 11:13:24,635 INFO  [org.jboss.remoting] (MSC service thread 1-3) JBoss Remoting version 5.0.8.Final
+2019-12-23 11:13:24,638 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 30) WFLYSEC0002: Activating Security Subsystem
+2019-12-23 11:13:24,648 INFO  [org.jboss.as.security] (MSC service thread 1-1) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2019-12-23 11:13:24,778 INFO  [org.jboss.as.connector] (MSC service thread 1-4) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.11.Final)
+2019-12-23 11:13:25,046 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 21) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2019-12-23 11:13:25,077 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = h2
+2019-12-23 11:13:25,158 INFO  [org.jboss.as.naming] (MSC service thread 1-6) WFLYNAM0003: Starting Naming Service
+2019-12-23 11:13:25,393 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-12-23 11:13:25,805 INFO  [org.jboss.as.patching] (MSC service thread 1-6) WFLYPAT0050: Infinispan Server cumulative patch ID is: base, one-off patches include: none
+2019-12-23 11:13:25,842 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-4) WFLYDM0111: Keystore /svc/infinispan/domains/hana11/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2019-12-23 11:13:25,904 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-4) WFLYDS0013: Started FileSystemDeploymentService for directory /svc/infinispan/domains/hana11/deployments
+2019-12-23 11:13:26,123 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2019-12-23 11:13:27,778 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-7) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.17.Final
+2019-12-23 11:13:27,781 INFO  [org.infinispan.globalstate.impl.GlobalStateManagerImpl] (MSC service thread 1-7) ISPN000389: Loaded global state, version=9.4.17.Final timestamp=2019-12-23T02:00:59.976Z
+2019-12-23 11:13:27,935 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-7) ISPN000078: Starting JGroups channel clustered
+2019-12-23 11:13:27,938 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-7) ISPN000094: Received new cluster view for channel cluster: [hana12|11] (2) [hana12, hana11]
+2019-12-23 11:13:27,946 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-7) ISPN000079: Channel clustered local address is hana11, physical addresses are [192.168.110.141:55300]
+2019-12-23 11:13:28,639 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-7) DGISPN0023: Started clustered cache container
+2019-12-23 11:13:29,009 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-6) DGISPN0001: Started repl cache from clustered container
+2019-12-23 11:13:29,103 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-4) DGISPN0001: Started default cache from clustered container
+2019-12-23 11:13:29,112 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-5) DGISPN0001: Started HANA_CACHE cache from clustered container
+2019-12-23 11:13:29,249 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-2) DGENDPT10000: HotRodServer starting
+2019-12-23 11:13:29,253 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-4) DGENDPT10000:  starting
+2019-12-23 11:13:29,256 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-2) DGENDPT10001: HotRodServer listening on 192.168.110.141:11322
+2019-12-23 11:13:29,570 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-4) DGENDPT10002:  listening on 192.168.110.141:8180 (mapped to rest)
+2019-12-23 11:13:29,829 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2019-12-23 11:13:29,833 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://192.168.110.141:10090/management
+2019-12-23 11:13:29,834 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://192.168.110.141:10090
+2019-12-23 11:13:29,834 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: Infinispan Server 9.4.17.Final (WildFly Core 6.0.2.Final) started in 9797ms - Started 229 of 277 services (134 services are lazy, passive or on-demand)
+2019-12-23 11:27:36,227 INFO  [org.jboss.modules] (main) JBoss Modules version 1.8.6.Final
+2019-12-23 11:27:40,216 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.3.Final
+2019-12-23 11:27:40,239 INFO  [org.jboss.threads] (main) JBoss Threads version 2.3.2.Final
+2019-12-23 11:27:40,662 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: Infinispan Server 9.4.17.Final (WildFly Core 6.0.2.Final) starting
+2019-12-23 11:27:40,666 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /svc/infinispan/infinispan-server-9.4.17.Final/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /usr/java/jdk1.8.0_202/jre/lib/endorsed
+	java.ext.dirs = /usr/java/jdk1.8.0_202/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/java/jdk1.8.0_202/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_202-b08
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_202
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.202-b08
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = 192.168.110.141
+	jboss.bind.address.management = 192.168.110.141
+	jboss.home.dir = /svc/infinispan/infinispan-server-9.4.17.Final
+	jboss.host.name = was01
+	jboss.modules.dir = /svc/infinispan/infinispan-server-9.4.17.Final/modules
+	jboss.node.name = hana11
+	jboss.qualified.host.name = was01
+	jboss.server.base.dir = /svc/infinispan/domains/hana11
+	jboss.server.config.dir = /svc/infinispan/domains/hana11/configuration
+	jboss.server.data.dir = /svc/infinispan/domains/hana11/data
+	jboss.server.deploy.dir = /svc/infinispan/domains/hana11/data/content
+	jboss.server.log.dir = /svc/infinispan/domains/hana11/logs
+	jboss.server.name = was01
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /svc/infinispan/domains/hana11/tmp
+	jboss.socket.binding.port-offset = 100
+	line.separator = 
+
+	logging.configuration = file:/svc/infinispan/domains/hana11/configuration/logging.properties
+	module.path = /svc/infinispan/infinispan-server-9.4.17.Final/modules
+	org.jboss.boot.log.file = /svc/infinispan/domains/hana11/logs/server.log
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Linux
+	os.version = 3.10.0-862.el7.x86_64
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.class.path = /usr/java/jdk1.8.0_202/jre/lib/resources.jar:/usr/java/jdk1.8.0_202/jre/lib/rt.jar:/usr/java/jdk1.8.0_202/jre/lib/sunrsasign.jar:/usr/java/jdk1.8.0_202/jre/lib/jsse.jar:/usr/java/jdk1.8.0_202/jre/lib/jce.jar:/usr/java/jdk1.8.0_202/jre/lib/charsets.jar:/usr/java/jdk1.8.0_202/jre/lib/jfr.jar:/usr/java/jdk1.8.0_202/jre/classes
+	sun.boot.library.path = /usr/java/jdk1.8.0_202/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /svc/infinispan/infinispan-server-9.4.17.Final/jboss-modules.jar -mp /svc/infinispan/infinispan-server-9.4.17.Final/modules org.jboss.as.standalone -Djboss.home.dir=/svc/infinispan/infinispan-server-9.4.17.Final -Djboss.server.base.dir=/svc/infinispan/domains/hana11 -Djboss.node.name=hana11 -c clustered.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = US
+	user.dir = /svc/infinispan/domains/hana11
+	user.home = /home/jboss
+	user.language = en
+	user.name = jboss
+	user.timezone = Asia/Seoul
+2019-12-23 11:27:40,695 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -verbose:gc -Xloggc:/svc/infinispan/domains/hana11/logs/gc.log -XX:+PrintGCDetails -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=5 -XX:GCLogFileSize=3M -XX:-TraceClassUnloading -Xms128m -Xmx512m -Xss256k -Djboss.server.base.dir=/svc/infinispan/domains/hana11 -Djboss.server.config.dir=/svc/infinispan/domains/hana11/configuration -Djboss.server.log.dir=/svc/infinispan/domains/hana11/logs -Djboss.socket.binding.port-offset=100 -Djboss.bind.address=192.168.110.141 -Djboss.bind.address.management=192.168.110.141 -Dorg.jboss.boot.log.file=/svc/infinispan/domains/hana11/logs/server.log -Dlogging.configuration=file:/svc/infinispan/domains/hana11/configuration/logging.properties 
+2019-12-23 11:27:45,618 INFO  [org.wildfly.security] (ServerService Thread Pool -- 14) ELY00001: WildFly Elytron version 1.6.0.Final
+2019-12-23 11:27:47,746 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-12-23 11:27:47,782 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 6) WFLYCTL0028: Attribute 'default-stack' in the resource at address '/subsystem=datagrid-jgroups' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2019-12-23 11:27:48,135 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2019-12-23 11:27:48,165 INFO  [org.xnio] (MSC service thread 1-7) XNIO version 3.6.5.Final
+2019-12-23 11:27:48,175 INFO  [org.xnio.nio] (MSC service thread 1-7) XNIO NIO Implementation Version 3.6.5.Final
+2019-12-23 11:27:48,347 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 17) Activating Infinispan subsystem.
+2019-12-23 11:27:48,410 INFO  [org.infinispan.server.jgroups] (ServerService Thread Pool -- 20) DGJGRP0001: Activating JGroups subsystem.
+2019-12-23 11:27:48,517 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 28) WFLYNAM0001: Activating Naming Subsystem
+2019-12-23 11:27:48,536 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 31) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2019-12-23 11:27:48,560 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 30) WFLYSEC0002: Activating Security Subsystem
+2019-12-23 11:27:48,731 INFO  [org.jboss.as.naming] (MSC service thread 1-8) WFLYNAM0003: Starting Naming Service
+2019-12-23 11:27:48,749 INFO  [org.jboss.as.connector] (MSC service thread 1-8) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.11.Final)
+2019-12-23 11:27:48,769 INFO  [org.jboss.as.security] (MSC service thread 1-7) WFLYSEC0001: Current PicketBox version=5.0.3.Final
+2019-12-23 11:27:48,774 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 21) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2019-12-23 11:27:48,810 INFO  [org.jboss.remoting] (MSC service thread 1-2) JBoss Remoting version 5.0.8.Final
+2019-12-23 11:27:48,856 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Started Driver service with driver-name = h2
+2019-12-23 11:27:49,235 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2019-12-23 11:27:50,163 INFO  [org.jboss.as.patching] (MSC service thread 1-7) WFLYPAT0050: Infinispan Server cumulative patch ID is: base, one-off patches include: none
+2019-12-23 11:27:50,229 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-5) WFLYDM0111: Keystore /svc/infinispan/domains/hana11/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2019-12-23 11:27:50,276 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-3) WFLYDS0013: Started FileSystemDeploymentService for directory /svc/infinispan/domains/hana11/deployments
+2019-12-23 11:27:50,439 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2019-12-23 11:27:56,066 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-4) ISPN000128: Infinispan version: Infinispan 'Infinity Minus ONE +2' 9.4.17.Final
+2019-12-23 11:27:56,070 INFO  [org.infinispan.globalstate.impl.GlobalStateManagerImpl] (MSC service thread 1-4) ISPN000389: Loaded global state, version=9.4.17.Final timestamp=2019-12-23T02:00:59.976Z
+2019-12-23 11:27:56,652 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-4) ISPN000078: Starting JGroups channel clustered
+2019-12-23 11:27:56,655 INFO  [org.infinispan.CLUSTER] (MSC service thread 1-4) ISPN000094: Received new cluster view for channel cluster: [hana12|13] (2) [hana12, hana11]
+2019-12-23 11:27:56,664 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-4) ISPN000079: Channel clustered local address is hana11, physical addresses are [192.168.110.141:55300]
+2019-12-23 11:27:57,823 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-4) DGISPN0023: Started clustered cache container
+2019-12-23 11:27:59,008 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-3) DGISPN0001: Started default cache from clustered container
+2019-12-23 11:27:59,014 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-8) DGISPN0001: Started HANA_CACHE cache from clustered container
+2019-12-23 11:27:59,060 INFO  [org.jboss.as.clustering.infinispan] (MSC service thread 1-5) DGISPN0001: Started repl cache from clustered container
+2019-12-23 11:27:59,412 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-3) DGENDPT10000: HotRodServer starting
+2019-12-23 11:27:59,422 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-7) DGENDPT10000:  starting
+2019-12-23 11:27:59,429 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-3) DGENDPT10001: HotRodServer listening on 192.168.110.141:11322
+2019-12-23 11:28:00,097 INFO  [org.infinispan.server.endpoint] (MSC service thread 1-7) DGENDPT10002:  listening on 192.168.110.141:8180 (mapped to rest)
+2019-12-23 11:28:00,832 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2019-12-23 11:28:00,839 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://192.168.110.141:10090/management
+2019-12-23 11:28:00,840 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://192.168.110.141:10090
+2019-12-23 11:28:00,840 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: Infinispan Server 9.4.17.Final (WildFly Core 6.0.2.Final) started in 27975ms - Started 229 of 277 services (134 services are lazy, passive or on-demand)
